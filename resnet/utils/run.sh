@@ -1,0 +1,47 @@
+#!/bin/bash
+
+if [ "$STRATEGY" == "multi_worker_mirrored" ]
+then 
+  MULTI_WORKER_FLAGS="--use_train_and_evaluate --all_reduce_alg=nccl"
+else
+  MULTI_WORKER_FLAGS=""
+fi 
+# Hyperparameters tuned at scale (1024 nodes)
+export HOROVOD_HIERARCHICAL_ALLGATHER=0
+export HOROVOD_HIERARCHICAL_ALLREDUCE=0
+export HOROVOD_GROUPED_ALLREDUCES=1
+export HOROVOD_CYCLE_TIME=1
+export HOROVOD_FUSION_THRESHOLD=8388608
+
+if [ "$DATA_MODE" == "real" ]
+then 
+  #Real data benchmarking (convergence testing)
+    #python -u ./official/resnet/imagenet_main.py --clean --distribution_strategy=$STRATEGY $MULTI_WORKER_FLAGS --data_dir=$DATADIR --stop_threshold=0.749 --enable_lars --label_smoothing=0 --batch_size=128 --fp16_implementation=casting --dtype=fp16 --inter_op_parallelism_threads=4 --intra_op_parallelism_threads=7 --tf_gpu_thread_mode=gpu_private --per_gpu_thread_count=4 --hooks=ExamplesPerSecondHook,LoggingTensorHook --model_dir=model_dir 2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
+    python -u ./official/resnet/imagenet_main.py \
+           --clean \
+           --distribution_strategy=$STRATEGY \
+           $MULTI_WORKER_FLAGS \
+           --data_dir=$DATADIR \
+           --train_epochs 39 \
+           --stop_threshold=0.749 \
+           --label_smoothing=0 \
+           --batch_size=128 \
+           --fp16_implementation=casting \
+           --dtype=fp16 \
+           --inter_op_parallelism_threads=4 \
+           --intra_op_parallelism_threads=7 \
+           --tf_gpu_thread_mode=gpu_private \
+           --per_gpu_thread_count=4 \
+           --hooks=ExamplesPerSecondHook,LoggingTensorHook \
+           --model_dir=model_dir \
+           2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
+else
+  # Synthetic data benchmarking (images/sec with batch size = 128)
+  python -u ./official/resnet/imagenet_main.py --clean --distribution_strategy=$STRATEGY $MULTI_WORKER_FLAGS --use_synthetic_data --train_epochs=2 --batch_size=128 --enable_lars --fp16_implementation=casting --dtype=fp16 --inter_op_parallelism_threads=4 --intra_op_parallelism_threads=7 --tf_gpu_thread_mode=gpu_private --per_gpu_thread_count=4 --hooks=ExamplesPerSecondHook,LoggingTensorHook --model_dir=model_dir 2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
+fi
+
+if [ $PMIX_RANK -eq 0 ]
+then
+  cp /mnt/bb/$USER/log.${LSB_JOBID} .
+fi
+
