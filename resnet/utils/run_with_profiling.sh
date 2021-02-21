@@ -16,8 +16,8 @@ export HOROVOD_FUSION_THRESHOLD=8388608
 
 # Where to store profiling results and logfiles
 RUN=j_${LSB_JOBID}
-RES_DIR=profiling_results/${DATA_MODE}/${NODES}_nodes/$RUN
-LOG_DIR=logs/${DATA_MODE}/${NODES}_nodes/$RUN
+RES_DIR=profiling_results/${DATA_MODE}/${NODES}_nodes_batchsize_${BATCHSIZE}/$RUN
+LOG_DIR=logs/${DATA_MODE}/${NODES}_nodes_batchsize_${BATCHSIZE}/$RUN
 if [ $PMIX_RANK -eq 0 ]
 then
     mkdir -p $RES_DIR
@@ -27,8 +27,8 @@ PROF_FILE=$DATADIR/nsys.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}
 
 if [ "$DATA_MODE" == "real" ]
 then 
-    #Real data benchmarking (convergence testing)
-    #nvprof -o $PROF_FILE python -u ./official/resnet/imagenet_main.py \
+    # Real data benchmarking (convergence testing)
+    # Memory error if collecting mpi trace
     #nsys profile -o $PROF_FILE -t cuda,nvtx,mpi,osrt --mpi-impl=openmpi \
     nsys profile -o $PROF_FILE -t cuda \
 	python -u ./official/resnet/imagenet_main.py \
@@ -38,7 +38,7 @@ then
         --data_dir=$DATADIR \
         --label_smoothing=0 \
         --train_epochs=2 \
-        --batch_size=128 \
+        --batch_size=$BATCHSIZE \
         --enable_lars \
         --fp16_implementation=casting \
         --dtype=fp16 \
@@ -48,8 +48,6 @@ then
         --per_gpu_thread_count=4 \
         --hooks=ExamplesPerSecondHook,LoggingTensorHook \
         --model_dir=$MODELDIR 2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
-
-    cp $PROF_FILE.qdrep $RES_DIR
 else
     # Synthetic data benchmarking (images/sec with batch size = 128)
     nsys profile -o $PROF_FILE -t cuda \
@@ -59,7 +57,7 @@ else
          $MULTI_WORKER_FLAGS \
          --use_synthetic_data \
          --train_epochs=2 \
-         --batch_size=128 \
+         --batch_size=$BATCHSIZE \
          --enable_lars \
          --fp16_implementation=casting \
          --dtype=fp16 \
@@ -69,9 +67,9 @@ else
          --per_gpu_thread_count=4 \
          --hooks=ExamplesPerSecondHook,LoggingTensorHook \
          --model_dir=$MODELDIR 2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
-    
-    cp $PROF_FILE.qdrep $RES_DIR
 fi
+
+cp $PROF_FILE.qdrep $RES_DIR
 
 if [ $PMIX_RANK -eq 0 ]
 then

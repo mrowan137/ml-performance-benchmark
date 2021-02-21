@@ -32,7 +32,6 @@ import os
 # pylint: disable=g-bad-import-order
 from absl import flags
 import tensorflow as tf
-tf.compat.v1.disable_v2_behavior()
 
 from official.resnet import resnet_model
 from official.utils.flags import core as flags_core
@@ -321,7 +320,7 @@ def learning_rate_with_decay(
 
     min_step = tf.constant(1, dtype=tf.int64)
     decay_steps = tf.maximum(min_step, tf.subtract(global_step, w_steps))
-    poly_rate = tf.compat.v1.train.polynomial_decay(
+    poly_rate = tf.train.polynomial_decay(
         plr,
         decay_steps,
         train_steps - w_steps + 1,
@@ -469,7 +468,7 @@ def resnet_model_fn(features, labels, mode, model_class,
 
     if horovod:
       import horovod.tensorflow as hvd
-      optimizer = hvd.DistributedOptimizer(optimizer) # removed num_groups=1 arg for compatibility
+      optimizer = hvd.DistributedOptimizer(optimizer, num_groups=1)      
 
     def _dense_grad_filter(gvs):
       """Only apply gradient updates to the final layer.
@@ -579,7 +578,7 @@ def resnet_main(
   if flags_obj.distribution_strategy == 'horovod':
     import horovod.tensorflow as hvd
     session_config.gpu_options.visible_device_list = '0' #str(hvd.local_rank())
-    session_config.graph_options.optimizer_options.global_jit_level = tf.compat.v1.OptimizerOptions.ON_1
+    session_config.graph_options.optimizer_options.global_jit_level = tf.OptimizerOptions.ON_1
     num_workers = hvd.size()
     model_dir = flags_obj.model_dir if hvd.rank() == 0 else None
     train_steps_per_epoch = num_images['train']/(flags_obj.batch_size*num_workers)
@@ -737,7 +736,6 @@ def resnet_main(
       if model_helpers.past_stop_threshold(
           flags_obj.stop_threshold, eval_results['accuracy']):
         break
-      
     train_time = time.time() - train_start_time
     if flags_obj.distribution_strategy == 'horovod' and hvd.rank() == 0:
       print("ImageNet training time: %2.3f at validation accuracy %2.3f"
