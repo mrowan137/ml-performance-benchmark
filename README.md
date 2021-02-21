@@ -18,4 +18,4 @@ python imagenet_to_gcs.py \
   --nogcs_upload
 ```
 
-Resnet directory based off: from https://code.ornl.gov/olcf-analytics/summit/distributed-deep-learning-examples
+Resnet directory based off: https://code.ornl.gov/olcf-analytics/summit/distributed-deep-learning-examples
