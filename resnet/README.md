@@ -1,3 +1,5 @@
+__This directory is mostly from: https://code.ornl.gov/olcf-analytics/summit/distributed-deep-learning-examples, please see the link for more details.__
+
 # Running TensorFlow official models in `MultiworkerMirroredStrategy` or `Horovod` mode on Summit
 
 The majority of the code is from TensorFlow's [official implementation of ResNet-50](https://github.com/tensorflow/models/tree/master/official/resnet). A minimal amount of modification is made to the `imagenet_main.py` to scale up the code on Summit. While this strategy is slightly slowered than Horovod, the setup is easier and the modification you need to make is only at the beginning.
