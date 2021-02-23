@@ -1,7 +1,7 @@
 #!/bin/bash
 #BSUB -P csc330
-#BSUB -W 04:00
-#BSUB -nnodes 16
+#BSUB -W 02:00
+#BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
 #BSUB -J ResNet50
 #BSUB -o %J.out
@@ -9,14 +9,17 @@
 # End LSF directives and begin shell commands
 
 # Environment setup
+module purge
+#export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
+export MODELDIR=model_dir #/mnt/bb/$USER/models/model_dir_${NODES}_nodes
+rm -rf $MODELDIR
 export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
-export BATCHSIZE=128
-export STRATEGY='horovod'  # horovod or multi_worker_mirrored
-export DATA_MODE='real'    # real or synthetic
+export BATCHSIZE=512
+export STRATEGY='horovod'   # horovod or multi_worker_mirrored
+export DATA_MODE='real'     # real or synthetic
 export DO_PROFILING='false' # true or false
 #export NCCL_DEBUG_SUBSYS=COLL
 
-source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
 if [ "$DO_PROFILING" == "true" ]
 then
     module load nsight-systems
@@ -25,15 +28,13 @@ fi
 if [ "$DATA_MODE" == "real" ]
 then
     #copy imagenet data to SSD 
-    jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/csc330/mrowan/imagenet/train/* $WORLDWORK/csc330/mrowan/imagenet/validation/* /mnt/bb/$USER
-    
+    #jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/csc330/mrowan/imagenet/train/* $WORLDWORK/csc330/mrowan/imagenet/validation/* /mnt/bb/$USER
+    jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/stf011/junqi/imagenet/train/* $WORLDWORK/stf011/junqi/imagenet/validation/* /mnt/bb/$USER
+    export DATADIR=/mnt/bb/$USER
 fi
 
-rm -rf $MODELDIR
-export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
-export DATADIR=/mnt/bb/$USER
-
 #XLA environment
+source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
 export PYTHONPATH=$(pwd):$PYTHONPATH
 
