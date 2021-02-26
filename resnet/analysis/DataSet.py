@@ -50,14 +50,18 @@ class DataSet():
                 tmp.append(line)
         return res
 
-    def parseInput(self, filepath):
+    def parseInput(self, filepath, mode='nodes'):
         """
         Parse all the ranks data in filepath
         """
         files = glob.glob(os.path.join(filepath, 'nsys*txt'))
         for f in files:
             rank = re.search('r([\d]+)', f).group()
-            nodes = re.search('([\d]+)_nodes', f).group()
+            if mode == 'batch':
+                nodes = re.search('batchsize_([\d]+)', f).group()
+            elif mode == 'nodes':
+                nodes = re.search('([\d]+)_nodes', f).group()
+                
             print('Parsing {}'.format(f))
             with open(f, 'r+', encoding="utf-8") as infile:
                 # gets cudaapisum, gpukernsum, gpumemtimesum, gpumemsizesum
