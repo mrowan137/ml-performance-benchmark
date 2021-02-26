@@ -1,0 +1,15 @@
+Using nsys.759016.r9.w.sqlite for SQL queries.
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/cudaapisum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/gpukernsum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/gpumemtimesum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/gpumemsizesum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/osrtsum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/nvtxppsum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
+Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/openmpevtsum.py nsys.759016.r9.w.sqlite]... SKIPPED: Database file nsys.759016.r9.w.sqlite could not be opened and appears to be invalid.
+
