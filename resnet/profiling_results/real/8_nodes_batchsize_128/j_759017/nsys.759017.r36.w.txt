@@ -1,4 +1,3 @@
-Generating SQLite file nsys.759017.r36.w.sqlite from nsys.759017.r36.w.qdrep
 Using nsys.759017.r36.w.sqlite for SQL queries.
 Running [/autofs/nccs-svm1_sw/summit/nsight-systems/2020.5.1.85/target-linux-ppc64le/reports/cudaapisum.py nsys.759017.r36.w.sqlite]... 
 
