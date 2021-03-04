@@ -19,3 +19,10 @@ python imagenet_to_gcs.py \
 ```
 
 Resnet directory based off: https://code.ornl.gov/olcf-analytics/summit/distributed-deep-learning-examples
+
+
+## DeepCam
+
+Data: symlinks to files on Cori
+
+DeepCam directory based off: https://bitbucket.org/kibrahim/hpc_mlperf_nsys_scripts
