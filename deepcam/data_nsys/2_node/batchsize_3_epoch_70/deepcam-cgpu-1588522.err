@@ -1,0 +1,30 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/2_node/nsys.1588522.0.r9.w16.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/2_node/nsys.1588522.0.r11.w16.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/2_node/nsys.1588522.0.r15.w16.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/2_node/nsys.1588522.0.r7.w16.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/2_node/nsys.1588522.0.r1.w16.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/2_node/nsys.1588522.0.r5.w16.qdrep': No such file or directory
+srun: error: cgpu11: tasks 9,11,15: Exited with exit code 1
+srun: Terminating job step 1588522.0
+slurmstepd: error: *** STEP 1588522.0 ON cgpu10 CANCELLED AT 2021-03-04T03:25:28 ***
+srun: error: cgpu10: tasks 0,2-4,6: Terminated
+srun: error: cgpu10: tasks 1,5,7: Exited with exit code 1
+srun: error: cgpu11: tasks 8,10,12-14: Terminated
+srun: Force Terminated job step 1588522.0
