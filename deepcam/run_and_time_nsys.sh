@@ -15,35 +15,18 @@
 BATCH_SIZE=2
 
 # Setup software environment
-#module unload darshan
-#module load cgpu
-#module load pytorch/v1.6.0-gpu
-#module load gcc/7.3.0
-#module load mpich/3.3.1-debug
-#module load cuda/11.1.1
 source activate mlperf_deepcam
-#module unload darshan
-#module load cgpu
-#module load pytorch/v1.6.0-gpu
-#module load nsight-systems
 module unload darshan
 module load cgpu
 module load pytorch/v1.6.0-gpu
 module load cuda/10.2.89
 module load gcc
 module load mpich
-#module load nccl
 module load nccl/2.5.6
-#module load pmi
 module load nsight-systems
-#module load nsight-systems/2020.5.1
 export BASEMAPDATA=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/share/basemap
 export PROJ_LIB=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/share/basemap
 export PYTHONPATH=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages:/global/homes/m/mrowan/code/mlperf-logging
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/common/software/mpich/3.3.1-debug/gcc/8.3.0/lib:/usr/common/software/sles15_cgpu/gcc/8.3.0/lib64:/usr/common/software/nccl/2.5.6/cuda-10.2.89/lib:/usr/common/software/sles15_cgpu/cuda/10.2.89/extras/CUPTI/lib64:/usr/common/software/sles15_cgpu/cuda/10.2.89/lib64:/global/common/cori_cle7/software/jdk/1.8.0_202/lib:/opt/esslurm/lib64:/usr/common/software/nccl/2.5.6/cuda-11.1.1/lib:/opt/cray/job/2.2.4-7.0.1.1_3.43__g36b56f4.ari/lib64:/opt/intel/compilers_and_libraries_2019.3.199/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2019.3.199/linux/mkl/lib/intel64:/usr/lib64:/usr/common/software/sles15_cgpu/cuda/10.2.89/lib64/stubs
-#export NCCL_DEBUG=INFO
-#export NCCL_SOCKET_IFNAME=eth0,eth3,eth0_144,eth0_224
-#export NCCL_SOCKET_IFNAME=eth0,eth3,eth0_144,eth0_224,ib0,ib1,ib2,ib3,ib4,ib5,ib6
 
 # Job configuration
 rankspernode=8
