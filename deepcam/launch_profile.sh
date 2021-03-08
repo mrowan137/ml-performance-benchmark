@@ -4,7 +4,6 @@ SCRIPT=$1
 output_dir=$2
 data_dir_prefix=$3
 PROFILE_DIR=$4
-batch_size=2
 run_tag=4
 
 RUN=j_${SLURM_JOB_ID}.s_${SLURM_STEP_ID}
@@ -29,7 +28,7 @@ python $SCRIPT \
      --optimizer "LAMB" \
      --max_epochs 70 \
      --amp_opt_level O1 \
-     --local_batch_size $batch_size |& tee -a ${output_dir}/train.out
+     --local_batch_size $BATCH_SIZE |& tee -a ${output_dir}/train.out
 
 
 cp $PROF_FILE.qdrep $RES_DIR
