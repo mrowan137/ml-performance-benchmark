@@ -12,7 +12,7 @@
 #SBATCH -e %x-%j.err
 
 # Run parameters
-BATCH_SIZE=2
+export BATCH_SIZE=2
 
 # Setup software environment
 source activate mlperf_deepcam
