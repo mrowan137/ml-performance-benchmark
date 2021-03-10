@@ -30,7 +30,7 @@ then
         --distribution_strategy=$STRATEGY \
         $MULTI_WORKER_FLAGS \
         --data_dir=$DATADIR \
-        --stop_threshold=0.749 \ #--train_epochs 39 \
+        --stop_threshold=0.6 \ #--train_epochs 39 \
         --label_smoothing=0 \
         --batch_size=$BATCHSIZE \
         --fp16_implementation=casting \

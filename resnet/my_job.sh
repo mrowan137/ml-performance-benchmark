@@ -1,7 +1,7 @@
 #!/bin/bash
 #BSUB -P csc330
 #BSUB -W 02:00
-#BSUB -w ended(759016)
+##BSUB -w ended(759016)
 #BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
 #BSUB -J ResNet50
@@ -18,7 +18,7 @@ export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v 
 export BATCHSIZE=128
 export STRATEGY='horovod'   # horovod or multi_worker_mirrored
 export DATA_MODE='real'     # real or synthetic
-export DO_PROFILING='true' # true or false
+export DO_PROFILING='false' # true or false
 #export NCCL_DEBUG_SUBSYS=COLL
 
 if [ "$DO_PROFILING" == "true" ]
