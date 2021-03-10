@@ -13,6 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 """Contains utility and supporting functions for ResNet.
+
   This module contains ResNet code which does not directly build layers. This
 includes dataset management, hyperparameter and optimizer code, and argument
 parsing. Code for defining the ResNet layers can be found in resnet_model.py.
@@ -31,7 +32,6 @@ import os
 # pylint: disable=g-bad-import-order
 from absl import flags
 import tensorflow as tf
-tf.compat.v1.disable_v2_behavior()
 
 from official.resnet import resnet_model
 from official.utils.flags import core as flags_core
@@ -57,6 +57,7 @@ def process_record_dataset(dataset,
                            drop_remainder=False,
                            tf_data_experimental_slack=False):
   """Given a Dataset with raw records, return an iterator over the records.
+
   Args:
     dataset: A Dataset representing raw records
     is_training: A boolean denoting whether the input is for training.
@@ -74,6 +75,7 @@ def process_record_dataset(dataset,
       batches. If True, the batch dimension will be static.
     tf_data_experimental_slack: Whether to enable tf.data's
       `experimental_slack` option.
+
   Returns:
     Dataset of (image, label) pairs ready for iteration.
   """
@@ -126,10 +128,12 @@ def process_record_dataset(dataset,
 def get_synth_input_fn(height, width, num_channels, num_classes,
                        dtype=tf.float32):
   """Returns an input function that returns a dataset with random data.
+
   This input_fn returns a data set that iterates over a set of random data and
   bypasses all preprocessing, e.g. jpeg decode and copy. The host to device
   copy is still included. This used to find the upper throughput bound when
   tunning the full input pipeline.
+
   Args:
     height: Integer height that will be used to create a fake image tensor.
     width: Integer width that will be used to create a fake image tensor.
@@ -137,6 +141,7 @@ def get_synth_input_fn(height, width, num_channels, num_classes,
     num_classes: Number of classes that should be represented in the fake labels
       tensor
     dtype: Data type for features/images.
+
   Returns:
     An input_fn that can be used in place of a real one to return a dataset
     that can be used for iteration.
@@ -187,13 +192,16 @@ def image_bytes_serving_input_fn(image_shape, dtype=tf.float32):
 
 def override_flags_and_set_envars_for_gpu_thread_pool(flags_obj):
   """Override flags and set env_vars for performance.
+
   These settings exist to test the difference between using stock settings
   and manual tuning. It also shows some of the ENV_VARS that can be tweaked to
   squeeze a few extra examples per second.  These settings are defaulted to the
   current platform of interest, which changes over time.
+
   On systems with small numbers of cpu cores, e.g. under 8 logical cores,
   setting up a gpu thread pool with `tf_gpu_thread_mode=gpu_private` may perform
   poorly.
+
   Args:
     flags_obj: Current flags, which will be adjusted possibly overriding
     what has been set by the user on the command-line.
@@ -232,6 +240,7 @@ def learning_rate_with_decay(
     batch_size, batch_denom, num_images, boundary_epochs, decay_rates,
     base_lr=0.1, warmup=False):
   """Get a learning rate that decays step-wise as training progresses.
+
   Args:
     batch_size: the number of examples processed in each training batch.
     batch_denom: this value will be used to scale the base learning rate.
@@ -274,12 +283,15 @@ def learning_rate_with_decay(
 
   def poly_rate_fn(global_step):
     """Handles linear scaling rule, gradual warmup, and LR decay.
+
     The learning rate starts at 0, then it increases linearly per step.  After
     FLAGS.poly_warmup_epochs, we reach the base learning rate (scaled to account
     for batch size). The learning rate is then decayed using a polynomial rate
     decay schedule with power 2.0.
+
     Args:
       global_step: the current global_step
+
     Returns:
       returns the current learning rate
     """
@@ -308,7 +320,7 @@ def learning_rate_with_decay(
 
     min_step = tf.constant(1, dtype=tf.int64)
     decay_steps = tf.maximum(min_step, tf.subtract(global_step, w_steps))
-    poly_rate = tf.compat.v1.train.polynomial_decay(
+    poly_rate = tf.train.polynomial_decay(
         plr,
         decay_steps,
         train_steps - w_steps + 1,
@@ -328,12 +340,14 @@ def resnet_model_fn(features, labels, mode, model_class,
                     loss_filter_fn=None, dtype=resnet_model.DEFAULT_DTYPE,
                     fine_tune=False, label_smoothing=0.0, horovod=False):
   """Shared functionality for different resnet model_fns.
+
   Initializes the ResnetModel representing the model layers
   and uses that model to build the necessary EstimatorSpecs for
   the `mode` in question. For training, this means building losses,
   the optimizer, and the train op that get passed into the EstimatorSpec.
   For evaluation and prediction, the EstimatorSpec is returned without
   a train op, but with the necessary parameters for the given mode.
+
   Args:
     features: tensor representing input images
     labels: tensor representing class labels for all input images
@@ -359,6 +373,7 @@ def resnet_model_fn(features, labels, mode, model_class,
     dtype: the TensorFlow dtype to use for calculations.
     fine_tune: If True only train the dense layers(final layers).
     label_smoothing: If greater than 0 then smooth the labels.
+
   Returns:
     EstimatorSpec parameterized according to the input params and the
     current mode.
@@ -453,11 +468,13 @@ def resnet_model_fn(features, labels, mode, model_class,
 
     if horovod:
       import horovod.tensorflow as hvd
-      optimizer = hvd.DistributedOptimizer(optimizer) # removed num_groups=1 arg for compatibility
+      optimizer = hvd.DistributedOptimizer(optimizer, num_groups=1)      
 
     def _dense_grad_filter(gvs):
       """Only apply gradient updates to the final layer.
+
       This function is used for fine tuning.
+
       Args:
         gvs: list of tuples with gradients and variable info
       Returns:
@@ -513,6 +530,7 @@ def resnet_model_fn(features, labels, mode, model_class,
 def resnet_main(
     flags_obj, model_function, input_function, dataset_name, num_images, shape=None):
   """Shared main loop for ResNet Models.
+
   Args:
     flags_obj: An object containing parsed flags. See define_resnet_flags()
       for details.
@@ -525,6 +543,7 @@ def resnet_main(
       used for logging purpose.
     shape: list of ints representing the shape of the images used for training.
       This is only used if flags_obj.export_dir is passed.
+
   Returns:
      Dict of results of the run.  Contains the keys `eval_results` and
     `train_hooks`. `eval_results` contains accuracy (top_1) and accuracy_top_5.
@@ -559,7 +578,7 @@ def resnet_main(
   if flags_obj.distribution_strategy == 'horovod':
     import horovod.tensorflow as hvd
     session_config.gpu_options.visible_device_list = '0' #str(hvd.local_rank())
-    session_config.graph_options.optimizer_options.global_jit_level = tf.compat.v1.OptimizerOptions.ON_1
+    session_config.graph_options.optimizer_options.global_jit_level = tf.OptimizerOptions.ON_1
     num_workers = hvd.size()
     model_dir = flags_obj.model_dir if hvd.rank() == 0 else None
     train_steps_per_epoch = num_images['train']/(flags_obj.batch_size*num_workers)
@@ -671,13 +690,13 @@ def resnet_main(
       #   Train for another 10 epochs and then evaluate.
       #   Train for a final 5 epochs (to reach 25 epochs) and then evaluate.
       
-      n_loops = math.ceil(train_epochs / flags_obj.epochs_between_evals)
-      schedule = [flags_obj.epochs_between_evals for _ in range(int(n_loops))]
-      schedule[-1] = train_epochs - sum(schedule[:-1])  # over counting.
+      #n_loops = math.ceil(train_epochs / flags_obj.epochs_between_evals)
+      #schedule = [flags_obj.epochs_between_evals for _ in range(int(n_loops))]
+      #schedule[-1] = train_epochs - sum(schedule[:-1])  # over counting.
 
       # Manual setup (override train_epochs) 
-      #schedule = [80] + [2]*5 
-      #n_loops = len(schedule)
+      schedule = [1]*200
+      n_loops = len(schedule)
     train_start_time = time.time()
     for cycle_index, num_train_epochs in enumerate(schedule):
       tf.compat.v1.logging.info('Starting cycle: %d/%d', cycle_index,
@@ -701,7 +720,6 @@ def resnet_main(
       # allows the eval (which is generally unimportant in those circumstances)
       # to terminate.  Note that eval will run for max_train_steps each loop,
       # regardless of the global_step count.
-      """
       tf.compat.v1.logging.info('Starting to evaluate.')
       eval_results = classifier.evaluate(input_fn=input_fn_eval,
                                          steps=eval_steps_per_epoch 
@@ -714,15 +732,14 @@ def resnet_main(
         eval_avg_acc /= num_workers
         eval_results['accuracy'] = eval_avg_acc
       benchmark_logger.log_evaluation_result(eval_results)
+
       if model_helpers.past_stop_threshold(
           flags_obj.stop_threshold, eval_results['accuracy']):
         break
-      """
     train_time = time.time() - train_start_time
     if flags_obj.distribution_strategy == 'horovod' and hvd.rank() == 0:
-      #print("ImageNet training time: %2.3f at validation accuracy %2.3f"
-      #      %(train_time, eval_results['accuracy']))
-      print("ImageNet training time: %2.3f (no validation)" %(train_time))
+      print("ImageNet training time: %2.3f (%d epochs) at validation accuracy %2.3f"
+            %(train_time, cycle_index + 1, eval_results['accuracy']))
       print("training schedule: [%s]" % ", ".join(map(str, schedule)))
   if flags_obj.export_dir is not None:
     # Exports a saved model for the given classifier.
@@ -737,7 +754,7 @@ def resnet_main(
                                  strip_default_attrs=True)
 
   stats = {}
-  stats['eval_results'] = {} #eval_results
+  stats['eval_results'] = eval_results
   stats['train_hooks'] = train_hooks
 
   return stats
