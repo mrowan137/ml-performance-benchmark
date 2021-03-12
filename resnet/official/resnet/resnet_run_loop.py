@@ -585,7 +585,7 @@ def resnet_main(
     eval_steps_per_epoch = max(num_images['validation']/(flags_obj.batch_size*num_workers),1)
     log_verbosity = tf.compat.v1.logging.INFO if hvd.rank() == 0 else tf.compat.v1.logging.WARN
     tf.compat.v1.logging.set_verbosity(log_verbosity)
-  model_dir = flags_obj.model_dir 
+
   # Creates a `RunConfig` that checkpoints every 24 hours which essentially
   # results in checkpoints determined only by `epochs_between_evals`.
   run_config = tf.estimator.RunConfig(
@@ -695,8 +695,9 @@ def resnet_main(
       #schedule[-1] = train_epochs - sum(schedule[:-1])  # over counting.
 
       # Manual setup (override train_epochs) 
-      schedule = [1]*200
+      schedule = [1]*1000
       n_loops = len(schedule)
+
     train_start_time = time.time()
     for cycle_index, num_train_epochs in enumerate(schedule):
       tf.compat.v1.logging.info('Starting cycle: %d/%d', cycle_index,
