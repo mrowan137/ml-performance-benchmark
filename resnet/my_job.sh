@@ -1,7 +1,7 @@
 #!/bin/bash
 #BSUB -P csc330
 #BSUB -W 02:00
-##BSUB -w ended(759016)
+##BSUB -w ended(805710)
 #BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
 #BSUB -J ResNet50
@@ -11,11 +11,12 @@
 
 # Environment setup
 module purge
-#export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
-export MODELDIR=model_dir #/mnt/bb/$USER/models/model_dir_${NODES}_nodes
+#module load cuda/10.1.168
+export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
+#export MODELDIR=model_dir #/mnt/bb/$USER/models/model_dir_${NODES}_nodes
 rm -rf $MODELDIR
 export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
-export BATCHSIZE=128
+export BATCHSIZE=512
 export STRATEGY='horovod'   # horovod or multi_worker_mirrored
 export DATA_MODE='real'     # real or synthetic
 export DO_PROFILING='false' # true or false

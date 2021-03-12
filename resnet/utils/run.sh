@@ -30,9 +30,10 @@ then
         --distribution_strategy=$STRATEGY \
         $MULTI_WORKER_FLAGS \
         --data_dir=$DATADIR \
-        --stop_threshold=0.6 \ #--train_epochs 39 \
+        --stop_threshold=0.4 \
         --label_smoothing=0 \
         --batch_size=$BATCHSIZE \
+	    --enable_lars \
         --fp16_implementation=casting \
         --dtype=fp16 \
         --inter_op_parallelism_threads=4 \
@@ -40,7 +41,7 @@ then
         --tf_gpu_thread_mode=gpu_private \
         --per_gpu_thread_count=4 \
         --hooks=ExamplesPerSecondHook,LoggingTensorHook \
-        --model_dir=model_dir \
+        --model_dir=$MODELDIR \
         2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
 else
     # Synthetic data benchmarking (images/sec with batch size = 128)
