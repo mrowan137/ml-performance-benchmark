@@ -23,6 +23,18 @@ Resnet directory based off: https://code.ornl.gov/olcf-analytics/summit/distribu
 
 ## DeepCam
 
+Requires to install `mlperf-logging` package (see https://github.com/mlcommons/logging).  May install with:
+```
+git clone https://github.com/mlperf/logging.git mlperf-logging
+pip install -e mlperf-logging
+```
+then add to PYTHONPATH.
+
+Split data directories with `link_count.sh 1` for 1 node, etc.
+
+Before running must generate `stats.h5` file; can do this with `/src/utils/summarize_data.py` (be sure to update data directory accordingly).
+This can take some time to complete, submit as a batch job (see `/src/utils/run_summarize_circe.sh`).
+
 Data: symlinks to files on Cori
 
 DeepCam directory based off: https://bitbucket.org/kibrahim/hpc_mlperf_nsys_scripts
