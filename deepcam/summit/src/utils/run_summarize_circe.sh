@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -A hpc
-#SBATCH -J summarize_cam5
-#SBATCH -t 01:00:00
+#BSUB -P csc330
+#BSUB -J DeepCam
+##BSUB -W 01:00
 
 # The MIT License (MIT)
 #
@@ -24,11 +24,7 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-rankspernode=48
-totalranks=$(( ${SLURM_NNODES} * ${rankspernode} ))
-
-srun --wait=60 --mpi=pmix -N ${SLURM_NNODES} -n ${totalranks} -c $(( 96 / ${rankspernode} )) \
-     --container-workdir=/opt/utils \
-     --container-mounts=/gpfs/fs1/tkurth/cam5_dataset/All-Hist:/data \
-     --container-image=gitlab-master.nvidia.com/tkurth/mlperf-deepcam:debug \
-     python summarize_data.py
+rankspernode=42
+totalranks=$(( ${NODES} * ${rankspernode} ))
+-n$NODES -a1 -c42 -r1
+jsrun -n$NODES -a1 -c42 -r1 python summarize_data.py
