@@ -33,7 +33,7 @@ then add to PYTHONPATH.
 Split data directories with `link_count.sh 1` for 1 node, etc.
 
 Before running must generate `stats.h5` file; can do this with `/src/utils/summarize_data.py` (be sure to update data directory accordingly).
-This can take some time to complete, submit as a batch job (see `/src/utils/run_summarize_circe.sh`).
+This can take some time to complete, submit as a batch job (with interactive job on Summit, can do `jsrun -n1 -a1 -c42 -r1 python summarize_data.py`).
 
 Data: symlinks to files on Cori
 
