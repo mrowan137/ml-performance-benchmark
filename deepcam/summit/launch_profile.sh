@@ -20,7 +20,7 @@ fi
 #nsys profile -o $PROF_FILE -t cuda,cudnn,nvtx,mpi,osrt --mpi-impl=openmpi python $SCRIPT \
 #nsys profile -o $PROF_FILE -t cuda --mpi-impl=mpich python $SCRIPT \
 python $SCRIPT \
-     --wireup_method "nccl-openmpi" \
+     --wireup_method "nccl-slurm" \
      --run_tag ${run_tag} \
      --data_dir_prefix ${data_dir_prefix} \
      --output_dir ${output_dir} \

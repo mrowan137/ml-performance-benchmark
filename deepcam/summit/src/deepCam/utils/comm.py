@@ -80,12 +80,12 @@ def init(method):
                                 world_size = world_size)
         
     elif method == "nccl-slurm":
-        rank = int(os.getenv("PMIX_RANK")) #rank = int(os.getenv("PMI_RANK")) 
-        world_size = int(os.getenv("SLURM_NTASKS"))
-        address = os.getenv("SLURM_LAUNCH_NODE_IPADDR")
-        port = "29500"
-        os.environ["MASTER_ADDR"] = address
-        os.environ["MASTER_PORT"] = port
+        import subprocess
+        get_master = "echo $(cat {} | sort | uniq | grep -v batch | grep -v login | head -1)".format(os.environ['LSB_DJOB_HOSTFILE'])
+        os.environ["MASTER_ADDR"] = str(subprocess.check_output(get_master, shell=True))[2:-3]
+        os.environ["MASTER_PORT"] = "23456"
+        rank = int(os.getenv("PMIX_RANK"))
+        world_size = int(os.environ['OMPI_COMM_WORLD_SIZE'])
 
         #init DDP
         dist.init_process_group(backend = "nccl",

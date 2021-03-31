@@ -9,18 +9,23 @@
 #BSUB -e %J.err
 # End LSF directives and begin shell commands
 
-# Environment setup
-module purge
-#module load cuda/10.1.168
-export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
-#export MODELDIR=model_dir #/mnt/bb/$USER/models/model_dir_${NODES}_nodes
-rm -rf $MODELDIR
-export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
+# Run parameters
 export BATCHSIZE=16
 export STRATEGY='horovod'   # horovod or multi_worker_mirrored
 export DATA_MODE='real'     # real or synthetic
 export DO_PROFILING='false' # true or false
+
+# Environment setup
+module purge
+export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
+export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
+#rm -rf $MODELDIR
 #export NCCL_DEBUG_SUBSYS=COLL
+
+#XLA environment
+source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
+export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$DO_PROFILING" == "true" ]
 then
@@ -34,11 +39,6 @@ then
     jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/stf011/junqi/imagenet/train/* $WORLDWORK/stf011/junqi/imagenet/validation/* /mnt/bb/$USER
     export DATADIR=/mnt/bb/$USER
 fi
-
-#XLA environment
-source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
-export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
-export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$STRATEGY" == "horovod" ]
 then

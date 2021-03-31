@@ -4,7 +4,7 @@ subdir=(train validation)
 samples_per_node=(720 72)
 
 node_count=$1
-base_dir="/ccs/home/mrowan/scratch/cam5_data/All-Hist/train"
+base_dir="/ccs/home/mrowan/scratch/cam5_data/All-Hist/all"
 data_dir="data/cam5_data/All-Hist_small_split_$node_count"
 mkdir -p $data_dir
 
