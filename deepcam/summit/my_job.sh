@@ -4,29 +4,28 @@
 ##BSUB -w ended(######)
 #BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
-#BSUB -J DeepCam_bs2
+#BSUB -J DeepCam_bs4
 #BSUB -o %J.out
 #BSUB -e %J.err
 ## End LSF directives and begin shell commands
 
 # Run parameters
-export BATCHSIZE=2
+export BATCHSIZE=4
 export DO_PROFILING='false' # true or false
 
 # Setup software environment
-source ~/.bashrc
+#module load cuda/10.2.89
 module unload python
 module load open-ce
 module unload darshan
-#source activate mlperf_deepcam # TODO
+#source ~/.bashrc
 #module load pytorch/v1.6.0-gpu # TODO
-module load cuda/10.2.89       # TODO
 #module load gcc                # TODO
 #module load mpich              # TODO
 #module load nccl/2.5.6         # TODO
 
 # TODO
-export PYTHONPATH=$PYTHONPATH:/ccs/home/mrowan/code/mlperf-logging
+export PYTHONPATH=$PYTHONPATH:/ccs/home/mrowan/code/mlperf-logging # Add as part of directory?
 export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
 #export BASEMAPDATA=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/share/basemap
 #export PROJ_LIB=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/share/basemap
@@ -44,26 +43,9 @@ then
 fi
 
 # Copy data to burst buffer # TODO
-#jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/stf011/junqi/imagenet/train/* $WORLDWORK/stf011/junqi/imagenet/validation/* /mnt/bb/$USER
-export DATADIR="/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/data/cam5_data/All-Hist_small_split_${NODES}"
-#export DATADIR=/mnt/bb/$USER
-#export DATADIR="/ccs/home/mrowan/scratch/cam5_data/All-Hist_small_split_${NODES}"
-
-rankspernode=6
-totalranks=$(( ${NODES} * ${rankspernode} ))
-run_tag="deepcam_${LSB_JOBID}_nodes${NODES}_batch${BATCHSIZE}"
-
-TAG='W'
-
-output_dir=/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/results/$run_tag
-
-# Create files
-mkdir -p ${output_dir}
-touch ${output_dir}/train.out
-
-SCRATCH_DIR=/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/data_nsys/${NODES}_node
-PROF_DIR=outputs_nodes${NODES}_batch${BATCHSIZE}
-mkdir $PROF_DIR
+# export data_dir_prefix="./data/cam5_data/All-Hist_small_split_${NODES}"
+jsrun -n$NODES -a1 -c42 -r1 cp -rL ./data/cam5_data/All-Hist_small_split_${NODES}/ /mnt/bb/$USER
+export data_dir_prefix=/mnt/bb/$USER
 
 if [ "$DO_PROFILING" == "true" ]
 then
@@ -84,8 +66,7 @@ else
           --bind=proportional-packed:7 \
           -x LD_LIBRARY_PATH \
           stdbuf -o0 \
-          ./launch_profile.sh \
-          src/deepCam/train_hdf5_ddp.py ${output_dir} ${DATADIR} ${SCRATCH_DIR} ${PROF_DIR}
+          ./utils/run.sh
 fi
 
 # if [ "$DO_PROFILING" == "true" ]
