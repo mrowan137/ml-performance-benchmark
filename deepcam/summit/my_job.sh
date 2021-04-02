@@ -1,6 +1,6 @@
 ##!/bin/bash
 #BSUB -P csc330
-#BSUB -W 01:00
+#BSUB -W 01:30
 ##BSUB -w ended(######)
 #BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
@@ -10,7 +10,7 @@
 ## End LSF directives and begin shell commands
 
 # Run parameters
-export BATCHSIZE=4
+export BATCHSIZE=3
 export DO_PROFILING='false' # true or false
 
 # Setup software environment
@@ -43,9 +43,9 @@ then
 fi
 
 # Copy data to burst buffer # TODO
-# export data_dir_prefix="./data/cam5_data/All-Hist_small_split_${NODES}"
-jsrun -n$NODES -a1 -c42 -r1 cp -rL ./data/cam5_data/All-Hist_small_split_${NODES}/ /mnt/bb/$USER
-export data_dir_prefix=/mnt/bb/$USER
+export data_dir_prefix="/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/data/cam5_data/All-Hist_small_split_${NODES}"
+#jsrun -n$NODES -a1 -c42 -r1 cp -rL ./data/cam5_data/All-Hist_small_split_${NODES}/ /mnt/bb/$USER
+#export data_dir_prefix=/mnt/bb/$USER
 
 if [ "$DO_PROFILING" == "true" ]
 then
