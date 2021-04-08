@@ -104,7 +104,7 @@ def create_token(filename, data_format="nchw", rank = 0):
 overwrite = False
 data_format = "nhwc"
 #data_path_prefix = "/data"
-data_path_prefix = "/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/data/cam5_data/All-Hist_small_split_1"
+data_path_prefix = "/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/data/cam5_data/All-Hist_small_split_16"
 
 #MPI
 comm = MPI.COMM_WORLD.Dup()

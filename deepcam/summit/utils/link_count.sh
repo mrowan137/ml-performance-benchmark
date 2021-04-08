@@ -5,7 +5,7 @@ samples_per_node=(720 72)
 
 node_count=$1
 base_dir="/ccs/home/mrowan/scratch/cam5_data/All-Hist/all"
-data_dir="data/cam5_data/All-Hist_small_split_$node_count"
+data_dir="/ccs/home/mrowan/scratch/ml-performance-benchmark/deepcam/summit/data/cam5_data/All-Hist_small_split_$node_count"
 mkdir -p $data_dir
 
 cd $data_dir

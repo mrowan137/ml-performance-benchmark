@@ -2,9 +2,9 @@
 #BSUB -P csc330
 #BSUB -W 01:30
 ##BSUB -w ended(######)
-#BSUB -nnodes 8
+#BSUB -nnodes 16
 #BSUB -alloc_flags "nvme smt4"
-#BSUB -J DeepCam_bs4
+#BSUB -J DeepCam_profile
 #BSUB -o %J.out
 #BSUB -e %J.err
 ## End LSF directives and begin shell commands
