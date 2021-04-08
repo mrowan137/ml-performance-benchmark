@@ -10,7 +10,7 @@
 ## End LSF directives and begin shell commands
 
 # Run parameters
-export BATCHSIZE=3
+export BATCHSIZE=2
 export DO_PROFILING='false' # true or false
 
 # Setup software environment
@@ -51,17 +51,10 @@ if [ "$DO_PROFILING" == "true" ]
 then
     jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
           --bind=proportional-packed:7 \
-          --launch_distribution=packed \
+          -x LD_LIBRARY_PATH \
           stdbuf -o0 \
-          ./utils/launch.sh "./utils/run_with_profiling.sh"
+          ./utils/run_with_profiling.sh
 else
-    # jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
-    #       --bind=proportional-packed:7 \
-    #       --launch_distribution=packed \
-    #       stdbuf -o0 \
-    #       ./utils/launch.sh "./utils/run.sh"
-    
-    # Run training
     jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
           --bind=proportional-packed:7 \
           -x LD_LIBRARY_PATH \

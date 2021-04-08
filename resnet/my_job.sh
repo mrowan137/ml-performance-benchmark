@@ -44,11 +44,11 @@ if [ "$STRATEGY" == "horovod" ]
 then
     if [ "$DO_PROFILING" == "true" ]
     then
-    jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
-          --bind=proportional-packed:7 \
-          --launch_distribution=packed \
-          stdbuf -o0 \
-          ./utils/launch.sh "./utils/run_with_profiling.sh"
+        jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
+              --bind=proportional-packed:7 \
+              --launch_distribution=packed \
+              stdbuf -o0 \
+              ./utils/launch.sh "./utils/run_with_profiling.sh"
     else
         jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
               --bind=proportional-packed:7 \
