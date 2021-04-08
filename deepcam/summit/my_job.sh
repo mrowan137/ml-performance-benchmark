@@ -1,6 +1,6 @@
 ##!/bin/bash
 #BSUB -P csc330
-#BSUB -W 01:30
+#BSUB -W 00:30
 ##BSUB -w ended(######)
 #BSUB -nnodes 16
 #BSUB -alloc_flags "nvme smt4"
@@ -15,10 +15,10 @@ export DO_PROFILING='true' # true or false
 
 # Setup software environment
 #module load cuda/10.2.89
+source ~/.mlperf_deepcam_profile
 module unload python
-module load open-ce
+conda activate open-ce-0.1-0 # has basemap
 module unload darshan
-#source ~/.bashrc
 #module load pytorch/v1.6.0-gpu # TODO
 #module load gcc                # TODO
 #module load mpich              # TODO
