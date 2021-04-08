@@ -11,7 +11,7 @@
 
 # Run parameters
 export BATCHSIZE=2
-export DO_PROFILING='false' # true or false
+export DO_PROFILING='true' # true or false
 
 # Setup software environment
 #module load cuda/10.2.89

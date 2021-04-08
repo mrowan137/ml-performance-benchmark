@@ -22,6 +22,6 @@ python src/deepCam/train_hdf5_ddp.py \
      --max_inter_threads 2 \
      --model_prefix "classifier" \
      --optimizer "LAMB" \
-     --max_epochs 70 \
+     --max_epochs 3 \
      --amp_opt_level O1 \
      --local_batch_size $BATCHSIZE |& tee -a ${output_dir}/train.out
