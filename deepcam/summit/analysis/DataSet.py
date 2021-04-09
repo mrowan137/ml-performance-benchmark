@@ -62,7 +62,7 @@ class DataSet():
             elif mode == 'nodes':
                 nodes = re.search('([\d]+)_nodes', f).group()
                 
-            print('Parsing {}'.format(f))
+            #print('Parsing {}'.format(f))
             with open(f, 'r+', encoding="utf-8") as infile:
                 # gets cudaapisum, gpukernsum, gpumemtimesum, gpumemsizesum
                 parsed = self._parseInputFile(infile)
