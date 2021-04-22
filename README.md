@@ -38,3 +38,9 @@ This can take some time to complete, submit as a batch job (with interactive job
 Data: symlinks to files on Cori
 
 DeepCam directory based off: https://bitbucket.org/kibrahim/hpc_mlperf_nsys_scripts
+
+## CosmoFlow
+
+Requires to install `mlperf-logging` (see above), `pandas`, and `wandb` packages.
+    
+CosmoFlow directory based off: https://github.com/sparticlesteve/cosmoflow-benchmark
