@@ -28,7 +28,7 @@ Requires to install `mlperf-logging` package (see https://github.com/mlcommons/l
 git clone https://github.com/mlperf/logging.git mlperf-logging
 pip install -e mlperf-logging
 ```
-then add to PYTHONPATH.
+then add to `PYTHONPATH`.
 
 Split data directories with `link_count.sh 1` for 1 node, etc.
 
