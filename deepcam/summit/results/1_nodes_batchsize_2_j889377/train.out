@@ -1,0 +1,102 @@
+Collecting data...
+Collecting data...
+Collecting data...
+Collecting data...
+Collecting data...
+Collecting data...
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+The target application returned non-zero exit code 1
+
+The target application returned non-zero exit code 1
+
+The target application returned non-zero exit code 1
+
+The target application returned non-zero exit code 1
+
+The target application returned non-zero exit code 1
+
+The target application returned non-zero exit code 1
+Processing events...
+Processing events...
+Processing events...
+Processing events...
+Processing events...
+Processing events...
+Saving temporary "/tmp/nsys-report-82f1-51d0-8f59-b958.qdstrm" file to disk...
+
+Saving temporary "/tmp/nsys-report-d585-f8a3-ef2c-5c54.qdstrm" file to disk...
+
+Saving temporary "/tmp/nsys-report-89c0-85db-bf97-dc77.qdstrm" file to disk...
+
+Creating final output files...
+Creating final output files...
+Creating final output files...
+Saving temporary "/tmp/nsys-report-a3e0-a07b-6ec8-b79f.qdstrm" file to disk...
+
+Saving temporary "/tmp/nsys-report-6d5b-cdaf-c730-0a9e.qdstrm" file to disk...
+
+Saving temporary "/tmp/nsys-report-a52a-7d1b-bbf9-67a8.qdstrm" file to disk...
+
+Creating final output files...
+Creating final output files...
+Creating final output files...
+Processing [0%                                                                ]Processing [0%                                                                ]Processing [0%                                                                ]Processing [0%                                                                ]Processing [0%                                                                ]Processing [0%                                                                ]Processing Processing [=========19%                                                      ][========18%                                                       ]Processing [============23%                                                   ]Processing [========18%                                                       ]Processing [========18%                                                       ]Processing [============23%                                                   ]Processing [========18%                                                       ]Processing [============24%                                                   ]Processing [============23%                                                   ]Processing [========18%                                                       ]Processing [=============================49%                                  ]Processing [==============================================75%                 ]Processing [============24%                                                   ]Processing [=============================49%                                  ]Processing [=============================================74%                  ]Processing [=============================49%                                  ]Processing [=============================================74%                  ]Processing [=============================49%                                  ]Processing [=============================================74%                  ]Processing [============24%                                                   ]Processing [=============================49%                                  ]Processing [==============================================75%                 ]Processing [=============================49%                                  ]Processing [==============================================75%                 ]Processing [===============================================76%                ]Processing [==============================================75%                 ]Processing [===============================================76%                ]Processing [==============================================75%                 ]Processing [==============================================75%                 ]Processing [===============================================76%                ]Processing [===============================================76%                ]Processing [===============================================76%                ]Processing [===============================================76%                ]Processing [===============================================77%                ]Processing [===============================================77%                ]Processing [===============================================77%                ]Processing [===============================================77%                ]Processing [===============================================77%                ]Processing [=================================================80%              ]Processing [=================================================80%              ]Processing [=================================================79%              ]Processing [===================================================83%            ]Processing [===================================================82%            ]Processing [===================================================82%            ]Processing [=================================================80%              ]Processing [=================================================80%              ]Processing [====================================================84%           ]Processing [=================================================80%              ]Processing [===================================================83%            ]Processing [===================================================83%            ]Processing [===================================================83%            ]Processing [===================================================82%            ]Processing [===================================================83%            ]Processing [=====================================================85%          ]Processing [====================================================84%           ]Processing [====================================================84%           ]Processing [====================================================84%           ]Processing [=====================================================86%          ]Processing [====================================================84%           ]Processing [=====================================================86%          ]Processing [===================================================83%            ]Processing [======================================================87%         ]Processing [=====================================================85%          ]Processing [=====================================================86%          ]Processing [======================================================87%         ]Processing [=====================================================86%          ]Processing [=====================================================86%          ]Processing [=====================================================85%          ]Processing [=========================================================91%      ]Processing [======================================================87%         ]Processing [=========================================================91%      ]Processing [=====================================================86%          ]Processing [======================================================87%         ]Processing [=========================================================91%      ]Processing [=========================================================92%      ]Processing [=========================================================92%      ]Processing [========================================================90%       ]Processing [=========================================================91%      ]Processing [=========================================================92%      ]Processing [=========================================================91%      ]Processing [=========================================================91%      ]Processing [=========================================================92%      ]Processing [=========================================================92%      ]Processing [===========================================================94%    ]Processing [===========================================================94%    ]Processing [===========================================================95%    ]Processing [=========================================================92%      ]Processing Processing [===========================================================95%    ][===========================================================94%    ]Processing [============================================================96%   ]Processing [============================================================96%   ]Processing [=============================================================97%  ]Processing [===========================================================95%    ]Processing [=============================================================97%  ]Processing [===========================================================94%    ]Processing [============================================================96%   ]Processing [=============================================================98%  ]Processing [==========================================================93%     ]Processing [===========================================================94%    ]Processing [=============================================================98%  ]Processing [=============================================================97%  ]Processing [==============================================================99% ]Processing [===========================================================95%    ]Processing [===========================================================94%    ]Processing [=============================================================98%  ]Processing [===========================================================95%    ]Processing [==============================================================100%]Processing [==============================================================99% ]Processing [============================================================96%   ]Processing [===========================================================95%    ]Processing [==============================================================100%]
+Processing [============================================================96%   ]Processing [==============================================================99% Processing [==============================================================100%]]Processing [=============================================================97%  ]Processing [=============================================================97%  ]Processing [==============================================================100%]
+Processing [=============================================================98%  ]Processing [============================================================96%   ]Processing [==============================================================100%]Processing [=============================================================98%  ]Processing [==============================================================99% ]Processing [==============================================================100%]
+Processing [=============================================================97%  ]Processing [==============================================================99% ]Processing [==============================================================100%]Processing [==============================================================100%]
+Processing [==============================================================100%]Processing [=============================================================98%  ]Processing [==============================================================100%]
+Processing [==============================================================99% ]Processing [==============================================================100%]Saved report file to "/tmp/nsys-report-82f1-51d0-8f59-b958.qdrep"
+Processing [==============================================================100%]
+Saved report file to "/tmp/nsys-report-6d5b-cdaf-c730-0a9e.qdrep"
+Saved report file to "/tmp/nsys-report-89c0-85db-bf97-dc77.qdrep"
+Saved report file to "/tmp/nsys-report-d585-f8a3-ef2c-5c54.qdrep"
+Saved report file to "/tmp/nsys-report-a52a-7d1b-bbf9-67a8.qdrep"
+Saved report file to "/tmp/nsys-report-a3e0-a07b-6ec8-b79f.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/results/1_nodes_batchsize_2_j889377/profiling_results/nsys.889377.r0.w.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/results/1_nodes_batchsize_2_j889377/profiling_results/nsys.889377.r4.w.qdrep"
+
+
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/results/1_nodes_batchsize_2_j889377/profiling_results/nsys.889377.r5.w.qdrep"
+
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/results/1_nodes_batchsize_2_j889377/profiling_results/nsys.889377.r1.w.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/results/1_nodes_batchsize_2_j889377/profiling_results/nsys.889377.r3.w.qdrep"
+
+
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/results/1_nodes_batchsize_2_j889377/profiling_results/nsys.889377.r2.w.qdrep"
+

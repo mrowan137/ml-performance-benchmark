@@ -1,0 +1,797 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-dx2vckcx because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-lj9quky_ because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-5awn2uaz because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-xiurs4i1 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-u7cz_us9 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-vt2r7vsp because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-sqwxdvzz because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-18_3v0y7 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-alyj19g1 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-xk2fbytp because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8ylsu4k3 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-sds0it6t because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-1z724uwk because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-t02y9sw7 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-0g2bhojj because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-hfkr2kly because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-1edj__32 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-kdv035dv because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8s721bra because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-u0yvgj13 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-qddy2hui because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-v6u7_zqc because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-v_7t56v4 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-13sghnoe because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-5g6udvkf because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-5h1q2f42 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-4qs6w_j_ because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-pz3o9zed because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ee_k0o09 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-4iljwp91 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-rqm_1j_u because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-mlwfkx0_ because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-p91zj918 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-gl2tpgtd because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-_3io1q1p because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-etxp23ms because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-f549qb_7 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-kawf_7gz because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-9rn1lt82 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-efxl3_zk because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-iv8efhmu because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-sz38iljx because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-zsqcsb13 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-vm9rmdz3 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-qlgnck4w because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-bh3mb0da because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-x6l39_jd because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-t5b_md8e because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-y663r8pz because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-9hf80zgg because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-bd8ztjx1 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-flaec0h3 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-91yk6hq4 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-2jexyhd9 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ttej8jxa because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-1u3ypmo4 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-krgq0ibe because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-xzm1oej_ because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ozeelz95 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-hkvg9f0n because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-3smtlps1 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-lwfpj89z because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-qavldpiw because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-2bif29hs because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-45pytikg because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-3lg59z0a because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+Traceback (most recent call last):
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+Traceback (most recent call last):
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+Traceback (most recent call last):
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+Traceback (most recent call last):
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/train_hdf5_ddp.py", line 40, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+    import utils.mlperf_log_utils as mll
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", line 26, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-2bua_e2j because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-5k2jesrl because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-rwqn6ytc because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-241estsz because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-jg_0d9aj because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-g5047ahj because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-0z5oa99m because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-3_2rodr8 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-gkc3jb0y because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-fhqhu1kv because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-b8plsc2w because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-5yrhyeyn because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8oeg46_z because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-th_rs5rw because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-17f3d_tu because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8nw1ohzn because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-rd4pys1j because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-gc1gikqo because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-24bxn7jl because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-bqccln62 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-td8p_5di because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-17_news0 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-rwmq4r2r because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-me8cjcy2 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-l6gsrhy5 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8zieeg73 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-b8knd71z because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-7p5xusoa because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-tydi3r4p because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-iqt0wmse because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-d7215rs0 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-bew5d28l because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-6zs_6085 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-xbnb7jvd because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-eugc9ej8 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-w3ugip68 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 66, in <module>
+    from utils import visualizer as vizc
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/visualizer.py", line 39, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-qvrme1lt because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-2_c_7xui because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-e_z076pd because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-s6kvggk1 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-u5c1rci5 because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-39uezj3p because the default path (/ccs/home/mrowan/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+:::MLLOG {"namespace": "", "time_ms": 1617871853632, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "deepcam", "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", "lineno": 56}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853795, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "Umbrella Corp.", "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", "lineno": 59}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853795, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "closed", "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", "lineno": 62}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853795, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "onprem", "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", "lineno": 65}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853795, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "6xSUBMISSION_PLATFORM_PLACEHOLDER", "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/deepcam/summit/src/deepCam/utils/mlperf_log_utils.py", "lineno": 68}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853795, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 109}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853796, "event_type": "POINT_IN_TIME", "key": "cache_clear", "value": null, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 110}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853796, "event_type": "POINT_IN_TIME", "key": "seed", "value": 333, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 114}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853803, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 12, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 187}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853803, "event_type": "POINT_IN_TIME", "key": "opt_name", "value": "LAMB", "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 188}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853803, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.001, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 189}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853803, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_steps", "value": 0, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 190}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853804, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 1.0, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 191}}
+:::MLLOG {"namespace": "", "time_ms": 1617871853804, "event_type": "POINT_IN_TIME", "key": "opt_epsilon", "value": 1e-08, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 192}}
+Constructing DeepLabv3+ model...
+Number of output channels: 3
+Output stride: 16
+Number of Input Channels: 16
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Initialized dataset with  720  samples.
+Initialized dataset with  72  samples.
+:::MLLOG {"namespace": "", "time_ms": 1617871857512, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 720, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 309}}
+:::MLLOG {"namespace": "", "time_ms": 1617871857513, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 72, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 314}}

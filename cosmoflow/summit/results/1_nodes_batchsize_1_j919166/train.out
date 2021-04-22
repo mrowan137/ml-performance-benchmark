@@ -1,0 +1,448 @@
+2021-04-22 00:09:52.021005: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:09:52.021077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:09:52.021005: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:09:52.021077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:09:52.021077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:09:52.021077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:02,046 INFO Initialized rank 4 size 6 local_rank 4 local_size 6
+2021-04-22 00:10:02,046 INFO Initialized rank 1 size 6 local_rank 1 local_size 6
+2021-04-22 00:10:02,046 INFO Initialized rank 0 size 6 local_rank 0 local_size 6
+2021-04-22 00:10:02,046 INFO Initialized rank 2 size 6 local_rank 2 local_size 6
+2021-04-22 00:10:02,046 INFO Configuration: {'output_dir': 'results/1_nodes_batchsize_1', 'mlperf': {'org': 'LBNL', 'division': 'closed', 'status': 'onprem', 'platform': 'SUBMISSION_PLATFORM_PLACEHOLDER'}, 'data': {'name': 'cosmo', 'data_dir': '/ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf', 'n_train': 512, 'n_valid': 16, 'sample_shape': [128, 128, 128, 4], 'batch_size': 1, 'n_epochs': 16, 'shard': True, 'apply_log': True, 'prefetch': 0, 'n_parallel_reads': 4}, 'model': {'name': 'cosmoflow', 'input_shape': [128, 128, 128, 4], 'target_size': 4, 'conv_size': 32, 'fc1_size': 128, 'fc2_size': 64, 'hidden_activation': 'LeakyReLU', 'pooling_type': 'MaxPool3D', 'dropout': 0.5}, 'optimizer': {'name': 'SGD', 'momentum': 0.9}, 'lr_schedule': {'base_lr': 0.001, 'scaling': 'linear', 'base_batch_size': 64, 'n_warmup_epochs': 4, 'decay_schedule': {32: 0.25, 64: 0.125}}, 'train': {'loss': 'mse', 'metrics': ['mae'], 'target_mae': 0.124}}
+2021-04-22 00:10:02,046 INFO Initialized rank 3 size 6 local_rank 3 local_size 6
+2021-04-22 00:10:02,047 INFO Initialized rank 5 size 6 local_rank 5 local_size 6
+2021-04-22 00:10:02,047 INFO Taking gpu 2
+2021-04-22 00:10:02,047 INFO Taking gpu 1
+2021-04-22 00:10:02,047 INFO Taking gpu 3
+2021-04-22 00:10:02,047 INFO Taking gpu 4
+2021-04-22 00:10:02,047 INFO Taking gpu 0
+2021-04-22 00:10:02,047 INFO Taking gpu 5
+2021-04-22 00:10:02,049 INFO KMP_BLOCKTIME 
+2021-04-22 00:10:02,050 INFO KMP_AFFINITY 
+2021-04-22 00:10:02,050 INFO OMP_NUM_THREADS 16
+2021-04-22 00:10:02,050 INFO INTRA_THREADS 32
+2021-04-22 00:10:02,050 INFO INTER_THREADS 2
+2021-04-22 00:10:02.063097: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-22 00:10:02.063269: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-22 00:10:02.063304: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-22 00:10:02.063278: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-22 00:10:02.063325: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-22 00:10:02.063322: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-22 00:10:03.020524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.021042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.021204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.021395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.021866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.021549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.037011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.037188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.037335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.037507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.037666: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.037827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.053352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.053503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.053650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.053835: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.053991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.054151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.069882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.070038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.070189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.070373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.070524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.070693: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.086335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.086559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.086703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.086912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.087059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.087225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.102803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.102830: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:03.102959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.102991: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:03.103112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.103148: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:03.103290: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.103312: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:03.103441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.103465: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:03.103610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:03.103639: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:03.464636: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:03.464664: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:03.464641: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:03.464659: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:03.464641: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:03.464659: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:03.519829: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:03.520127: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:03.520127: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:03.521559: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:03.521578: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:03.521580: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:03.549691: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:03.549696: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:03.549701: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:03.549701: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:03.549689: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:03.549700: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:03.948559: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:03.948649: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:03.948647: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:03.949016: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:03.949017: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:03.949017: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:03.977909: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:03.978239: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:03.978239: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:03.979144: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:03.979145: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:03.979144: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:04.371291: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:04.371909: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:04.371909: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:04.373279: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:04.373280: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:04.373280: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:04.566530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-22 00:10:04.571773: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-22 00:10:04.571968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-22 00:10:04.573317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-22 00:10:04.573502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-22 00:10:04.573702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-22 00:10:04,573 INFO Loading data
+2021-04-22 00:10:04.623397: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-22 00:10:04.624656: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-22 00:10:04.624667: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-22 00:10:04.626682: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1310a5fc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:04.626710: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-22 00:10:04.627334: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x172365d20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:04.627367: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-22 00:10:04.627583: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1253c5d20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:04.627608: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-22 00:10:04.627778: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-22 00:10:04.628618: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-22 00:10:04.629373: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x11ac05d20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:04.629394: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-22 00:10:04.631891: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x149a15d20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:04.631920: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-22 00:10:05.198667: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x11ac71ec0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.198710: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-22 00:10:05.224800: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x125431ec0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.224820: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-22 00:10:05.227484: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:05.227538: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.227610: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:05.227643: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:05.227674: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:05.227705: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:05.227737: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:05.227768: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:05.231358: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x149a81ec0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.231391: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-22 00:10:05.234573: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1723d1ec0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.234658: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-22 00:10:05.242382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:05.242425: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.242482: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:05.242515: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:05.242548: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:05.242579: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:05.242612: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:05.242646: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:05.242723: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x131112160 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.242747: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-22 00:10:05.250474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:05.250518: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.250569: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:05.250599: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:05.250628: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:05.250654: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:05.250680: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:05.250707: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:05.255664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:05.255711: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.255774: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:05.255801: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:05.255830: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:05.255856: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:05.255883: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:05.255910: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:05.260095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 5
+2021-04-22 00:10:05.260133: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.263049: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:05.263110: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.263190: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:05.263226: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:05.263259: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:05.263293: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:05.263325: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:05.263355: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:05.273263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 4
+2021-04-22 00:10:05.273307: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.279017: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 2
+2021-04-22 00:10:05.279055: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.280576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 1
+2021-04-22 00:10:05.280667: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.283401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 3
+2021-04-22 00:10:05.283443: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+Traceback (most recent call last):
+  File "src/train.py", line 388, in <module>
+    main()
+  File "src/train.py", line 275, in main
+    datasets = get_datasets(dist=dist, **data_config)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/__init__.py", line 38, in get_datasets
+    return get_datasets(**data_args)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", line 166, in get_datasets
+    utils.distributed.barrier()
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/distributed.py", line 40, in barrier
+    hvd.allreduce([], name='Barrier')
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/tensorflow/keras/__init__.py", line 102, in allreduce
+    return _impl.allreduce(K, value, name, average)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/_keras/__init__.py", line 101, in allreduce
+    return _eval(backend, hvd.allreduce(tf.constant(value, name=name), average=average))
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version
+Traceback (most recent call last):
+  File "src/train.py", line 388, in <module>
+    main()
+  File "src/train.py", line 275, in main
+    datasets = get_datasets(dist=dist, **data_config)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/__init__.py", line 38, in get_datasets
+    return get_datasets(**data_args)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", line 166, in get_datasets
+    utils.distributed.barrier()
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/distributed.py", line 40, in barrier
+    hvd.allreduce([], name='Barrier')
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/tensorflow/keras/__init__.py", line 102, in allreduce
+    return _impl.allreduce(K, value, name, average)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/_keras/__init__.py", line 101, in allreduce
+    return _eval(backend, hvd.allreduce(tf.constant(value, name=name), average=average))
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version
+Traceback (most recent call last):
+  File "src/train.py", line 388, in <module>
+    main()
+  File "src/train.py", line 275, in main
+    datasets = get_datasets(dist=dist, **data_config)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/__init__.py", line 38, in get_datasets
+    return get_datasets(**data_args)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", line 166, in get_datasets
+    utils.distributed.barrier()
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/distributed.py", line 40, in barrier
+    hvd.allreduce([], name='Barrier')
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/tensorflow/keras/__init__.py", line 102, in allreduce
+    return _impl.allreduce(K, value, name, average)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/_keras/__init__.py", line 101, in allreduce
+    return _eval(backend, hvd.allreduce(tf.constant(value, name=name), average=average))
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version
+Traceback (most recent call last):
+  File "src/train.py", line 388, in <module>
+    main()
+  File "src/train.py", line 275, in main
+    datasets = get_datasets(dist=dist, **data_config)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/__init__.py", line 38, in get_datasets
+    return get_datasets(**data_args)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", line 166, in get_datasets
+    utils.distributed.barrier()
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/distributed.py", line 40, in barrier
+    hvd.allreduce([], name='Barrier')
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/tensorflow/keras/__init__.py", line 102, in allreduce
+    return _impl.allreduce(K, value, name, average)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/_keras/__init__.py", line 101, in allreduce
+    return _eval(backend, hvd.allreduce(tf.constant(value, name=name), average=average))
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version
+Traceback (most recent call last):
+  File "src/train.py", line 388, in <module>
+    main()
+  File "src/train.py", line 275, in main
+    datasets = get_datasets(dist=dist, **data_config)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/__init__.py", line 38, in get_datasets
+    return get_datasets(**data_args)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", line 166, in get_datasets
+    utils.distributed.barrier()
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/distributed.py", line 40, in barrier
+    hvd.allreduce([], name='Barrier')
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/tensorflow/keras/__init__.py", line 102, in allreduce
+    return _impl.allreduce(K, value, name, average)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/_keras/__init__.py", line 101, in allreduce
+    return _eval(backend, hvd.allreduce(tf.constant(value, name=name), average=average))
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version
+:::MLLOG {"namespace": "", "time_ms": 1619064604597, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 6, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 160}}
+:::MLLOG {"namespace": "", "time_ms": 1619064605567, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 512, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 161}}
+:::MLLOG {"namespace": "", "time_ms": 1619064605567, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 16, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 162}}
+2021-04-22 00:10:05.585950: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-22 00:10:05.587841: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x15c9632d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.587869: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-22 00:10:05.759205: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x15c9cf410 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-22 00:10:05.759244: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-22 00:10:05.762828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-22 00:10:05.762881: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-22 00:10:05.762933: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-22 00:10:05.762954: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-22 00:10:05.762974: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-22 00:10:05.762994: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-22 00:10:05.763014: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-22 00:10:05.763033: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-22 00:10:05.768226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-04-22 00:10:05.768260: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+Traceback (most recent call last):
+  File "src/train.py", line 388, in <module>
+    main()
+  File "src/train.py", line 275, in main
+    datasets = get_datasets(dist=dist, **data_config)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/__init__.py", line 38, in get_datasets
+    return get_datasets(**data_args)
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", line 166, in get_datasets
+    utils.distributed.barrier()
+  File "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/distributed.py", line 40, in barrier
+    hvd.allreduce([], name='Barrier')
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/tensorflow/keras/__init__.py", line 102, in allreduce
+    return _impl.allreduce(K, value, name, average)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/horovod/_keras/__init__.py", line 101, in allreduce
+    return _eval(backend, hvd.allreduce(tf.constant(value, name=name), average=average))
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/sw/summit/open-ce/anaconda-base/envs/open-ce-0.1-0/lib/python3.6/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: cudaGetDevice() failed. Status: CUDA driver version is insufficient for CUDA runtime version

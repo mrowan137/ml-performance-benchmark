@@ -1,0 +1,48 @@
+  File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+       File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+         File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                         ^
+SyntaxError: invalid syntax
+  File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+          File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                         ^
+SyntaxError: invalid syntax
+                                                                 ^
+SyntaxError: invalid syntax
+                                                                ^
+SyntaxError: invalid syntax
+                                                                 ^
+SyntaxError: invalid syntax
+  File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+        File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+       File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                          ^
+SyntaxError: invalid syntax
+                                                                 ^
+SyntaxError: invalid syntax
+                                                                  ^
+SyntaxError: invalid syntax
+  File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+        File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                         ^
+SyntaxError: invalid syntax
+                                                                 ^
+SyntaxError: invalid syntax
+  File "src/deepCam/train_hdf5_ddp.py", line 256
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
