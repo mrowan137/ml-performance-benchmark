@@ -1,4 +1,4 @@
-output_dir: results/1_nodes_batchsize_1 # $output_dir
+output_dir: OUTPUT_DIR_PLACEHOLDER
 
 mlperf:
     org: LBNL
@@ -8,11 +8,11 @@ mlperf:
 
 data:
     name: cosmo
-    data_dir: /ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf # $data_dir
+    data_dir: /ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf
     n_train: 510
     n_valid: 18
     sample_shape: [128, 128, 128, 4]
-    batch_size: 1 # $BATCHSIZE
+    batch_size: 1
     n_epochs: 16
     shard: True
     apply_log: True

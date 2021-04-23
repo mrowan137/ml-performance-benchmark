@@ -2,34 +2,33 @@
 #BSUB -P csc330
 #BSUB -W 00:15
 ##BSUB -w ended(######)
-#BSUB -nnodes 1
+#BSUB -nnodes 2
 #BSUB -alloc_flags "nvme smt4"
 #BSUB -J CosmoFlow_profile
 #BSUB -o %J.out
 #BSUB -e %J.err
 ## End LSF directives and begin shell commands
 
-#output_dir,BATCHSIZE,data_dir, prof_dir? update CONFIG files
 
 # Run parameters
-export BATCHSIZE=1
-export DO_PROFILING='false' # true or false
+export batch_size=1
+export DO_PROFILING='true' # true or false
 
 # Setup software environment
 source ~/.mlperf_deepcam_profile
 module load cuda/10.2.89
 #module unload python
-conda activate open-ce-0.1-0 # has basemap
+conda activate open-ce-0.1-0
 module unload darshan
 
 # TODO
-export PYTHONPATH=$PYTHONPATH:/ccs/home/mrowan/code/mlperf-logging # Add as part of directory?
+export PYTHONPATH=$PYTHONPATH:/ccs/home/mrowan/code/mlperf-logging
 export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
 export CONFIG=src/configs/cosmo_runs_gpu_$NODES.yaml
 
 #XLA environment
-#export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
-#export PYTHONPATH=$(pwd):$PYTHONPATH # TODO
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
+#export PYTHONPATH=$(pwd):$PYTHONPATH
 
 
 if [ "$DO_PROFILING" == "true" ]
@@ -44,7 +43,7 @@ export data_dir="/ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf"
 
 if [ "$DO_PROFILING" == "true" ]
 then
-    jsrun -n$((NODES*6)) -a1 -c7 -g1 -r6 \
+    jsrun -r1 -a6 -c7 -g6 \
           --bind=proportional-packed:7 \
           -x LD_LIBRARY_PATH \
           stdbuf -o0 \

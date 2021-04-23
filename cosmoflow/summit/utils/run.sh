@@ -10,4 +10,8 @@ mkdir -p ${output_dir}
 touch ${output_dir}/train.out
 #fi
 
-python src/train.py -d --rank-gpu $CONFIG |& tee -a ${output_dir}/train.out
+python src/train.py -d \
+       --batch_size=$batch_size \
+       --data_dir=$data_dir \
+       --output_dir=$output_dir \
+       --rank-gpu $CONFIG |& tee -a ${output_dir}/train.out
