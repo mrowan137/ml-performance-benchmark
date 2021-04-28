@@ -2,9 +2,9 @@
 #BSUB -P csc330
 #BSUB -W 00:15
 ##BSUB -w ended(######)
-#BSUB -nnodes 2
+#BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
-#BSUB -J CosmoFlow_profile
+#BSUB -J CosmoFlow_8
 #BSUB -o %J.out
 #BSUB -e %J.err
 ## End LSF directives and begin shell commands
@@ -12,7 +12,8 @@
 
 # Run parameters
 export batch_size=1
-export DO_PROFILING='true' # true or false
+export DO_PROFILING='false' # true or false
+export DO_NCCL_DEBUG='true' # true or false
 
 # Setup software environment
 source ~/.mlperf_deepcam_profile

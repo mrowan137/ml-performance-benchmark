@@ -1,0 +1,660 @@
+Collecting data...
+Collecting data...
+Collecting data...
+Collecting data...
+Collecting data...
+Collecting data...
+2021-04-23 03:51:57.615131: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:51:57.615181: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:51:57.615181: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:51:57.615181: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:51:57.615188: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:51:57.615189: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:06,653 INFO Initialized rank 2 size 6 local_rank 2 local_size 6
+2021-04-23 03:52:06,654 INFO Initialized rank 3 size 6 local_rank 3 local_size 6
+2021-04-23 03:52:06,653 INFO Taking gpu 2
+2021-04-23 03:52:06,654 INFO Taking gpu 3
+2021-04-23 03:52:06,663 INFO Initialized rank 4 size 6 local_rank 4 local_size 6
+2021-04-23 03:52:06,663 INFO Initialized rank 0 size 6 local_rank 0 local_size 6
+2021-04-23 03:52:06,663 INFO Configuration: {'output_dir': 'results/1_nodes_batchsize_1_j923942', 'mlperf': {'org': 'LBNL', 'division': 'closed', 'status': 'onprem', 'platform': 'SUBMISSION_PLATFORM_PLACEHOLDER'}, 'data': {'name': 'cosmo', 'data_dir': '/ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf', 'n_train': 510, 'n_valid': 18, 'sample_shape': [128, 128, 128, 4], 'batch_size': 1, 'n_epochs': 16, 'shard': True, 'apply_log': True, 'prefetch': 0, 'n_parallel_reads': 4}, 'model': {'name': 'cosmoflow', 'input_shape': [128, 128, 128, 4], 'target_size': 4, 'conv_size': 32, 'fc1_size': 128, 'fc2_size': 64, 'hidden_activation': 'LeakyReLU', 'pooling_type': 'MaxPool3D', 'dropout': 0.5}, 'optimizer': {'name': 'SGD', 'momentum': 0.9}, 'lr_schedule': {'base_lr': 0.001, 'scaling': 'linear', 'base_batch_size': 64, 'n_warmup_epochs': 4, 'decay_schedule': {32: 0.25, 64: 0.125}}, 'train': {'loss': 'mse', 'metrics': ['mae'], 'target_mae': 0.124}}
+2021-04-23 03:52:06,663 INFO Taking gpu 4
+2021-04-23 03:52:06,663 INFO Taking gpu 0
+2021-04-23 03:52:06,666 INFO KMP_BLOCKTIME 
+2021-04-23 03:52:06,667 INFO KMP_AFFINITY 
+2021-04-23 03:52:06,667 INFO Initialized rank 1 size 6 local_rank 1 local_size 6
+2021-04-23 03:52:06,667 INFO OMP_NUM_THREADS 16
+2021-04-23 03:52:06,667 INFO INTRA_THREADS 32
+2021-04-23 03:52:06,667 INFO INTER_THREADS 2
+2021-04-23 03:52:06,668 INFO Initialized rank 5 size 6 local_rank 5 local_size 6
+2021-04-23 03:52:06,667 INFO Taking gpu 1
+2021-04-23 03:52:06,668 INFO Taking gpu 5
+2021-04-23 03:52:06.898834: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-23 03:52:06.898901: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-23 03:52:06.900020: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-23 03:52:06.900020: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-23 03:52:06.900020: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-23 03:52:06.900020: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-04-23 03:52:07.239941: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.252922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.265825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.281120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.300496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.316797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.316826: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:07.327388: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:07.334164: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:07.339599: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:07.349365: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:07.355502: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:07.371171: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:07.606363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-23 03:52:07.664538: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-23 03:52:07.670318: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x16490ca20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:07.670372: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 03:52:07.994402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:07.996246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.014154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.016146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.032616: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.034157: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.050692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.053500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.054506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.070927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.071801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.073985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.074921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.090846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.092368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.092956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.093008: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:08.094754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.094802: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:08.096720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.096802: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:08.097560: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:08.099754: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:08.099754: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:08.100514: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:08.100640: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:08.103458: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:08.103458: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:08.105813: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:08.105819: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:08.108341: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.109070: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.111593: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:08.111970: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:08.113039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.128100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 2 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.129063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.132077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.146430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 3 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.147366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.150136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.150186: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:08.152732: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:08.154661: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:08.155299: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:08.157511: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:08.158889: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:08.163146: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:08.164920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 4 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.166263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.166299: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:08.168868: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:08.170403: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:08.170970: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:08.173070: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:08.174911: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:08.178996: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:08.183586: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 5 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.183629: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:08.186072: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:08.187657: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:08.188298: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:08.190171: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:08.192071: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:08.195674: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:08.327549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-23 03:52:08.327792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-23 03:52:08,328 INFO Loading data
+2021-04-23 03:52:08.354613: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-23 03:52:08.362643: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x18770ca30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:08.362679: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 03:52:08.365188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-23 03:52:08.377960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-23 03:52:08.387651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1, 2, 3, 4, 5
+2021-04-23 03:52:08.401652: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-23 03:52:08.411651: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x17f28ca30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:08.411726: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 03:52:08.417620: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-23 03:52:08.425876: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x165c0ca20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:08.425940: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 03:52:08.427121: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-23 03:52:08.434680: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x17adcca20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:08.434726: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 03:52:08.926670: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x164978ba0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:08.926706: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-23 03:52:08.941993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:06:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:08.942030: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:08.942070: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:08.942102: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:08.942128: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:08.942154: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:08.942181: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:08.942207: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:08.953283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 2
+2021-04-23 03:52:08.953321: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.237402: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x187778bb0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:09.237562: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-23 03:52:09.252734: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0035:03:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:09.252836: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.252971: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:09.253031: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:09.253090: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:09.253298: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:09.253370: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:09.253430: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:09.276657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 3
+2021-04-23 03:52:09.276815: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.419785: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x17f2f8bb0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:09.419842: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-23 03:52:09.425684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0035:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:09.425749: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.425829: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:09.425885: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:09.425940: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:09.426005: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:09.426060: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:09.426118: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:09.436331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 4
+2021-04-23 03:52:09.436408: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.443497: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x17ae38ba0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:09.443536: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-23 03:52:09.456582: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:09.456657: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.456788: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:09.456859: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:09.456925: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:09.456882: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x165c78ba0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:09.456921: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-23 03:52:09.456989: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:09.457089: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:09.457152: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:09.469231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0035:05:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:09.469316: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.469412: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:09.469475: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:09.469532: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:09.469588: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:09.469640: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:09.469691: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:09.478936: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 1
+2021-04-23 03:52:09.479012: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:09.493457: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 5
+2021-04-23 03:52:09.493543: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+:::MLLOG {"namespace": "", "time_ms": 1619164328329, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 6, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 160}}
+:::MLLOG {"namespace": "", "time_ms": 1619164330958, "event_type": "POINT_IN_TIME", "key": "train_samples", "value": 510, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 161}}
+:::MLLOG {"namespace": "", "time_ms": 1619164330958, "event_type": "POINT_IN_TIME", "key": "eval_samples", "value": 18, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 162}}
+2021-04-23 03:52:10.989286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-23 03:52:10.989331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      2 
+2021-04-23 03:52:10.989343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 2:   N 
+2021-04-23 03:52:10.998342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14693 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0004:06:00.0, compute capability: 7.0)
+2021-04-23 03:52:11.024820: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 3450000000 Hz
+2021-04-23 03:52:11.036299: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x177f96550 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:11.036586: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 03:52:11.689747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-23 03:52:11.689818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      5 
+2021-04-23 03:52:11.689838: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 5:   N 
+2021-04-23 03:52:11.699024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14693 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0035:05:00.0, compute capability: 7.0)
+2021-04-23 03:52:11.716167: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1780026a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-23 03:52:11.716205: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-04-23 03:52:11.721171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0004:04:00.0 name: Tesla V100-SXM2-16GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 836.37GiB/s
+2021-04-23 03:52:11.721252: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:11.721345: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:11.721406: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-04-23 03:52:11.721470: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-04-23 03:52:11.721522: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-04-23 03:52:11.721577: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-04-23 03:52:11.721633: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:11.730423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-04-23 03:52:11.730497: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.2
+2021-04-23 03:52:12.009959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-23 03:52:12.010059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      4 
+2021-04-23 03:52:12.010077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 4:   N 
+2021-04-23 03:52:12.016954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14693 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0035:04:00.0, compute capability: 7.0)
+2021-04-23 03:52:12.072059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-23 03:52:12.072118: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      3 
+2021-04-23 03:52:12.072141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 3:   N 
+2021-04-23 03:52:12.081588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14693 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0035:03:00.0, compute capability: 7.0)
+2021-04-23 03:52:12.110942: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-23 03:52:12.110987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      1 
+2021-04-23 03:52:12.111009: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 1:   N 
+2021-04-23 03:52:12.119732: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14693 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0004:05:00.0, compute capability: 7.0)
+2021-04-23 03:52:13.296173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-23 03:52:13.296215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-04-23 03:52:13.296244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-04-23 03:52:13.302414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14693 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+:::MLLOG {"namespace": "", "time_ms": 1619164333556, "event_type": "INTERVAL_START", "key": "staging_start", "value": null, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 170}}
+:::MLLOG {"namespace": "", "time_ms": 1619164333563, "event_type": "INTERVAL_END", "key": "staging_stop", "value": null, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/data/cosmo.py", "lineno": 189}}
+2021-04-23 03:52:19,651 INFO Splitting data into 6 worker shards
+2021-04-23 03:52:19,651 INFO Each worker reading 85 training samples and 3 validation samples
+2021-04-23 03:52:19,651 INFO Data setting n_train: 510
+2021-04-23 03:52:19,651 INFO Data setting n_valid: 18
+2021-04-23 03:52:19,651 INFO Data setting batch_size: 1
+2021-04-23 03:52:19,652 INFO Data setting prefetch: 0
+2021-04-23 03:52:19,652 INFO Data setting n_parallel_reads: 4
+2021-04-23 03:52:19,652 INFO Building the model
+2021-04-23 03:52:20.012072: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+:::MLLOG {"namespace": "", "time_ms": 1619164340433, "event_type": "POINT_IN_TIME", "key": "opt_name", "value": "SGD", "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/optimizers.py", "lineno": 106}}
+2021-04-23 03:52:20,479 INFO Writing config via pickle to results/1_nodes_batchsize_1_j923942/config.pkl
+2021-04-23 03:52:20,481 INFO Preparing callbacks
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv3d (Conv3D)              (None, 128, 128, 128, 32) 1056      
+_________________________________________________________________
+leaky_re_lu (LeakyReLU)      (None, 128, 128, 128, 32) 0         
+_________________________________________________________________
+max_pooling3d (MaxPooling3D) (None, 64, 64, 64, 32)    0         
+_________________________________________________________________
+conv3d_1 (Conv3D)            (None, 64, 64, 64, 64)    16448     
+_________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)    (None, 64, 64, 64, 64)    0         
+_________________________________________________________________
+max_pooling3d_1 (MaxPooling3 (None, 32, 32, 32, 64)    0         
+_________________________________________________________________
+conv3d_2 (Conv3D)            (None, 32, 32, 32, 128)   65664     
+_________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)    (None, 32, 32, 32, 128)   0         
+_________________________________________________________________
+max_pooling3d_2 (MaxPooling3 (None, 16, 16, 16, 128)   0         
+_________________________________________________________________
+conv3d_3 (Conv3D)            (None, 16, 16, 16, 256)   262400    
+_________________________________________________________________
+leaky_re_lu_3 (LeakyReLU)    (None, 16, 16, 16, 256)   0         
+_________________________________________________________________
+max_pooling3d_3 (MaxPooling3 (None, 8, 8, 8, 256)      0         
+_________________________________________________________________
+conv3d_4 (Conv3D)            (None, 8, 8, 8, 512)      1049088   
+_________________________________________________________________
+leaky_re_lu_4 (LeakyReLU)    (None, 8, 8, 8, 512)      0         
+_________________________________________________________________
+max_pooling3d_4 (MaxPooling3 (None, 4, 4, 4, 512)      0         
+_________________________________________________________________
+flatten (Flatten)            (None, 32768)             0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               4194432   
+_________________________________________________________________
+leaky_re_lu_5 (LeakyReLU)    (None, 128)               0         
+_________________________________________________________________
+dropout (Dropout)            (None, 128)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+leaky_re_lu_6 (LeakyReLU)    (None, 64)                0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 4)                 260       
+_________________________________________________________________
+lambda (Lambda)              (None, 4)                 0         
+=================================================================
+Total params: 5,597,604
+Trainable params: 5,597,604
+Non-trainable params: 0
+_________________________________________________________________
+:::MLLOG {"namespace": "", "time_ms": 1619164340481, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 9.375e-05, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/optimizers.py", "lineno": 89}}
+:::MLLOG {"namespace": "", "time_ms": 1619164340481, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_epochs", "value": 4, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/optimizers.py", "lineno": 90}}
+:::MLLOG {"namespace": "", "time_ms": 1619164340481, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 0.09375, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/optimizers.py", "lineno": 91}}
+:::MLLOG {"namespace": "", "time_ms": 1619164340482, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_decay_boundary_epochs", "value": [32, 64], "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/optimizers.py", "lineno": 93}}
+:::MLLOG {"namespace": "", "time_ms": 1619164340482, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_decay_factor", "value": 0.25, "metadata": {"file": "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/src/utils/optimizers.py", "lineno": 95}}
+2021-04-23 03:52:20,482 INFO Beginning training
+2021-04-23 03:52:20.606469: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:20.855101: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:22.070619: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:22.070855: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:22.083863: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:22.721086: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:22.799002: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:23.341220: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-04-23 03:52:23.693492: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:23.788963: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-04-23 03:52:24.200722: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+Epoch 1/16
+85/85 - 13s - loss: 0.4266 - mae: 0.5428 - val_loss: 0.5718 - val_mae: 0.7407
+Epoch 1/16
+85/85 - 13s - loss: 0.4239 - mae: 0.5283 - val_loss: 0.5725 - val_mae: 0.7407
+Epoch 1/16
+85/85 - 13s - loss: 0.3849 - mae: 0.5093 - val_loss: 0.5666 - val_mae: 0.7375
+Epoch 1/16
+85/85 - 13s - loss: 0.4081 - mae: 0.5260 - val_loss: 0.5710 - val_mae: 0.7401
+Epoch 1/16
+85/85 - 13s - loss: 0.4192 - mae: 0.5364 - val_loss: 0.5688 - val_mae: 0.7384
+Epoch 1/16
+85/85 - 14s - loss: 0.3701 - mae: 0.5052 - val_loss: 0.5698 - val_mae: 0.7401
+Epoch 2/16
+85/85 - 13s - loss: 0.3050 - mae: 0.4578 - val_loss: 0.5777 - val_mae: 0.7251
+Epoch 2/16
+85/85 - 13s - loss: 0.3197 - mae: 0.4732 - val_loss: 0.5839 - val_mae: 0.7308
+Epoch 2/16
+85/85 - 13s - loss: 0.3120 - mae: 0.4617 - val_loss: 0.5863 - val_mae: 0.7318
+Epoch 2/16
+85/85 - 13s - loss: 0.3073 - mae: 0.4595 - val_loss: 0.5817 - val_mae: 0.7296
+Epoch 2/16
+85/85 - 13s - loss: 0.3108 - mae: 0.4653 - val_loss: 0.5778 - val_mae: 0.7262
+Epoch 2/16
+85/85 - 13s - loss: 0.3245 - mae: 0.4733 - val_loss: 0.5818 - val_mae: 0.7288
+Epoch 3/16
+85/85 - 13s - loss: 0.2197 - mae: 0.3750 - val_loss: 0.6209 - val_mae: 0.7686
+Epoch 3/16
+85/85 - 13s - loss: 0.2455 - mae: 0.3954 - val_loss: 0.6298 - val_mae: 0.7753
+Epoch 3/16
+85/85 - 13s - loss: 0.2272 - mae: 0.3811 - val_loss: 0.6156 - val_mae: 0.7670
+Epoch 3/16
+85/85 - 13s - loss: 0.2327 - mae: 0.3912 - val_loss: 0.6222 - val_mae: 0.7695
+Epoch 3/16
+85/85 - 13s - loss: 0.2231 - mae: 0.3814 - val_loss: 0.6147 - val_mae: 0.7656
+Epoch 3/16
+85/85 - 13s - loss: 0.2066 - mae: 0.3672 - val_loss: 0.6147 - val_mae: 0.7664
+Epoch 4/16
+85/85 - 13s - loss: 0.1594 - mae: 0.3088 - val_loss: 0.7095 - val_mae: 0.8025
+Epoch 4/16
+85/85 - 13s - loss: 0.1729 - mae: 0.3280 - val_loss: 0.7286 - val_mae: 0.8094
+Epoch 4/16
+85/85 - 13s - loss: 0.1701 - mae: 0.3295 - val_loss: 0.7018 - val_mae: 0.7995
+Epoch 4/16
+85/85 - 13s - loss: 0.1633 - mae: 0.3180 - val_loss: 0.7152 - val_mae: 0.8034
+Epoch 4/16
+85/85 - 13s - loss: 0.1784 - mae: 0.3298 - val_loss: 0.7215 - val_mae: 0.8056
+Epoch 4/16
+85/85 - 13s - loss: 0.1673 - mae: 0.3148 - val_loss: 0.7045 - val_mae: 0.8035
+Epoch 5/16
+85/85 - 13s - loss: 0.1443 - mae: 0.2935 - val_loss: 0.7311 - val_mae: 0.8169
+Epoch 5/16
+85/85 - 13s - loss: 0.1535 - mae: 0.3019 - val_loss: 0.7234 - val_mae: 0.8127
+Epoch 5/16
+85/85 - 13s - loss: 0.1687 - mae: 0.3199 - val_loss: 0.7164 - val_mae: 0.8094
+Epoch 5/16
+85/85 - 13s - loss: 0.1342 - mae: 0.2794 - val_loss: 0.7111 - val_mae: 0.8093
+Epoch 5/16
+85/85 - 13s - loss: 0.1492 - mae: 0.3019 - val_loss: 0.7039 - val_mae: 0.8060
+Epoch 5/16
+85/85 - 13s - loss: 0.1544 - mae: 0.3024 - val_loss: 0.7071 - val_mae: 0.8102
+Epoch 6/16
+85/85 - 13s - loss: 0.1396 - mae: 0.2823 - val_loss: 0.6696 - val_mae: 0.8009
+Epoch 6/16
+85/85 - 13s - loss: 0.1496 - mae: 0.3028 - val_loss: 0.6603 - val_mae: 0.7923
+Epoch 6/16
+85/85 - 13s - loss: 0.1481 - mae: 0.2991 - val_loss: 0.6642 - val_mae: 0.7965
+Epoch 6/16
+85/85 - 13s - loss: 0.1483 - mae: 0.3010 - val_loss: 0.6547 - val_mae: 0.7924
+Epoch 6/16
+85/85 - 13s - loss: 0.1431 - mae: 0.2950 - val_loss: 0.6518 - val_mae: 0.7885
+Epoch 6/16
+85/85 - 13s - loss: 0.1437 - mae: 0.2917 - val_loss: 0.6542 - val_mae: 0.7921
+Epoch 7/16
+85/85 - 13s - loss: 0.1550 - mae: 0.3100 - val_loss: 0.6669 - val_mae: 0.7968
+Epoch 7/16
+85/85 - 13s - loss: 0.1486 - mae: 0.3040 - val_loss: 0.6706 - val_mae: 0.8007
+Epoch 7/16
+85/85 - 13s - loss: 0.1497 - mae: 0.3046 - val_loss: 0.6765 - val_mae: 0.8054
+Epoch 7/16
+85/85 - 13s - loss: 0.1487 - mae: 0.2965 - val_loss: 0.6617 - val_mae: 0.7973
+Epoch 7/16
+85/85 - 13s - loss: 0.1499 - mae: 0.3045 - val_loss: 0.6579 - val_mae: 0.7929
+Epoch 7/16
+85/85 - 13s - loss: 0.1441 - mae: 0.2930 - val_loss: 0.6602 - val_mae: 0.7964
+Epoch 8/16
+85/85 - 13s - loss: 0.1320 - mae: 0.2828 - val_loss: 0.7098 - val_mae: 0.8185
+Epoch 8/16
+85/85 - 13s - loss: 0.1448 - mae: 0.2943 - val_loss: 0.7026 - val_mae: 0.8139
+Epoch 8/16
+85/85 - 13s - loss: 0.1353 - mae: 0.2896 - val_loss: 0.7175 - val_mae: 0.8230
+Epoch 8/16
+85/85 - 13s - loss: 0.1393 - mae: 0.2935 - val_loss: 0.6909 - val_mae: 0.8102
+Epoch 8/16
+85/85 - 13s - loss: 0.1431 - mae: 0.2850 - val_loss: 0.6967 - val_mae: 0.8137
+Epoch 8/16
+85/85 - 13s - loss: 0.1397 - mae: 0.2900 - val_loss: 0.6958 - val_mae: 0.8148
+Epoch 9/16
+85/85 - 13s - loss: 0.1379 - mae: 0.2906 - val_loss: 0.7048 - val_mae: 0.8180
+Epoch 9/16
+85/85 - 13s - loss: 0.1434 - mae: 0.2969 - val_loss: 0.6989 - val_mae: 0.8176
+Epoch 9/16
+85/85 - 13s - loss: 0.1370 - mae: 0.2921 - val_loss: 0.6920 - val_mae: 0.8131
+Epoch 9/16
+85/85 - 13s - loss: 0.1406 - mae: 0.2911 - val_loss: 0.7118 - val_mae: 0.8228
+Epoch 9/16
+85/85 - 13s - loss: 0.1396 - mae: 0.2852 - val_loss: 0.7176 - val_mae: 0.8259
+Epoch 9/16
+85/85 - 13s - loss: 0.1415 - mae: 0.2944 - val_loss: 0.6982 - val_mae: 0.8185
+Epoch 10/16
+85/85 - 13s - loss: 0.1460 - mae: 0.2981 - val_loss: 0.7261 - val_mae: 0.8245
+Epoch 10/16
+85/85 - 13s - loss: 0.1433 - mae: 0.2913 - val_loss: 0.7321 - val_mae: 0.8279
+Epoch 10/16
+85/85 - 13s - loss: 0.1432 - mae: 0.2918 - val_loss: 0.7389 - val_mae: 0.8319
+Epoch 10/16
+85/85 - 13s - loss: 0.1367 - mae: 0.2843 - val_loss: 0.7108 - val_mae: 0.8195
+Epoch 10/16
+85/85 - 13s - loss: 0.1347 - mae: 0.2794 - val_loss: 0.7190 - val_mae: 0.8237
+Epoch 10/16
+85/85 - 13s - loss: 0.1353 - mae: 0.2801 - val_loss: 0.7171 - val_mae: 0.8250
+Epoch 11/16
+85/85 - 13s - loss: 0.1295 - mae: 0.2773 - val_loss: 0.6954 - val_mae: 0.8152
+Epoch 11/16
+85/85 - 13s - loss: 0.1379 - mae: 0.2826 - val_loss: 0.7105 - val_mae: 0.8210
+Epoch 11/16
+85/85 - 13s - loss: 0.1375 - mae: 0.2847 - val_loss: 0.7025 - val_mae: 0.8195
+Epoch 11/16
+85/85 - 13s - loss: 0.1391 - mae: 0.2917 - val_loss: 0.7212 - val_mae: 0.8282
+Epoch 11/16
+85/85 - 13s - loss: 0.1404 - mae: 0.2912 - val_loss: 0.7173 - val_mae: 0.8260
+Epoch 11/16
+85/85 - 14s - loss: 0.1394 - mae: 0.2817 - val_loss: 0.7049 - val_mae: 0.8229
+Epoch 12/16
+85/85 - 13s - loss: 0.1279 - mae: 0.2746 - val_loss: 0.6890 - val_mae: 0.8136
+Epoch 12/16
+85/85 - 13s - loss: 0.1332 - mae: 0.2792 - val_loss: 0.7136 - val_mae: 0.8282
+Epoch 12/16
+85/85 - 13s - loss: 0.1346 - mae: 0.2857 - val_loss: 0.7025 - val_mae: 0.8196
+Epoch 12/16
+85/85 - 13s - loss: 0.1258 - mae: 0.2761 - val_loss: 0.6936 - val_mae: 0.8177
+Epoch 12/16
+85/85 - 13s - loss: 0.1423 - mae: 0.2905 - val_loss: 0.7097 - val_mae: 0.8254
+Epoch 12/16
+85/85 - 13s - loss: 0.1287 - mae: 0.2815 - val_loss: 0.6989 - val_mae: 0.8218
+Epoch 13/16
+85/85 - 13s - loss: 0.1349 - mae: 0.2843 - val_loss: 0.7178 - val_mae: 0.8313
+Epoch 13/16
+85/85 - 13s - loss: 0.1358 - mae: 0.2867 - val_loss: 0.7017 - val_mae: 0.8235
+Epoch 13/16
+85/85 - 13s - loss: 0.1352 - mae: 0.2840 - val_loss: 0.6967 - val_mae: 0.8191
+Epoch 13/16
+85/85 - 13s - loss: 0.1339 - mae: 0.2841 - val_loss: 0.7112 - val_mae: 0.8259
+Epoch 13/16
+85/85 - 13s - loss: 0.1283 - mae: 0.2763 - val_loss: 0.7207 - val_mae: 0.8336
+Epoch 13/16
+85/85 - 13s - loss: 0.1304 - mae: 0.2731 - val_loss: 0.7064 - val_mae: 0.8270
+Epoch 14/16
+85/85 - 13s - loss: 0.1402 - mae: 0.2892 - val_loss: 0.7197 - val_mae: 0.8280
+Epoch 14/16
+85/85 - 13s - loss: 0.1316 - mae: 0.2797 - val_loss: 0.7114 - val_mae: 0.8267
+Epoch 14/16
+85/85 - 13s - loss: 0.1340 - mae: 0.2806 - val_loss: 0.7269 - val_mae: 0.8332
+Epoch 14/16
+85/85 - 13s - loss: 0.1363 - mae: 0.2847 - val_loss: 0.7303 - val_mae: 0.8358
+Epoch 14/16
+85/85 - 13s - loss: 0.1367 - mae: 0.2872 - val_loss: 0.7040 - val_mae: 0.8217
+Epoch 14/16
+85/85 - 13s - loss: 0.1358 - mae: 0.2873 - val_loss: 0.7148 - val_mae: 0.8304
+Epoch 15/16
+85/85 - 13s - loss: 0.1301 - mae: 0.2773 - val_loss: 0.7285 - val_mae: 0.8336
+Epoch 15/16
+85/85 - 13s - loss: 0.1360 - mae: 0.2851 - val_loss: 0.7337 - val_mae: 0.8372
+Epoch 15/16
+85/85 - 13s - loss: 0.1308 - mae: 0.2754 - val_loss: 0.7204 - val_mae: 0.8281
+Epoch 15/16
+85/85 - 13s - loss: 0.1453 - mae: 0.2952 - val_loss: 0.7130 - val_mae: 0.8271
+Epoch 15/16
+85/85 - 13s - loss: 0.1503 - mae: 0.3034 - val_loss: 0.7056 - val_mae: 0.8220
+Epoch 15/16
+85/85 - 13s - loss: 0.1368 - mae: 0.2849 - val_loss: 0.7165 - val_mae: 0.8309
+Epoch 16/16
+85/85 - 13s - loss: 0.1269 - mae: 0.2826 - val_loss: 0.6889 - val_mae: 0.8113
+Epoch 16/16
+85/85 - 13s - loss: 0.1236 - mae: 0.2752 - val_loss: 0.7057 - val_mae: 0.8235
+Epoch 16/16
+85/85 - 13s - loss: 0.1383 - mae: 0.2888 - val_loss: 0.7003 - val_mae: 0.8176
+Epoch 16/16
+85/85 - 13s - loss: 0.1187 - mae: 0.2684 - val_loss: 0.7137 - val_mae: 0.8293
+Epoch 16/16
+85/85 - 13s - loss: 0.1243 - mae: 0.2680 - val_loss: 0.6944 - val_mae: 0.8170
+Epoch 16/16
+85/85 - 13s - loss: 0.1279 - mae: 0.2791 - val_loss: 0.6977 - val_mae: 0.8194
+2021-04-23 03:56:07,666 INFO Best result:
+2021-04-23 03:56:07,668 INFO   epoch: 0
+2021-04-23 03:56:07,668 INFO   loss: 0.405454
+2021-04-23 03:56:07,668 INFO   lr: 0.001
+2021-04-23 03:56:07,668 INFO   mae: 0.524667
+2021-04-23 03:56:07,668 INFO   time: 24.8849
+2021-04-23 03:56:07,669 INFO   val_loss: 0.57006
+2021-04-23 03:56:07,669 INFO   val_mae: 0.739563
+2021-04-23 03:56:07,669 INFO Total epoch time: 221.435
+2021-04-23 03:56:07,670 INFO Mean epoch time: 13.840
+2021-04-23 03:56:07,670 INFO All done!
+Processing events...
+Processing events...
+Processing events...
+Processing events...
+Processing events...
+Processing events...
+Saving temporary "/tmp/nsys-report-bd09-f2c8-ad85-7c88.qdstrm" file to disk...
+
+Creating final output files...
+Processing [0%                                                                ]Processing [==============================50%                                 ]Processing [==============================================================100%]Processing [0%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [=5%                                                               ]Processing [4%                                                                ]Processing [==7%                                                              ]Processing [===10%                                                            ]Processing [===9%                                                             ]Processing [===8%                                                             ]Processing [==7%                                                              ]Processing [=6%                                                               ]Processing [=5%                                                               ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [=5%                                                               ]Processing [=6%                                                               ]Processing [==7%                                                              ]Processing [===8%                                                             ]Processing [===9%                                                             ]Processing [===10%                                                            ]Processing [====11%                                                           ]Processing [====12%                                                           ]Processing [=====13%                                                          ]Processing [======14%                                                         ]Processing [======15%                                                         ]Processing [=======16%                                                        ]Processing [========17%                                                       ]Processing [========18%                                                       ]Processing [=========19%                                                      ]Processing [==========20%                                                     ]Processing [==========21%                                                     ]Processing [===========22%                                                    ]Processing [============23%                                                   ]Processing [============24%                                                   ]Processing [=============25%                                                  ]Processing [==============26%                                                 ]Processing [==============27%                                                 ]Processing [===============28%                                                ]Processing [================29%                                               ]Processing [================30%                                               ]Processing [=================31%                                              ]Processing [==================32%                                             ]Processing [==================33%                                             ]Processing [===================34%                                            ]Processing [====================35%                                           ]Processing [====================36%                                           ]Processing [=====================37%                                          ]Processing [======================38%                                         ]Processing [======================39%                                         ]Processing [=======================40%                                        ]Processing [========================41%                                       ]Processing [========================42%                                       ]Processing [=========================43%                                      ]Processing [==========================44%                                     ]Processing [==========================45%                                     ]Processing [===========================46%                                    ]Processing [============================47%                                   ]Processing [============================48%                                   ]Processing [=============================49%                                  ]Processing [==============================50%                                 ]Processing [==============================51%                                 ]Processing [===============================52%                                ]Processing [===============================53%                                ]Processing [================================54%                               ]Processing [=================================55%                              ]Processing [=================================56%                              ]Processing [==================================57%                             ]Processing [===================================58%                            ]Processing [===================================59%                            ]Processing [====================================60%                           ]Saving temporary "/tmp/nsys-report-8661-8206-7142-6207.qdstrm" file to disk...
+
+Creating final output files...
+Processing [0%                                                                ]Processing [1%                                                                ]Processing [3%                                                                ]Processing [=5%                                                               ]Processing [==7%                                                              ]Processing [=6%                                                               ]Processing [=5%                                                               ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [=5%                                                               ]Processing [=6%                                                               ]Processing [==7%                                                              ]Processing [===8%                                                             ]Processing [===9%                                                             ]Processing [===10%                                                            ]Saving temporary "/tmp/nsys-report-9b7f-39f3-fbcd-d8f1.qdstrm" file to disk...
+
+Creating final output files...
+Processing [====11%                                                           ]Processing [====12%                                                           ]Processing [=====13%                                                          ]Processing [======14%                                                         ]Processing [======15%                                                         ]Processing [=======16%                                                        ]Processing [========17%                                                       ]Processing [========18%                                                       ]Processing [=========19%                                                      ]Processing [==========20%                                                     ]Processing [==========21%                                                     ]Processing [===========22%                                                    ]Processing [============23%                                                   ]Processing [0%                                                                ]Processing [==============================50%                                 ]Processing [==============================================================100%]Processing [1%                                                                ]Processing [0%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [=5%                                                               ]Processing [==7%                                                              ]Processing [=6%                                                               ]Processing [=5%                                                               ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [============24%                                                   ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [=====================================61%                          ]Processing [=============25%                                                  ]Processing [==============26%                                                 ]Processing [==============27%                                                 ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [===============28%                                                ]Processing [================29%                                               ]Processing [4%                                                                ]Processing [================30%                                               ]Processing [=5%                                                               ]Processing [=================31%                                              ]Processing [=6%                                                               ]Processing [==================32%                                             ]Processing [==7%                                                              ]Processing [==================33%                                             ]Processing [===8%                                                             ]Processing [===================34%                                            ]Processing [===9%                                                             ]Processing [====================35%                                           ]Processing [===10%                                                            ]Processing [====================36%                                           ]Processing [====11%                                                           ]Processing [=====================37%                                          ]Processing [====12%                                                           ]Processing [======================38%                                         ]Processing [=====13%                                                          ]Processing [======================39%                                         ]Saving temporary "/tmp/nsys-report-069b-4677-b2c6-67b6.qdstrm" file to disk...
+
+Creating final output files...
+Processing [======14%                                                         ]Processing [=======================40%                                        ]Processing [======15%                                                         ]Processing [========================41%                                       ]Processing [=======16%                                                        ]Processing [========================42%                                       ]Processing [========17%                                                       ]Processing [=========================43%                                      ]Processing [========18%                                                       ]Processing [==========================44%                                     ]Processing [=========19%                                                      ]Processing [==========================45%                                     ]Processing [==========20%                                                     ]Processing [===========================46%                                    ]Processing [==========21%                                                     ]Processing [============================47%                                   ]Processing [===========22%                                                    ]Processing [============================48%                                   ]Processing [============23%                                                   ]Processing [=============================49%                                  ]Processing [0%                                                                ]Processing [============24%                                                   ]Processing [==============================50%                                 ]Processing [==============================================================100%]Processing [2%                                                                ]Processing [1%                                                                ]Processing [==============================50%                                 ]Processing [=======16%                                                        ]Processing [======14%                                                         ]Processing [=============25%                                                  ]Processing [==============26%                                                 ]Processing [========================42%                                       ]Processing [=============================49%                                  ]Processing [============================48%                                   ]Processing [=============================49%                                  ]Processing [=========================43%                                      ]Processing [=============================49%                                  ]Processing [=========================43%                                      ]Processing [=============================49%                                  ]Processing [===========================46%                                    ]Processing [=============================49%                                  ]Processing [==========================44%                                     ]Processing [=============================49%                                  ]Processing [==========================45%                                     ]Processing [=============================49%                                  ]Processing [=============25%                                                  ]Processing [========================42%                                       ]Processing [=======================40%                                        ]Processing [======================39%                                         ]Processing [=====================37%                                          ]Processing [==========================45%                                     ]Processing [========================41%                                       ]Processing [=======================40%                                        ]Processing [======================38%                                         ]Processing [=====================37%                                          ]Processing [====================35%                                           ]Processing [===================34%                                            ]Processing [=================31%                                              ]Processing [===============28%                                                ]Processing [==============26%                                                 ]Processing [============24%                                                   ]Processing [============23%                                                   ]Processing [===========22%                                                    ]Processing [==========21%                                                     ]Processing [==========20%                                                     ]Processing [=========19%                                                      ]Processing [========18%                                                       ]Processing [========17%                                                       ]Processing [=======16%                                                        ]Processing [======15%                                                         ]Processing [======14%                                                         ]Processing [=====13%                                                          ]Processing [====12%                                                           ]Processing [====11%                                                           ]Processing [===10%                                                            ]Processing [===9%                                                             ]Processing [===8%                                                             ]Processing [==7%                                                              ]Processing [=6%                                                               ]Processing [=5%                                                               ]Processing [==============================51%                                 ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [==============26%                                                 ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [==============27%                                                 ]Processing [===============================52%                                ]Processing [===============28%                                                ]Processing [================29%                                               ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [===============================53%                                ]Processing [================30%                                               ]Processing [4%                                                                ]Processing [=================31%                                              ]Processing [==================32%                                             ]Processing [=5%                                                               ]Processing [================================54%                               ]Processing [==================33%                                             ]Processing [=6%                                                               ]Processing [===================34%                                            ]Processing [==7%                                                              ]Processing [=================================55%                              ]Processing [===8%                                                             ]Processing [====================35%                                           ]Processing [===9%                                                             ]Processing [====================36%                                           ]Processing [===10%                                                            ]Processing [=====================37%                                          ]Processing [=================================56%                              ]Processing [====11%                                                           ]Processing [======================38%                                         ]Processing [====12%                                                           ]Processing [======================39%                                         ]Processing [=====13%                                                          ]Processing [==================================57%                             ]Processing [=======================40%                                        ]Processing [======14%                                                         ]Processing [======15%                                                         ]Processing [========================41%                                       ]Processing [===================================58%                            ]Processing [=======16%                                                        ]Processing [========================42%                                       ]Processing [========17%                                                       ]Processing [=========================43%                                      ]Processing [========18%                                                       ]Processing [==========================44%                                     ]Processing [===================================59%                            ]Processing [=========19%                                                      ]Processing [==========================45%                                     ]Processing [==========20%                                                     ]Processing [===========================46%                                    ]Processing [====================================60%                           ]Processing [==========21%                                                     ]Processing [============================47%                                   ]Processing [===========22%                                                    ]Processing [============================48%                                   ]Processing [============23%                                                   ]Processing [=====================================61%                          ]Processing [=============================49%                                  ]Processing [============24%                                                   ]Processing [=============25%                                                  ]Processing [==============================50%                                 ]Processing [==============26%                                                 ]Processing [==============================51%                                 ]Processing [==============27%                                                 ]Processing [===============28%                                                ]Processing [===============================52%                                ]Processing [================29%                                               ]Processing [================30%                                               ]Processing [===============================53%                                ]Processing [=================31%                                              ]Processing [==================32%                                             ]Processing [================================54%                               ]Processing [==================33%                                             ]Processing [===================34%                                            ]Processing [=================================55%                              ]Processing [====================35%                                           ]Processing [====================36%                                           ]Processing [=================================56%                              ]Processing [=====================37%                                          ]Processing [======================38%                                         ]Processing [==================================57%                             ]Processing [======================39%                                         ]Processing [===================================58%                            ]Processing [=======================40%                                        ]Processing [========================41%                                       ]Processing [===================================59%                            ]Processing [========================42%                                       ]Processing [=========================43%                                      ]Processing [==========================44%                                     ]Processing [====================================60%                           ]Processing [==========================45%                                     ]Processing [=====================================61%                          ]Processing [===========================46%                                    ]Saving temporary "/tmp/nsys-report-1359-f247-82a8-d848.qdstrm" file to disk...
+
+Creating final output files...
+Processing [============================47%                                   ]Processing [============================48%                                   ]Processing [=============================49%                                  ]Processing [==============================50%                                 ]Processing [==============================51%                                 ]Processing [===============================52%                                ]Saving temporary "/tmp/nsys-report-5e22-f990-0c2a-6e8d.qdstrm" file to disk...
+
+Creating final output files...
+Processing [===============================53%                                ]Processing [================================54%                               ]Processing [=================================55%                              ]Processing [0%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [=5%                                                               ]Processing [===8%                                                             ]Processing [==7%                                                              ]Processing [=6%                                                               ]Processing [=5%                                                               ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [0%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [1%                                                                ]Processing [0%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [=5%                                                               ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [=================================56%                              ]Processing [3%                                                                ]Processing [2%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [==================================57%                             ]Processing [2%                                                                ]Processing [1%                                                                ]Processing [2%                                                                ]Processing [3%                                                                ]Processing [===================================58%                            ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [4%                                                                ]Processing [3%                                                                ]Processing [4%                                                                ]Processing [===================================59%                            ]Processing [=5%                                                               ]Processing [=5%                                                               ]Processing [=6%                                                               ]Processing [=6%                                                               ]Processing [==7%                                                              ]Processing [====================================60%                           ]Processing [===8%                                                             ]Processing [==7%                                                              ]Processing [===9%                                                             ]Processing [===8%                                                             ]Processing [===10%                                                            ]Processing [=====================================61%                          ]Processing [===9%                                                             ]Processing [====11%                                                           ]Processing [====12%                                                           ]Processing [===10%                                                            ]Processing [=====13%                                                          ]Processing [======14%                                                         ]Processing [====11%                                                           ]Processing [======15%                                                         ]Processing [====12%                                                           ]Processing [=======16%                                                        ]Processing [=====13%                                                          ]Processing [========17%                                                       ]Processing [========18%                                                       ]Processing [======14%                                                         ]Processing [=========19%                                                      ]Processing [======15%                                                         ]Processing [==========20%                                                     ]Processing [=======16%                                                        ]Processing [==========21%                                                     ]Processing [===========22%                                                    ]Processing [========17%                                                       ]Processing [============23%                                                   ]Processing [========18%                                                       ]Processing [============24%                                                   ]Processing [=============25%                                                  ]Processing [=========19%                                                      ]Processing [==============26%                                                 ]Processing [==========20%                                                     ]Processing [==============27%                                                 ]Processing [===============28%                                                ]Processing [==========21%                                                     ]Processing [================29%                                               ]Processing [===========22%                                                    ]Processing [================30%                                               ]Processing [============23%                                                   ]Processing [=================31%                                              ]Processing [============24%                                                   ]Processing [==================32%                                             ]Processing [==================33%                                             ]Processing [=============25%                                                  ]Processing [===================34%                                            ]Processing [==============26%                                                 ]Processing [====================35%                                           ]Processing [==============27%                                                 ]Processing [====================36%                                           ]Processing [=====================37%                                          ]Processing [===============28%                                                ]Processing [======================38%                                         ]Processing [================29%                                               ]Processing [======================39%                                         ]Processing [=====================================62%                          ]Processing [================30%                                               ]Processing [=======================40%                                        ]Processing [========================41%                                       ]Processing [=================31%                                              ]Processing [========================42%                                       ]Processing [==================32%                                             ]Processing [=========================43%                                      ]Processing [==========================44%                                     ]Processing [==================33%                                             ]Processing [==========================45%                                     ]Processing [===================34%                                            ]Processing [===========================46%                                    ]Processing [====================35%                                           ]Processing [============================47%                                   ]Processing [============================48%                                   ]Processing [====================36%                                           ]Processing [=============================49%                                  ]Processing [=====================37%                                          ]Processing [==============================50%                                 ]Processing [======================38%                                         ]Processing [======================39%                                         ]Processing [==============================51%                                 ]Processing [=======================40%                                        ]Processing [========================41%                                       ]Processing [===============================52%                                ]Processing [========================42%                                       ]Processing [===============================53%                                ]Processing [=========================43%                                      ]Processing [==========================44%                                     ]Processing [================================54%                               ]Processing [==========================45%                                     ]Processing [===========================46%                                    ]Processing [=================================55%                              ]Processing [============================47%                                   ]Processing [=================================56%                              ]Processing [============================48%                                   ]Processing [=============================49%                                  ]Processing [==================================57%                             ]Processing [==============================50%                                 ]Processing [==============================51%                                 ]Processing [===================================58%                            ]Processing [===============================52%                                ]Processing [===================================59%                            ]Processing [===============================53%                                ]Processing [====================================60%                           ]Processing [================================54%                               ]Processing [=====================================61%                          ]Processing [=================================55%                              ]Processing [======================================63%                         ]Processing [=================================56%                              ]Processing [==================================57%                             ]Processing [===================================58%                            ]Processing [===================================59%                            ]Processing [====================================60%                           ]Processing [=====================================61%                          ]Processing [=======================================64%                        ]Processing [=======================================65%                        ]Processing [========================================66%                       ]Processing [=========================================67%                      ]Processing [=========================================68%                      ]Processing [=====================================62%                          ]Processing [==========================================69%                     ]Processing [=====================================62%                          ]Processing [===========================================70%                    ]Processing [===========================================71%                    ]Processing [============================================72%                   ]Processing [======================================63%                         ]Processing [=============================================73%                  ]Processing [=============================================74%                  ]Processing [==============================================75%                 ]Processing [=======================================64%                        ]Processing [=======================================65%                        ]Processing [===============================================76%                ]Processing [======================================63%                         ]Processing [========================================66%                       ]Processing [=====================================62%                          ]Processing [===============================================77%                ]Processing [=========================================67%                      ]Processing [=========================================68%                      ]Processing [================================================78%               ]Processing [=====================================62%                          ]Processing [==========================================69%                     ]Processing [=================================================79%              ]Processing [=======================================64%                        ]Processing [===========================================70%                    ]Processing [=================================================80%              ]Processing [=======================================65%                        ]Processing [===========================================71%                    ]Processing [==================================================81%             ]Processing [======================================63%                         ]Processing [============================================72%                   ]Processing [========================================66%                       ]Processing [===================================================82%            ]Processing [======================================63%                         ]Processing [===================================================83%            ]Processing [=========================================67%                      ]Processing [=============================================73%                  ]Processing [=======================================64%                        ]Processing [=============================================74%                  ]Processing [====================================================84%           ]Processing [=========================================68%                      ]Processing [==============================================75%                 ]Processing [=======================================65%                        ]Processing [=====================================62%                          ]Processing [=====================================================85%          ]Processing [=======================================64%                        ]Processing [===============================================76%                ]Processing [==========================================69%                     ]Processing [========================================66%                       ]Processing [=====================================================86%          ]Processing [=======================================65%                        ]Processing [=========================================67%                      ]Processing [===============================================77%                ]Processing [===========================================70%                    ]Processing [========================================66%                       ]Processing [======================================================87%         ]Processing [================================================78%               ]Processing [=========================================68%                      ]Processing [=========================================67%                      ]Processing [===========================================71%                    ]Processing [=================================================79%              ]Processing [==========================================69%                     ]Processing [=======================================================88%        ]Processing [=========================================68%                      ]Processing [=================================================80%              ]Processing [============================================72%                   ]Processing [===========================================70%                    ]Processing [======================================63%                         ]Processing [==========================================69%                     ]Processing [=======================================================89%        ]Processing [==================================================81%             ]Processing [===========================================71%                    ]Processing [=============================================73%                  ]Processing [========================================================90%       ]Processing [===========================================70%                    ]Processing [============================================72%                   ]Processing [===================================================82%            ]Processing [=============================================74%                  ]Processing [=========================================================91%      ]Processing [=======================================64%                        ]Processing [===========================================71%                    ]Processing [=============================================73%                  ]Processing [===================================================83%            ]Processing [==============================================75%                 ]Processing [============================================72%                   ]Processing [=======================================65%                        ]Processing [====================================================84%           ]Processing [=========================================================92%      ]Processing [=============================================74%                  ]Processing [===============================================76%                ]Processing [=============================================73%                  ]Processing [=====================================================85%          ]Processing [========================================66%                       ]Processing [==============================================75%                 ]Processing [===============================================77%                ]Processing [=============================================74%                  ]Processing [=====================================================86%          ]Processing [=========================================67%                      ]Processing [===============================================76%                ]Processing [================================================78%               ]Processing [==============================================75%                 ]Processing [======================================================87%         ]Processing [=========================================68%                      ]Processing [===============================================77%                ]Processing [==============================================================100%]
+Processing [===============================================76%                ]Processing [=======================================================88%        ]Processing [=================================================79%              ]Processing [================================================78%               ]Processing [==========================================69%                     ]Processing [=======================================================89%        ]Processing [===============================================77%                ]Processing [=================================================80%              ]Processing [=================================================79%              ]Processing [===========================================70%                    ]Processing [========================================================90%       ]Processing [================================================78%               ]Processing [=================================================80%              ]Processing [=========================================================91%      ]Processing [==================================================81%             ]Processing [=================================================79%              ]Processing [===========================================71%                    ]Processing [==================================================81%             ]Processing [=================================================80%              ]Processing [===================================================82%            ]Processing [==================================================81%             ]Processing [===================================================82%            ]Processing [============================================72%                   ]Processing [===================================================82%            ]Processing [===================================================83%            ]Processing [===================================================83%            ]Processing [===================================================83%            ]Processing [=============================================73%                  ]Processing [==============================================================100%]
+Processing [====================================================84%           ]Processing [====================================================84%           ]Processing [====================================================84%           ]Processing [=====================================================85%          ]Processing [=============================================74%                  ]Processing [=====================================================86%          ]Processing [=====================================================85%          ]Processing [=====================================================85%          ]Processing [======================================================87%         ]Processing [==============================================75%                 ]Processing [=====================================================86%          ]Processing [=======================================================88%        ]Processing [=====================================================86%          ]Processing [=======================================================89%        ]Processing [======================================================87%         ]Processing [========================================================90%       ]Processing [===============================================76%                ]Processing [======================================================87%         ]Processing [=========================================================91%      ]Processing [=======================================================88%        ]Processing [=========================================================92%      ]Processing [=======================================================88%        ]Processing [===============================================77%                ]Processing [=======================================================89%        ]Processing [=======================================================89%        ]Processing [==============================================================100%]
+Processing [========================================================90%       ]Processing [================================================78%               ]Processing [========================================================90%       ]Processing [=========================================================91%      ]Processing [=================================================79%              ]Processing [=========================================================91%      ]Processing [=================================================80%              ]Processing [==================================================81%             ]Saved report file to "/tmp/nsys-report-bd09-f2c8-ad85-7c88.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/results/1_nodes_batchsize_1_j923942/profiling_results/nsys.923942.r2.w.qdrep"
+
+Processing [==============================================================100%]
+Processing [===================================================82%            ]Processing [==============================================================100%]
+Processing [===================================================83%            ]Saved report file to "/tmp/nsys-report-5e22-f990-0c2a-6e8d.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/results/1_nodes_batchsize_1_j923942/profiling_results/nsys.923942.r3.w.qdrep"
+
+Processing [====================================================84%           ]Processing [=====================================================85%          ]Saved report file to "/tmp/nsys-report-8661-8206-7142-6207.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/results/1_nodes_batchsize_1_j923942/profiling_results/nsys.923942.r5.w.qdrep"
+
+Processing [=====================================================86%          ]Processing [======================================================87%         ]Processing [=======================================================88%        ]Processing [=======================================================89%        ]Processing [========================================================90%       ]Processing [=========================================================91%      ]Saved report file to "/tmp/nsys-report-9b7f-39f3-fbcd-d8f1.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/results/1_nodes_batchsize_1_j923942/profiling_results/nsys.923942.r0.w.qdrep"
+
+Saved report file to "/tmp/nsys-report-069b-4677-b2c6-67b6.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/results/1_nodes_batchsize_1_j923942/profiling_results/nsys.923942.r1.w.qdrep"
+
+Processing [==============================================================100%]
+Saved report file to "/tmp/nsys-report-1359-f247-82a8-d848.qdrep"
+Report file moved to "/gpfs/alpine/aph114/scratch/mrowan/ml-performance-benchmark/cosmoflow/summit/results/1_nodes_batchsize_1_j923942/profiling_results/nsys.923942.r4.w.qdrep"
+

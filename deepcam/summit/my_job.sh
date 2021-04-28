@@ -2,7 +2,7 @@
 #BSUB -P csc330
 #BSUB -W 00:30
 ##BSUB -w ended(######)
-#BSUB -nnodes 16
+#BSUB -nnodes 8
 #BSUB -alloc_flags "nvme smt4"
 #BSUB -J DeepCam_profile
 #BSUB -o %J.out
@@ -11,7 +11,8 @@
 
 # Run parameters
 export BATCHSIZE=2
-export DO_PROFILING='true' # true or false
+export DO_PROFILING='false' # true or false
+export DO_NCCL_DEBUG='true' # true or false
 
 # Setup software environment
 #module load cuda/10.2.89
@@ -24,18 +25,17 @@ module unload darshan
 #module load mpich              # TODO
 #module load nccl/2.5.6         # TODO
 
-# TODO
+# Setup software environment
 export PYTHONPATH=$PYTHONPATH:/ccs/home/mrowan/code/mlperf-logging # Add as part of directory?
 export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
 #export BASEMAPDATA=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/share/basemap
 #export PROJ_LIB=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/share/basemap
 #export PYTHONPATH=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages:/global/homes/m/mrowan/code/mlperf-logging
 
-#XLA environment
+# XLA environment
 #source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
 export PYTHONPATH=$(pwd):$PYTHONPATH # TODO
-
 
 if [ "$DO_PROFILING" == "true" ]
 then

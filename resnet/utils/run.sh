@@ -14,6 +14,17 @@ export HOROVOD_GROUPED_ALLREDUCES=1
 export HOROVOD_CYCLE_TIME=1
 export HOROVOD_FUSION_THRESHOLD=8388608
 
+# NCCL
+if [ "$DO_NCCL_DEBUG" == "true" ]
+then
+    export NCCL_DEBUG=INFO
+    export NCCL_DEBUG_SUBSYS=COLL
+    export NCCL_DEBUG_DIR="logs/${DATA_MODE}/${NODES}_nodes_batchsize_${BATCHSIZE}/j_${LSB_JOBID}"
+    mkdir -p $NCCL_DEBUG_DIR
+    export NCCL_DEBUG_FILE="${NCCL_DEBUG_DIR}/nccl.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}"
+    echo $NCCL_DEBUG_FILE
+fi
+
 # Where to store results and logfiles
 RUN=j_${LSB_JOBID}
 LOG_DIR=logs/${DATA_MODE}/${NODES}_nodes_batchsize_${BATCHSIZE}/$RUN
@@ -30,7 +41,7 @@ then
         --distribution_strategy=$STRATEGY \
         $MULTI_WORKER_FLAGS \
         --data_dir=$DATADIR \
-        --stop_threshold=0.4 \
+        --stop_threshold=0.1 \
         --label_smoothing=0 \
         --batch_size=$BATCHSIZE \
 	    --enable_lars \

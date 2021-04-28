@@ -14,6 +14,7 @@ export HOROVOD_GROUPED_ALLREDUCES=1
 export HOROVOD_CYCLE_TIME=1
 export HOROVOD_FUSION_THRESHOLD=8388608
 
+
 # Where to store profiling results and logfiles
 RUN=j_${LSB_JOBID}
 RES_DIR=profiling_results/${DATA_MODE}/${NODES}_nodes_batchsize_${BATCHSIZE}/$RUN
