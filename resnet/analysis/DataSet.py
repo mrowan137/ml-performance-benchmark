@@ -6,6 +6,7 @@ import os
 import re
 import glob
 import collections
+import numpy as np
 import pandas as pd
 
     
@@ -23,7 +24,7 @@ class DataSet():
         """
         return self._hash.__getitem__(args)
 
-    def _parseInputFile(self, infile):
+    def _parseInputFileNsys(self, infile):
         """
         Parse the profiling data into recorded traces
         Return profiling data for:
@@ -49,8 +50,35 @@ class DataSet():
             else:
                 tmp.append(line)
         return res
+    
+    def _parseInputFileNccl(self, infile):
+        """
+        Parse the profiling data
+        Return profiling data for:
+            ncclAllReduce counts
+        """
+        # Info to parse the nccl debug output
+        int_to_datatype = {0: 'ncclInt8', 1: 'ncclUint8', 2: 'ncclInt32', 3: 'ncclUint32', 4: 'ncclInt64',
+                           5: 'ncclUint64', 6: 'ncclFloat16', 7: 'ncclFloat32', 8: 'ncclFloat64'}
+        int_to_op = {0: 'ncclSum', 1: 'ncclProd', 2: 'ncclMax', 3: 'ncclMin'}
 
-    def parseInput(self, filepath, mode='nodes'):
+        res = []
+        
+        for line in infile:
+            ncclAllReduce = re.search('NCCL INFO AllReduce', line)
+            if ncclAllReduce: 
+                data = re.search('count ([\d]+)(.*?)datatype ([\d]+)(.*?)op ([\d]+)', line)
+                count, int_datatype, int_op = np.array(data.group().split(' '))[1::2].astype(int)
+                res.append([int_to_op[int_op], int_to_datatype[int_datatype], count])
+            
+        return res
+    
+    def parseInput(self, filepath, inputType='nsys'):
+        if inputType == 'nsys': self.parseInputNsys(filepath, mode='nodes')
+        elif inputType == 'nccl': self.parseInputNccl(filepath)
+        return
+            
+    def parseInputNsys(self, filepath, mode='nodes'):
         """
         Parse all the ranks data in filepath
         """
@@ -65,7 +93,7 @@ class DataSet():
             print('Parsing {}'.format(f))
             with open(f, 'r+', encoding="utf-8") as infile:
                 # gets cudaapisum, gpukernsum, gpumemtimesum, gpumemsizesum
-                parsed = self._parseInputFile(infile)
+                parsed = self._parseInputFileNsys(infile)
                 
                 # CUDA API sum
                 self._hash[nodes][rank]['cudaapisum'] = pd.read_csv(
@@ -116,5 +144,36 @@ class DataSet():
                                                                     'Minimum',
                                                                     'Maximum',
                                                                     'Operation']
+                
+        return
+
+    
+    def parseInputNccl(self, filepath, mode='nodes'):
+        """
+        Parse all the ranks data in filepath
+        """
+        files = glob.glob(os.path.join(filepath, 'nccl*'))
+        for f in files:
+            rank = int(re.search('r([\d]+)', f).group().replace('r',''))
+            nodes = int(re.search('([\d]+)_nodes', f).group().replace('_nodes', ''))
+            #print('Parsing {}')
+            print('Parsing {}'.format(f), '; {} rank, {} nodes'.format(rank, nodes))
+            
+            with open(f, 'r+') as infile:
+                # get the counts for each function
+                
+                # hash will store hash[rank]['ncclAllReduce'] --> [count1, count2, count3, ...]
+                # Then we could plot histogram of ranks to count per ncclAllReduce (convert to size),
+                # with error bars
+                parsed = self._parseInputFileNccl(infile)
+                
+                for p in parsed:
+                    op, dtype, count = p
+                    if not self._hash[nodes][rank][op][dtype]:
+                        #print('create a list for rank {}'.format(rank),
+                        #     '\n filepath={}'.format(infile))
+                        self._hash[nodes][rank][op][dtype] = []
+                        
+                    self._hash[nodes][rank][op][dtype].append(count)
                 
         return
