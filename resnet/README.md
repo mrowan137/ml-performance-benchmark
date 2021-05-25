@@ -1,4 +1,4 @@
-__This directory is mostly from: https://code.ornl.gov/olcf-analytics/summit/distributed-deep-learning-examples, please see the link for more details.__
+__This directory is based on: https://code.ornl.gov/olcf-analytics/summit/distributed-deep-learning-examples, please see the link for more details.__
 
 # Running TensorFlow official models in `MultiworkerMirroredStrategy` or `Horovod` mode on Summit
 
