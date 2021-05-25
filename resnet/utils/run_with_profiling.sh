@@ -39,6 +39,7 @@ then
         --data_dir=$DATADIR \
         --label_smoothing=0 \
         --train_epochs=2 \
+        --stop_threshold=0.1 \
         --batch_size=$BATCHSIZE \
         --enable_lars \
         --fp16_implementation=casting \

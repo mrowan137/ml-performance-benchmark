@@ -10,11 +10,11 @@
 # End LSF directives and begin shell commands
 
 # Run parameters
-export BATCHSIZE=64
+export BATCHSIZE=128
 export STRATEGY='horovod'   # horovod or multi_worker_mirrored
 export DATA_MODE='real'     # real or synthetic
-export DO_PROFILING='false' # true or false
-export DO_NCCL_DEBUG='true' # true or false
+export DO_PROFILING='true' # true or false
+export DO_NCCL_DEBUG='false' # true or false
 
 # Setup software environment
 module purge
