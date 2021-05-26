@@ -41,7 +41,8 @@ then
         --distribution_strategy=$STRATEGY \
         $MULTI_WORKER_FLAGS \
         --data_dir=$DATADIR \
-        --stop_threshold=0.1 \
+        --stop_threshold=0.99 \
+	--train_epochs=5 \
         --label_smoothing=0 \
         --batch_size=$BATCHSIZE \
 	    --enable_lars \
@@ -55,13 +56,14 @@ then
         --model_dir=$MODELDIR \
         2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
 else
-    # Synthetic data benchmarking (images/sec with batch size = 128)
+    # Synthetic data benchmarking
     python -u ./official/resnet/imagenet_main.py \
          --clean \
          --distribution_strategy=$STRATEGY \
          $MULTI_WORKER_FLAGS \
          --use_synthetic_data \
-         --train_epochs=2 \
+	 --stop_threshold=0.99 \
+         --train_epochs=5 \
          --batch_size=$BATCHSIZE \
          --enable_lars \
          --fp16_implementation=casting \
