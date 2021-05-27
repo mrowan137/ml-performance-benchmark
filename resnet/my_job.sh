@@ -13,8 +13,8 @@
 export BATCHSIZE=64
 export STRATEGY='horovod'    # horovod or multi_worker_mirrored
 export DATA_MODE='synthetic' # real or synthetic
-export DO_PROFILING='false'  # true or false
-export DO_NCCL_DEBUG='true'  # true or false
+export DO_PROFILING='true'  # true or false
+export DO_NCCL_DEBUG='false'  # true or false
 
 # Setup software environment
 module purge
@@ -37,8 +37,9 @@ then
     #copy imagenet data to SSD 
     #jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/csc330/mrowan/imagenet/train/* $WORLDWORK/csc330/mrowan/imagenet/validation/* /mnt/bb/$USER
     jsrun -n$NODES -a1 -c42 -r1 cp $WORLDWORK/stf011/junqi/imagenet/train/* $WORLDWORK/stf011/junqi/imagenet/validation/* /mnt/bb/$USER
-    export DATADIR=/mnt/bb/$USER
 fi
+export DATADIR=/mnt/bb/$USER
+
 
 if [ "$STRATEGY" == "horovod" ]
 then

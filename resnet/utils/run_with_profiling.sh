@@ -38,8 +38,8 @@ then
         $MULTI_WORKER_FLAGS \
         --data_dir=$DATADIR \
         --label_smoothing=0 \
-        --train_epochs=2 \
-        --stop_threshold=0.1 \
+        --train_epochs=5 \
+        --stop_threshold=0.99 \
         --batch_size=$BATCHSIZE \
         --enable_lars \
         --fp16_implementation=casting \
@@ -58,7 +58,8 @@ else
          --distribution_strategy=$STRATEGY \
          $MULTI_WORKER_FLAGS \
          --use_synthetic_data \
-         --train_epochs=2 \
+         --train_epochs=5 \
+	 --stop_threshold=0.99 \
          --batch_size=$BATCHSIZE \
          --enable_lars \
          --fp16_implementation=casting \

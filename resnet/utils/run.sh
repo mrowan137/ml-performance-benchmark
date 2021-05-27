@@ -45,7 +45,7 @@ then
 	--train_epochs=5 \
         --label_smoothing=0 \
         --batch_size=$BATCHSIZE \
-	    --enable_lars \
+        --enable_lars \
         --fp16_implementation=casting \
         --dtype=fp16 \
         --inter_op_parallelism_threads=4 \
