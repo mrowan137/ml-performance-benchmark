@@ -11,9 +11,9 @@
 
 
 # Run parameters
-export batch_size=1
-export DO_PROFILING='false' # true or false
-export DO_NCCL_DEBUG='true' # true or false
+export batch_size=8
+export DO_PROFILING='true' # true or false
+export DO_NCCL_DEBUG='false' # true or false
 
 # Setup software environment
 source ~/.mlperf_deepcam_profile

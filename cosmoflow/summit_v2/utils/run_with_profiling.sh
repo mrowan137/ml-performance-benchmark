@@ -16,6 +16,7 @@ prof_file=${profile_dir}/nsys.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}
 nsys profile -o $prof_file -t cuda \
      python src/train.py -d \
      --batch-size=$batch_size \
+     --n-epochs=5 \
      --data-dir=$data_dir \
      --output-dir=$output_dir \
      --rank-gpu $CONFIG |& tee -a ${output_dir}/train.out
