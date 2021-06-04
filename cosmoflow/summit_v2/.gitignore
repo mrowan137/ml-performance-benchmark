@@ -1,0 +1,5 @@
+data
+(\+d).out
+*.err
+*.cpt
+results*png
