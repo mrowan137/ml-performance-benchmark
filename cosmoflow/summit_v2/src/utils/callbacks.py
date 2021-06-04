@@ -43,7 +43,7 @@ except ImportError:
 
 class MLPerfLoggingCallback(tf.keras.callbacks.Callback):
     """A Keras Callback for logging MLPerf results"""
-    def __init__(self, metric='val_mean_absolute_error', log_key='eval_error'):
+    def __init__(self, metric='val_mae', log_key='eval_error'):
         self.mllogger = mllog.get_mllogger()
         self.metric = metric
         self.log_key = log_key
@@ -70,8 +70,7 @@ class MLPerfLoggingCallback(tf.keras.callbacks.Callback):
 
 class StopAtTargetCallback(tf.keras.callbacks.Callback):
     """A Keras callback for stopping training at specified target quality"""
-
-    def __init__(self, metric='val_mean_absolute_error', target_max=None):
+    def __init__(self, metric='val_mae', target_max=None):
         self.metric = metric
         self.target_max = target_max
 
