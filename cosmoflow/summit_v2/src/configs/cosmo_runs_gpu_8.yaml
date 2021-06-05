@@ -9,8 +9,8 @@ mlperf:
 data:
     name: cosmo
     data_dir: /ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf
-    n_train: 4080
-    n_valid: 144
+    n_train: 4224
+    n_valid: 384
     sample_shape: [128, 128, 128, 4]
     batch_size: 1
     n_epochs: 16
