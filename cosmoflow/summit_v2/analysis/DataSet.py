@@ -99,13 +99,23 @@ class DataSet():
                 self._hash[nodes][rank]['cudaapisum'] = pd.read_csv(
                     io.BytesIO(b'\n'.join(parsed[0])), sep='\s{2,}',  engine='python',
                     skiprows=3, header=None)
-                self._hash[nodes][rank]['cudaapisum'].columns = ['Time(%)',
-                                                                 'Total Time (ns)',
-                                                                 'Num Calls',
-                                                                 'Average',
-                                                                 'Minimum',
-                                                                 'Maximum',
-                                                                 'Name']
+                try:
+                    self._hash[nodes][rank]['cudaapisum'].columns = ['Time(%)',
+                                                                     'Total Time (ns)',
+                                                                     'Num Calls',
+                                                                     'Average',
+                                                                     'Minimum',
+                                                                     'Maximum',
+                                                                     'StdDev',
+                                                                     'Name']
+                except ValueError:
+                    self._hash[nodes][rank]['cudaapisum'].columns = ['Time(%)',
+                                                                     'Total Time (ns)',
+                                                                     'Num Calls',
+                                                                     'Average',
+                                                                     'Minimum',
+                                                                     'Maximum',
+                                                                     'Name']
                 
                 # GPU kern sum
                 for i in range(len(parsed[1])):
@@ -114,19 +124,39 @@ class DataSet():
                 self._hash[nodes][rank]['gpukernsum'] = pd.read_csv(
                     io.StringIO('\n'.join(parsed[1])), sep='\s{2,}', engine='python', 
                     skiprows=3, header=None)
-                self._hash[nodes][rank]['gpukernsum'].columns = ['Time(%)',
-                                                                 'Total Time (ns)',
-                                                                 'Instances',
-                                                                 'Average',
-                                                                 'Minimum',
-                                                                 'Maximum',
-                                                                 'Name']
+                try:
+                    self._hash[nodes][rank]['gpukernsum'].columns = ['Time(%)',
+                                                                     'Total Time (ns)',
+                                                                     'Instances',
+                                                                     'Average',
+                                                                     'Minimum',
+                                                                     'Maximum',
+                                                                     'StdDev',
+                                                                     'Name']
+                except ValueError:
+                    self._hash[nodes][rank]['gpukernsum'].columns = ['Time(%)',
+                                                                     'Total Time (ns)',
+                                                                     'Instances',
+                                                                     'Average',
+                                                                     'Minimum',
+                                                                     'Maximum',
+                                                                     'Name']
 
                 # GPU mem time sum
                 self._hash[nodes][rank]['gpumemtimesum'] = pd.read_csv(
                     io.BytesIO(b'\n'.join(parsed[2])), sep='\s{2,}', engine='python',
                     skiprows=3, header=None)
-                self._hash[nodes][rank]['gpumemtimesum'].columns = ['Time(%)',
+                try:
+                    self._hash[nodes][rank]['gpumemtimesum'].columns = ['Time(%)',
+                                                                    'Total Time (ns)',
+                                                                    'Operations',
+                                                                    'Average',
+                                                                    'Minimum',
+                                                                    'Maximum',
+                                                                    'StdDev',
+                                                                    'Operation']
+                except ValueError:
+                    self._hash[nodes][rank]['gpumemtimesum'].columns = ['Time(%)',
                                                                     'Total Time (ns)',
                                                                     'Operations',
                                                                     'Average',
@@ -138,7 +168,16 @@ class DataSet():
                 self._hash[nodes][rank]['gpumemsizesum'] = pd.read_csv(
                     io.BytesIO(b'\n'.join(parsed[3])), sep='\s{2,}', engine='python',
                     skiprows=3, header=None)
-                self._hash[nodes][rank]['gpumemsizesum'].columns = ['Total',
+                try:
+                    self._hash[nodes][rank]['gpumemsizesum'].columns = ['Total',
+                                                                    'Operations',
+                                                                    'Average',
+                                                                    'Minimum',
+                                                                    'Maximum',
+                                                                    'StdDev',
+                                                                    'Operation']
+                except ValueError:
+                    self._hash[nodes][rank]['gpumemsizesum'].columns = ['Total',
                                                                     'Operations',
                                                                     'Average',
                                                                     'Minimum',
