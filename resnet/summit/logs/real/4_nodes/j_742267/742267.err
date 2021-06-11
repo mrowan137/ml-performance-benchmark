@@ -1,0 +1,8 @@
+Warning: OMP_NUM_THREADS=16 is greater than available PU's
+Warning: OMP_NUM_THREADS=16 is greater than available PU's
+Warning: OMP_NUM_THREADS=16 is greater than available PU's
+Warning: OMP_NUM_THREADS=16 is greater than available PU's
+cp: cannot stat '/gpfs/alpine/world-shared/csc330/mrowan/imagenet/validation/*': No such file or directory
+mv: cannot create regular file '/log.742267': Permission denied
+mv: cannot stat '%J.out': No such file or directory
+mv: cannot stat '%J.err': No such file or directory
