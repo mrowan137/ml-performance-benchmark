@@ -25,6 +25,9 @@ module purge
 module load cgpu
 
 module load tensorflow/gpu-1.15.0-py37
+#module load cuda/10.1.168
+#module load cudnn/7.6.5
+#module load nccl
 export PYTHONPATH=/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
 
 # module load tensorflow/gpu-2.2.0-py37
@@ -37,8 +40,8 @@ export NODES=$SLURM_NNODES
 # #rm -rf $MODELDIR
 
 # # XLA environment
-# source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
-export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_PATH
+source /global/cscratch1/sd/mrowan/1.14.0/env.sh
+#export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
 # export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$DO_PROFILING" == "true" ]
