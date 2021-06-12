@@ -68,7 +68,7 @@ TRAINING_SHARDS = 1024
 VALIDATION_SHARDS = 128
 
 TRAINING_DIRECTORY = 'train'
-VALIDATION_DIRECTORY = 'val'
+VALIDATION_DIRECTORY = 'val/n02097658'
 
 
 def _check_or_create_dir(directory: str):
