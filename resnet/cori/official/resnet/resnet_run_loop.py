@@ -468,7 +468,7 @@ def resnet_model_fn(features, labels, mode, model_class,
 
     if horovod:
       import horovod.tensorflow as hvd
-      optimizer = hvd.DistributedOptimizer(optimizer, num_groups=1)      
+      optimizer = hvd.DistributedOptimizer(optimizer)
 
     def _dense_grad_filter(gvs):
       """Only apply gradient updates to the final layer.
