@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH -N 1
 #SBATCH -C gpu
-#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks-per-node=2
 #SBATCH --gpus-per-task=1
 #SBATCH --cpus-per-task=10
-#SBATCH -t 4:00:00
+#SBATCH -t 0:30:00
 #SBATCH -A nstaff
 #SBATCH --exclusive
 #SBATCH -J resnet50-cgpu
@@ -40,8 +40,8 @@ export NODES=$SLURM_NNODES
 # #rm -rf $MODELDIR
 
 # # XLA environment
-source /global/cscratch1/sd/mrowan/1.14.0/env.sh
-#export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
+#source /global/cscratch1/sd/mrowan/1.14.0/env.sh
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_PATH
 # export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$DO_PROFILING" == "true" ]
@@ -67,13 +67,11 @@ then
         echo "then"
         srun -N $NODES -n $((NODES*8)) -c 10 \
              --cpu-bind=cores \
-             --mem=30GB \
              ./utils/run_with_profiling.sh
     else
         echo "else"
         srun -N $NODES -n $((NODES*8)) -c 10 \
              --cpu-bind=cores \
-             --mem=30GB \
              ./utils/run.sh
     fi
 else

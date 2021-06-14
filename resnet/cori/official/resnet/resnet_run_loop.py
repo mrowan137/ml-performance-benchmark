@@ -569,10 +569,12 @@ def resnet_main(
 
   # Creates session config. allow_soft_placement = True, is required for
   # multi-GPU and is not harmful for other modes.
+  gpu_options = tf.GPUOptions(allow_growth=True) #USER MICHAEL
   session_config = tf.compat.v1.ConfigProto(
       inter_op_parallelism_threads=flags_obj.inter_op_parallelism_threads,
       intra_op_parallelism_threads=flags_obj.intra_op_parallelism_threads,
-      allow_soft_placement=True)
+      allow_soft_placement=True,
+      gpu_options=gpu_options) #USER MICHAEL
   train_steps_per_epoch = None 
   eval_steps_per_epoch = None 
   if flags_obj.distribution_strategy == 'horovod':
