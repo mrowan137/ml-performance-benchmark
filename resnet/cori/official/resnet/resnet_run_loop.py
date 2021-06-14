@@ -573,13 +573,13 @@ def resnet_main(
   session_config = tf.compat.v1.ConfigProto(
       inter_op_parallelism_threads=flags_obj.inter_op_parallelism_threads,
       intra_op_parallelism_threads=flags_obj.intra_op_parallelism_threads,
-      allow_soft_placement=True)
-      #gpu_options=gpu_options) #USER MICHAEL
+      allow_soft_placement=True,
+      gpu_options=gpu_options) #USER MICHAEL
   train_steps_per_epoch = None 
   eval_steps_per_epoch = None 
   if flags_obj.distribution_strategy == 'horovod':
     import horovod.tensorflow as hvd
-    session_config.gpu_options.visible_device_list = '0' #str(hvd.local_rank())
+    session_config.gpu_options.visible_device_list = str(hvd.local_rank()) #0 #USER MICHAEL
     session_config.graph_options.optimizer_options.global_jit_level = tf.OptimizerOptions.ON_1
     num_workers = hvd.size()
     model_dir = flags_obj.model_dir if hvd.rank() == 0 else None

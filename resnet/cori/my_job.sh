@@ -40,7 +40,8 @@ export NODES=$SLURM_NNODES
 
 # # XLA environment
 #source /global/cscratch1/sd/mrowan/1.14.0/env.sh
-export XLA_FLAGS="--xla_gpu_cuda_data_dir=$CUDA_PATH --tf_xla_cpu_global_jit"
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_PATH
+export TF_XLA_FLAGS=tf_xla_cpu_global_jit
 # export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$DO_PROFILING" == "true" ]
