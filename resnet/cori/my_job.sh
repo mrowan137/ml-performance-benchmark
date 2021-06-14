@@ -1,12 +1,11 @@
 #!/bin/bash
 #SBATCH -N 1
-#SBATCH -C gpu
-#SBATCH --ntasks-per-node=2
+#SBATCH -C gpu -c 10
+#SBATCH --ntasks-per-node=8
 #SBATCH --gpus-per-task=1
-#SBATCH --cpus-per-task=10
-#SBATCH -t 0:30:00
-#SBATCH -A nstaff
 #SBATCH --exclusive
+#SBATCH -t 0:40:00
+#SBATCH -A nstaff
 #SBATCH -J resnet50-cgpu
 #SBATCH -d singleton
 #SBATCH -o logs/%x-%j.out
@@ -41,7 +40,7 @@ export NODES=$SLURM_NNODES
 
 # # XLA environment
 #source /global/cscratch1/sd/mrowan/1.14.0/env.sh
-export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_PATH
+export XLA_FLAGS="--xla_gpu_cuda_data_dir=$CUDA_PATH --tf_xla_cpu_global_jit"
 # export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$DO_PROFILING" == "true" ]
@@ -49,12 +48,12 @@ then
     module load nsight-systems
 fi
 
-if [ "$DATA_MODE" == "real" ]
-then
-    #copy imagenet data to BB
-    #./utils/stage_data_bb.sh
-    #srun -n 1 -c $((NODES*8*10)) cp /global/cscratch1/sd/mrowan/scratch/imagenet/train/* /global/cscratch1/sd/mrowan/scratch/imagenet/validation/* /mnt/bb/$USER
-fi
+# if [ "$DATA_MODE" == "real" ]
+# then
+#     #copy imagenet data to BB
+#     ./utils/stage_data_bb.sh
+#     srun -n 1 -c $((NODES*8*10)) cp /global/cscratch1/sd/mrowan/scratch/imagenet/train/* /global/cscratch1/sd/mrowan/scratch/imagenet/validation/* /mnt/bb/$USER
+# fi
 #export DATADIR=/mnt/bb/$USER
 
 #DW persistentdw name=cosmobb
@@ -65,14 +64,17 @@ then
     if [ "$DO_PROFILING" == "true" ]
     then
         echo "then"
-        srun -N $NODES -n $((NODES*8)) -c 10 \
+        srun -N $SLURM_NNODES -n $SLURM_NTASKS -c 10 \
              --cpu-bind=cores \
              ./utils/run_with_profiling.sh
     else
-        echo "else"
-        srun -N $NODES -n $((NODES*8)) -c 10 \
-             --cpu-bind=cores \
-             ./utils/run.sh
+        #echo "Nodes: " $SLURM_NNODES " Tasks: " $((SLURM_NNODES*8)) " CPUs per task: " $SLURM_CPUS_PER_TASK
+        set -x
+        srun -N 1 -n 8 -c 10 ./utils/run.sh $@
+        #srun -l -u ./utils/run.sh $@
+        # srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
+        #      --cpu-bind=cores \
+        #      ./utils/run.sh
     fi
 else
     if [ "$DO_PROFILING" == "true" ]

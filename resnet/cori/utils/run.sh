@@ -36,6 +36,8 @@ fi
 if [ "$DATA_MODE" == "real" ]
 then 
     # Real data benchmarking (convergence testing)
+    echo $PYTHONPATH
+    which python
     python -u ./official/resnet/imagenet_main.py \
         --clean \
         --distribution_strategy=$STRATEGY \

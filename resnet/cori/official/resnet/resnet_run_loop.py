@@ -573,8 +573,8 @@ def resnet_main(
   session_config = tf.compat.v1.ConfigProto(
       inter_op_parallelism_threads=flags_obj.inter_op_parallelism_threads,
       intra_op_parallelism_threads=flags_obj.intra_op_parallelism_threads,
-      allow_soft_placement=True,
-      gpu_options=gpu_options) #USER MICHAEL
+      allow_soft_placement=True)
+      #gpu_options=gpu_options) #USER MICHAEL
   train_steps_per_epoch = None 
   eval_steps_per_epoch = None 
   if flags_obj.distribution_strategy == 'horovod':
