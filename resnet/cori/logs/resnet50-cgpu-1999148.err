@@ -1,0 +1,15 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 1 -n 8 -c 10 ./utils/run.sh
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+srun: error: cgpu14: tasks 0-5,7: Exited with exit code 1
+srun: Terminating job step 1999148.0
+slurmstepd: error: *** STEP 1999148.0 ON cgpu14 CANCELLED AT 2021-06-14T12:44:51 ***
+srun: error: cgpu14: task 6: Terminated
+srun: Force Terminated job step 1999148.0

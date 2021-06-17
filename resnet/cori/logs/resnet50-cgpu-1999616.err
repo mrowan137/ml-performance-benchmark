@@ -1,0 +1,13 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+/var/spool/slurmd/job1999616/slurm_script: line 43: export: `--tf_xla_cpu_global_jit': not a valid identifier
++ srun -N 1 -n 8 -c 10 ./utils/run.sh
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+srun: error: cgpu08: tasks 0-7: Exited with exit code 1
+srun: Terminating job step 1999616.0

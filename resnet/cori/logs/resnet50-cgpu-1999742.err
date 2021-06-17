@@ -1,0 +1,13 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 1 -n 8 -c 10 ./utils/run.sh
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1999742.0 ON cgpu10 CANCELLED AT 2021-06-14T16:19:30 ***
+slurmstepd: error: *** JOB 1999742 ON cgpu10 CANCELLED AT 2021-06-14T16:19:30 ***

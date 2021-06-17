@@ -1,0 +1,465 @@
+Nodes:  1  Tasks:  6  CPUs per task:  10
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+INFO:tensorflow:Logical CPU cores: 28
+I0614 12:05:25.270682 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 12:05:25.270913 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 12:05:25.271019 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:Logical CPU cores: 28
+I0614 12:05:25.271112 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 12:05:25.271358 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 12:05:25.271463 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 12:05:25.324940 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 12:05:25.325078 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 12:05:25.325057 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 12:05:25.325181 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 12:05:25.507256 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 12:05:25.507810 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 12:05:25.508091 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 12:05:25.508337 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpoxhk5d8x
+W0614 12:05:25.508504 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpoxhk5d8x
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpo8yabf_2
+W0614 12:05:25.508844 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpo8yabf_2
+INFO:tensorflow:Using config: {'_model_dir': '/tmp/tmpoxhk5d8x', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 86400, '_session_config': intra_op_parallelism_threads: 7
+inter_op_parallelism_threads: 27
+gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+allow_soft_placement: true
+graph_options {
+  optimizer_options {
+    global_jit_level: ON_1
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x2aab025c6690>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+I0614 12:05:25.509980 46912496713088 estimator.py:212] Using config: {'_model_dir': '/tmp/tmpoxhk5d8x', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 86400, '_session_config': intra_op_parallelism_threads: 7
+inter_op_parallelism_threads: 27
+gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+allow_soft_placement: true
+graph_options {
+  optimizer_options {
+    global_jit_level: ON_1
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x2aab025c6690>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 12:05:25.510747 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 12:05:25.510871 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+INFO:tensorflow:Benchmark run: {'model_name': 'resnet', 'dataset': {'name': 'ImageNet'}, 'machine_config': {'memory_total': 403611475968, 'memory_available': 344307134464}, 'test_id': None, 'run_date': '2021-06-14T19:05:25.510189Z', 'tensorflow_version': {'version': '1.15.0', 'git_hash': 'v1.15.0-rc3-22-g590d6ee'}, 'tensorflow_environment_variables': [{'name': 'TF_GPU_THREAD_COUNT', 'value': '1'}, {'name': 'TF_GPU_THREAD_MODE', 'value': 'gpu_private'}], 'run_parameters': [{'name': 'batch_size', 'long_value': 64}, {'name': 'dtype', 'string_value': "<dtype: 'float16'>"}, {'name': 'num_workers', 'long_value': 2}, {'name': 'resnet_size', 'string_value': '50'}, {'name': 'resnet_version', 'string_value': '1'}, {'name': 'synthetic_data', 'bool_value': 'False'}, {'name': 'train_epochs', 'long_value': 5}]}
+I0614 12:05:25.570665 46912496713088 logger.py:152] Benchmark run: {'model_name': 'resnet', 'dataset': {'name': 'ImageNet'}, 'machine_config': {'memory_total': 403611475968, 'memory_available': 344307134464}, 'test_id': None, 'run_date': '2021-06-14T19:05:25.510189Z', 'tensorflow_version': {'version': '1.15.0', 'git_hash': 'v1.15.0-rc3-22-g590d6ee'}, 'tensorflow_environment_variables': [{'name': 'TF_GPU_THREAD_COUNT', 'value': '1'}, {'name': 'TF_GPU_THREAD_MODE', 'value': 'gpu_private'}], 'run_parameters': [{'name': 'batch_size', 'long_value': 64}, {'name': 'dtype', 'string_value': "<dtype: 'float16'>"}, {'name': 'num_workers', 'long_value': 2}, {'name': 'resnet_size', 'string_value': '50'}, {'name': 'resnet_version', 'string_value': '1'}, {'name': 'synthetic_data', 'bool_value': 'False'}, {'name': 'train_epochs', 'long_value': 5}]}
+INFO:tensorflow:Starting cycle: 0/5
+I0614 12:05:25.571010 46912496713088 resnet_run_loop.py:706] Starting cycle: 0/5
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 12:05:25.587442 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 12:05:25.587502 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:datasets_num_private_threads: 25
+I0614 12:05:25.626708 46912496713088 resnet_run_loop.py:89] datasets_num_private_threads: 25
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 12:05:28.155826 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 12:05:28.156480 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+2021-06-14 12:05:28.179723: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 12:05:28.179723: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 12:05:28.351569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 12:05:28.351621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 12:05:28.355510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 12:05:28.355568: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 12:05:28.355602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 12:05:28.355654: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 12:05:28.420158: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 12:05:28.420151: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 12:05:28.455552: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 12:05:28.455548: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 12:05:28.469529: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 12:05:28.469528: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 12:05:28.543937: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 12:05:28.543940: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 12:05:28.591607: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 12:05:28.591609: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 12:05:28.723641: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 12:05:28.723635: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 12:05:28.733917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2021-06-14 12:05:28.733920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+INFO:tensorflow:Calling model_fn.
+I0614 12:05:28.891030 46912496713088 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 12:05:28.893588 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 12:05:28.894185 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 12:05:28.894212 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 12:05:28.894746 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 12:05:28.904958 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 12:05:28.904951 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 12:05:28.923115 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 12:05:28.923147 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 12:05:30.348544 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 12:05:30.370054 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 12:05:30.373409 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 12:05:30.393301 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 12:05:30.403302 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 12:05:30.410214 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 12:05:30.426610 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 12:05:30.433578 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Done calling model_fn.
+I0614 12:05:33.102858 46912496713088 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0614 12:05:33.103838 46912496713088 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0614 12:05:35.038213 46912496713088 monitored_session.py:240] Graph was finalized.
+2021-06-14 12:05:35.039750: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 12:05:35.068040: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 12:05:35.080739: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 12:05:35.080757: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 12:05:35.085853: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597e4ca0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 12:05:35.085869: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 12:05:35.085866: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597b4590 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 12:05:35.085895: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 12:05:35.381374: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597b3ee0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 12:05:35.381400: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 12:05:35.382126: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597e3480 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 12:05:35.382152: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 12:05:35.385445: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 12:05:35.385492: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 12:05:35.385517: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 12:05:35.385524: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 12:05:35.385522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 12:05:35.385531: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 12:05:35.385538: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 12:05:35.385546: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 12:05:35.385554: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 12:05:35.385586: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 12:05:35.385617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 12:05:35.385626: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 12:05:35.385636: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 12:05:35.385645: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 12:05:35.385655: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 12:05:35.385665: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 12:05:35.390325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 12:05:35.390462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 12:05:35.391335: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 12:05:35.391363: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 12:05:35.493450: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 12:05:35.493477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 12:05:35.493500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 12:05:35.493444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 12:05:35.493473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 12:05:35.493497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 12:05:35.500723: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14739 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 12:05:35.500719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14739 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 12:05:39.827393: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 12:05:39.827853: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0614 12:05:39.879197 46912496713088 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0614 12:05:40.038059 46912496713088 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/tmpoxhk5d8x/model.ckpt.
+I0614 12:05:43.711817 46912496713088 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/tmpoxhk5d8x/model.ckpt.
+2021-06-14 12:05:48.490384: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 12:05:48.560225: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 12:05:51.904266: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 12:05:52.948729: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 12:05:53.644390: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 12:05:54.196211: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 12:06:04.849062: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 12:06:05.077295: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+INFO:tensorflow:cross_entropy = 7.9681077, learning_rate = 0.0, train_accuracy = 0.0
+I0614 12:06:08.387227 46912496713088 basic_session_run_hooks.py:262] cross_entropy = 7.9681077, learning_rate = 0.0, train_accuracy = 0.0
+INFO:tensorflow:loss = 9.362963, step = 0
+I0614 12:06:08.388277 46912496713088 basic_session_run_hooks.py:262] loss = 9.362963, step = 0
+2021-06-14 12:06:09.733410: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 12:06:09.776344: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+INFO:tensorflow:global_step/sec: 2.37401
+I0614 12:06:50.509359 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 2.37401
+INFO:tensorflow:cross_entropy = 7.198995, learning_rate = 0.009991009, train_accuracy = 0.0 (42.124 sec)
+I0614 12:06:50.510977 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 7.198995, learning_rate = 0.009991009, train_accuracy = 0.0 (42.124 sec)
+INFO:tensorflow:loss = 8.593764, step = 100 (42.123 sec)
+I0614 12:06:50.511175 46912496713088 basic_session_run_hooks.py:260] loss = 8.593764, step = 100 (42.123 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.362723345371, 'unit': None, 'global_step': 106, 'timestamp': '2021-06-14T19:06:52.181707Z', 'extras': []}
+I0614 12:06:52.181813 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.362723345371, 'unit': None, 'global_step': 106, 'timestamp': '2021-06-14T19:06:52.181707Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 227.362723345371, 'unit': None, 'global_step': 106, 'timestamp': '2021-06-14T19:06:52.182084Z', 'extras': []}
+I0614 12:06:52.182108 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 227.362723345371, 'unit': None, 'global_step': 106, 'timestamp': '2021-06-14T19:06:52.182084Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.54664
+I0614 12:07:18.704886 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.54664
+INFO:tensorflow:cross_entropy = 7.4807053, learning_rate = 0.019982018, train_accuracy = 0.0 (28.195 sec)
+I0614 12:07:18.705959 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 7.4807053, learning_rate = 0.019982018, train_accuracy = 0.0 (28.195 sec)
+INFO:tensorflow:loss = 8.875195, step = 200 (28.196 sec)
+I0614 12:07:18.706715 46912496713088 basic_session_run_hooks.py:260] loss = 8.875195, step = 200 (28.196 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.01493713210297, 'unit': None, 'global_step': 206, 'timestamp': '2021-06-14T19:07:20.416755Z', 'extras': []}
+I0614 12:07:20.416831 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.01493713210297, 'unit': None, 'global_step': 206, 'timestamp': '2021-06-14T19:07:20.416755Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.668213278674, 'unit': None, 'global_step': 206, 'timestamp': '2021-06-14T19:07:20.417040Z', 'extras': []}
+I0614 12:07:20.417069 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.668213278674, 'unit': None, 'global_step': 206, 'timestamp': '2021-06-14T19:07:20.417040Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.55528
+I0614 12:07:46.832036 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.55528
+INFO:tensorflow:cross_entropy = 7.0780168, learning_rate = 0.029973026, train_accuracy = 0.0 (28.127 sec)
+I0614 12:07:46.833030 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 7.0780168, learning_rate = 0.029973026, train_accuracy = 0.0 (28.127 sec)
+INFO:tensorflow:loss = 8.472034, step = 300 (28.127 sec)
+I0614 12:07:46.833523 46912496713088 basic_session_run_hooks.py:260] loss = 8.472034, step = 300 (28.127 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.18337528030216, 'unit': None, 'global_step': 306, 'timestamp': '2021-06-14T19:07:48.546027Z', 'extras': []}
+I0614 12:07:48.546100 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.18337528030216, 'unit': None, 'global_step': 306, 'timestamp': '2021-06-14T19:07:48.546027Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 227.52100254685612, 'unit': None, 'global_step': 306, 'timestamp': '2021-06-14T19:07:48.546322Z', 'extras': []}
+I0614 12:07:48.546355 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 227.52100254685612, 'unit': None, 'global_step': 306, 'timestamp': '2021-06-14T19:07:48.546322Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.5696
+I0614 12:08:14.846389 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.5696
+INFO:tensorflow:cross_entropy = 6.920043, learning_rate = 0.039964035, train_accuracy = 0.0 (28.014 sec)
+I0614 12:08:14.847222 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.920043, learning_rate = 0.039964035, train_accuracy = 0.0 (28.014 sec)
+INFO:tensorflow:loss = 8.313378, step = 400 (28.014 sec)
+I0614 12:08:14.847715 46912496713088 basic_session_run_hooks.py:260] loss = 8.313378, step = 400 (28.014 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.53818082132727, 'unit': None, 'global_step': 406, 'timestamp': '2021-06-14T19:08:16.541380Z', 'extras': []}
+I0614 12:08:16.541453 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.53818082132727, 'unit': None, 'global_step': 406, 'timestamp': '2021-06-14T19:08:16.541380Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 228.6092781918829, 'unit': None, 'global_step': 406, 'timestamp': '2021-06-14T19:08:16.541626Z', 'extras': []}
+I0614 12:08:16.541643 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 228.6092781918829, 'unit': None, 'global_step': 406, 'timestamp': '2021-06-14T19:08:16.541626Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.55839
+I0614 12:08:42.949032 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.55839
+INFO:tensorflow:cross_entropy = 7.0081387, learning_rate = 0.049955044, train_accuracy = 0.0 (28.103 sec)
+I0614 12:08:42.950102 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 7.0081387, learning_rate = 0.049955044, train_accuracy = 0.0 (28.103 sec)
+INFO:tensorflow:loss = 8.400576, step = 500 (28.103 sec)
+I0614 12:08:42.950775 46912496713088 basic_session_run_hooks.py:260] loss = 8.400576, step = 500 (28.103 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.58849435055242, 'unit': None, 'global_step': 506, 'timestamp': '2021-06-14T19:08:44.637457Z', 'extras': []}
+I0614 12:08:44.637546 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.58849435055242, 'unit': None, 'global_step': 506, 'timestamp': '2021-06-14T19:08:44.637457Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 227.7899711722516, 'unit': None, 'global_step': 506, 'timestamp': '2021-06-14T19:08:44.637786Z', 'extras': []}
+I0614 12:08:44.637823 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 227.7899711722516, 'unit': None, 'global_step': 506, 'timestamp': '2021-06-14T19:08:44.637786Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.53681
+I0614 12:09:11.223070 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.53681
+INFO:tensorflow:cross_entropy = 6.8924246, learning_rate = 0.059946053, train_accuracy = 0.0 (28.274 sec)
+I0614 12:09:11.224346 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.8924246, learning_rate = 0.059946053, train_accuracy = 0.0 (28.274 sec)
+INFO:tensorflow:loss = 8.283741, step = 600 (28.274 sec)
+I0614 12:09:11.225173 46912496713088 basic_session_run_hooks.py:260] loss = 8.283741, step = 600 (28.274 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.34752221440934, 'unit': None, 'global_step': 606, 'timestamp': '2021-06-14T19:09:12.937203Z', 'extras': []}
+I0614 12:09:12.937271 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.34752221440934, 'unit': None, 'global_step': 606, 'timestamp': '2021-06-14T19:09:12.937203Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.15027550968415, 'unit': None, 'global_step': 606, 'timestamp': '2021-06-14T19:09:12.937443Z', 'extras': []}
+I0614 12:09:12.937460 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.15027550968415, 'unit': None, 'global_step': 606, 'timestamp': '2021-06-14T19:09:12.937443Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.53541
+I0614 12:09:39.508281 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.53541
+INFO:tensorflow:cross_entropy = 6.922062, learning_rate = 0.069937065, train_accuracy = 0.0 (28.285 sec)
+I0614 12:09:39.509073 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.922062, learning_rate = 0.069937065, train_accuracy = 0.0 (28.285 sec)
+INFO:tensorflow:loss = 8.312023, step = 700 (28.284 sec)
+I0614 12:09:39.509632 46912496713088 basic_session_run_hooks.py:260] loss = 8.312023, step = 700 (28.284 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.2526067908502, 'unit': None, 'global_step': 706, 'timestamp': '2021-06-14T19:09:41.170242Z', 'extras': []}
+I0614 12:09:41.170334 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.2526067908502, 'unit': None, 'global_step': 706, 'timestamp': '2021-06-14T19:09:41.170242Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.6847743948812, 'unit': None, 'global_step': 706, 'timestamp': '2021-06-14T19:09:41.170567Z', 'extras': []}
+I0614 12:09:41.170602 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.6847743948812, 'unit': None, 'global_step': 706, 'timestamp': '2021-06-14T19:09:41.170567Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.53444
+I0614 12:10:07.801336 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.53444
+INFO:tensorflow:cross_entropy = 6.957654, learning_rate = 0.07992807, train_accuracy = 0.0 (28.294 sec)
+I0614 12:10:07.802690 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.957654, learning_rate = 0.07992807, train_accuracy = 0.0 (28.294 sec)
+INFO:tensorflow:loss = 8.34603, step = 800 (28.294 sec)
+I0614 12:10:07.803261 46912496713088 basic_session_run_hooks.py:260] loss = 8.34603, step = 800 (28.294 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.08567807910654, 'unit': None, 'global_step': 806, 'timestamp': '2021-06-14T19:10:09.498360Z', 'extras': []}
+I0614 12:10:09.498443 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.08567807910654, 'unit': None, 'global_step': 806, 'timestamp': '2021-06-14T19:10:09.498360Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 225.92400856236526, 'unit': None, 'global_step': 806, 'timestamp': '2021-06-14T19:10:09.498672Z', 'extras': []}
+I0614 12:10:09.498701 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 225.92400856236526, 'unit': None, 'global_step': 806, 'timestamp': '2021-06-14T19:10:09.498672Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.5484
+I0614 12:10:35.983038 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.5484
+INFO:tensorflow:cross_entropy = 6.8483076, learning_rate = 0.08991908, train_accuracy = 0.0 (28.182 sec)
+I0614 12:10:35.984255 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.8483076, learning_rate = 0.08991908, train_accuracy = 0.0 (28.182 sec)
+INFO:tensorflow:loss = 8.234855, step = 900 (28.181 sec)
+I0614 12:10:35.984425 46912496713088 basic_session_run_hooks.py:260] loss = 8.234855, step = 900 (28.181 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.0552107263067, 'unit': None, 'global_step': 906, 'timestamp': '2021-06-14T19:10:37.715601Z', 'extras': []}
+I0614 12:10:37.715696 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.0552107263067, 'unit': None, 'global_step': 906, 'timestamp': '2021-06-14T19:10:37.715601Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.81176590321158, 'unit': None, 'global_step': 906, 'timestamp': '2021-06-14T19:10:37.715981Z', 'extras': []}
+I0614 12:10:37.716016 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 226.81176590321158, 'unit': None, 'global_step': 906, 'timestamp': '2021-06-14T19:10:37.715981Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.55923
+I0614 12:11:04.078985 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.55923
+INFO:tensorflow:cross_entropy = 6.8357115, learning_rate = 0.09991009, train_accuracy = 0.0 (28.096 sec)
+I0614 12:11:04.080273 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.8357115, learning_rate = 0.09991009, train_accuracy = 0.0 (28.096 sec)
+INFO:tensorflow:loss = 8.22017, step = 1000 (28.096 sec)
+I0614 12:11:04.080908 46912496713088 basic_session_run_hooks.py:260] loss = 8.22017, step = 1000 (28.096 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.15796326289203, 'unit': None, 'global_step': 1006, 'timestamp': '2021-06-14T19:11:05.775071Z', 'extras': []}
+I0614 12:11:05.775157 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.15796326289203, 'unit': None, 'global_step': 1006, 'timestamp': '2021-06-14T19:11:05.775071Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 228.0869382135044, 'unit': None, 'global_step': 1006, 'timestamp': '2021-06-14T19:11:05.775392Z', 'extras': []}
+I0614 12:11:05.775419 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 228.0869382135044, 'unit': None, 'global_step': 1006, 'timestamp': '2021-06-14T19:11:05.775392Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.51859
+I0614 12:11:32.499475 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.51859
+INFO:tensorflow:cross_entropy = 6.9186153, learning_rate = 0.1099011, train_accuracy = 0.0 (28.421 sec)
+I0614 12:11:32.501192 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.9186153, learning_rate = 0.1099011, train_accuracy = 0.0 (28.421 sec)
+INFO:tensorflow:loss = 8.300678, step = 1100 (28.421 sec)
+I0614 12:11:32.501865 46912496713088 basic_session_run_hooks.py:260] loss = 8.300678, step = 1100 (28.421 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 226.9942433041288, 'unit': None, 'global_step': 1106, 'timestamp': '2021-06-14T19:11:34.172815Z', 'extras': []}
+I0614 12:11:34.172883 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 226.9942433041288, 'unit': None, 'global_step': 1106, 'timestamp': '2021-06-14T19:11:34.172815Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 225.3699306355291, 'unit': None, 'global_step': 1106, 'timestamp': '2021-06-14T19:11:34.173097Z', 'extras': []}
+I0614 12:11:34.173132 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 225.3699306355291, 'unit': None, 'global_step': 1106, 'timestamp': '2021-06-14T19:11:34.173097Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.56931
+I0614 12:12:00.516098 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.56931
+INFO:tensorflow:cross_entropy = 6.8388767, learning_rate = 0.119892105, train_accuracy = 0.0 (28.016 sec)
+I0614 12:12:00.517107 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.8388767, learning_rate = 0.119892105, train_accuracy = 0.0 (28.016 sec)
+INFO:tensorflow:loss = 8.218257, step = 1200 (28.016 sec)
+I0614 12:12:00.517671 46912496713088 basic_session_run_hooks.py:260] loss = 8.218257, step = 1200 (28.016 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.10086790987913, 'unit': None, 'global_step': 1206, 'timestamp': '2021-06-14T19:12:02.208514Z', 'extras': []}
+I0614 12:12:02.208579 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.10086790987913, 'unit': None, 'global_step': 1206, 'timestamp': '2021-06-14T19:12:02.208514Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 228.28038401349664, 'unit': None, 'global_step': 1206, 'timestamp': '2021-06-14T19:12:02.208757Z', 'extras': []}
+I0614 12:12:02.208779 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 228.28038401349664, 'unit': None, 'global_step': 1206, 'timestamp': '2021-06-14T19:12:02.208757Z', 'extras': []}
+INFO:tensorflow:global_step/sec: 3.53162
+I0614 12:12:28.831765 46912496713088 basic_session_run_hooks.py:692] global_step/sec: 3.53162
+INFO:tensorflow:cross_entropy = 6.807853, learning_rate = 0.12988311, train_accuracy = 0.0 (28.316 sec)
+I0614 12:12:28.832899 46912496713088 basic_session_run_hooks.py:260] cross_entropy = 6.807853, learning_rate = 0.12988311, train_accuracy = 0.0 (28.316 sec)
+INFO:tensorflow:loss = 8.184291, step = 1300 (28.316 sec)
+I0614 12:12:28.833461 46912496713088 basic_session_run_hooks.py:260] loss = 8.184291, step = 1300 (28.316 sec)
+INFO:tensorflow:Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.01213461783087, 'unit': None, 'global_step': 1306, 'timestamp': '2021-06-14T19:12:30.533030Z', 'extras': []}
+I0614 12:12:30.533131 46912496713088 logger.py:147] Benchmark metric: {'name': 'average_examples_per_sec', 'value': 227.01213461783087, 'unit': None, 'global_step': 1306, 'timestamp': '2021-06-14T19:12:30.533030Z', 'extras': []}
+INFO:tensorflow:Benchmark metric: {'name': 'current_examples_per_sec', 'value': 225.95271839972196, 'unit': None, 'global_step': 1306, 'timestamp': '2021-06-14T19:12:30.533381Z', 'extras': []}
+I0614 12:12:30.533410 46912496713088 logger.py:147] Benchmark metric: {'name': 'current_examples_per_sec', 'value': 225.95271839972196, 'unit': None, 'global_step': 1306, 'timestamp': '2021-06-14T19:12:30.533381Z', 'extras': []}

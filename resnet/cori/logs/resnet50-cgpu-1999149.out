@@ -1,0 +1,1331 @@
+Nodes:  1  Tasks:  6  CPUs per task:  10
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.105345 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.105345 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.105348 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.105401 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105582 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105583 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.105584 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:Logical CPU cores: 28
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105669 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105670 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105671 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105532 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.105532 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105559 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+I0614 13:37:04.105639 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105756 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105765 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105781 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.105783 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105840 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105852 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.105865 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+INFO:tensorflow:Logical CPU cores: 28
+I0614 13:37:04.106112 46912496713088 resnet_run_loop.py:212] Logical CPU cores: 28
+INFO:tensorflow:TF_GPU_THREAD_COUNT: 1
+I0614 13:37:04.106341 46912496713088 resnet_run_loop.py:220] TF_GPU_THREAD_COUNT: 1
+INFO:tensorflow:TF_GPU_THREAD_MODE: gpu_private
+I0614 13:37:04.106427 46912496713088 resnet_run_loop.py:222] TF_GPU_THREAD_MODE: gpu_private
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119524 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119535 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119526 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119529 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119652 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119614 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119665 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119594 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119650 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119598 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119724 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119649 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+W0614 13:37:04.119614 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:152: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119743 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119735 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0614 13:37:04.119716 46912496713088 module_wrapper.py:139] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/horovod/tensorflow/__init__.py:178: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 13:37:04.753584 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.753854 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.753737 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 13:37:04.753778 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 13:37:04.753873 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754024 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.753959 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754055 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754221 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754204 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpk1jrkyeb
+W0614 13:37:04.754484 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpk1jrkyeb
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpk2p98ubm
+W0614 13:37:04.754643 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpk2p98ubm
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp2875bylo
+W0614 13:37:04.754685 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmp2875bylo
+W0614 13:37:04.754635 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 13:37:04.754672 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+W0614 13:37:04.754683 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:572: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpkqtwrlr8
+W0614 13:37:04.754770 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpkqtwrlr8
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpunsx0dcl
+W0614 13:37:04.754845 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpunsx0dcl
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754882 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754905 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+W0614 13:37:04.754942 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:583: The name tf.OptimizerOptions is deprecated. Please use tf.compat.v1.OptimizerOptions instead.
+
+INFO:tensorflow:Using config: {'_model_dir': '/tmp/tmpkqtwrlr8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 86400, '_session_config': intra_op_parallelism_threads: 7
+inter_op_parallelism_threads: 27
+gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+allow_soft_placement: true
+graph_options {
+  optimizer_options {
+    global_jit_level: ON_1
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x2aab025c7410>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+I0614 13:37:04.755127 46912496713088 estimator.py:212] Using config: {'_model_dir': '/tmp/tmpkqtwrlr8', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 86400, '_session_config': intra_op_parallelism_threads: 7
+inter_op_parallelism_threads: 27
+gpu_options {
+  allow_growth: true
+  visible_device_list: "0"
+}
+allow_soft_placement: true
+graph_options {
+  optimizer_options {
+    global_jit_level: ON_1
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x2aab025c7410>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpjrnenjx3
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpus0wyqxl
+W0614 13:37:04.755425 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpjrnenjx3
+W0614 13:37:04.755459 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmpus0wyqxl
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp5575z47w
+W0614 13:37:04.755486 46912496713088 estimator.py:1821] Using temporary folder as model directory: /tmp/tmp5575z47w
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756018 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756080 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756089 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756086 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756088 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756548 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+WARNING:tensorflow:'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756610 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+W0614 13:37:04.756595 46912496713088 logger.py:387] 'cpuinfo' not imported. CPU info will not be logged.
+INFO:tensorflow:Benchmark run: {'model_name': 'resnet', 'dataset': {'name': 'ImageNet'}, 'machine_config': {'memory_total': 403611475968, 'memory_available': 348231356416}, 'test_id': None, 'run_date': '2021-06-14T20:37:04.755328Z', 'tensorflow_version': {'version': '1.15.0', 'git_hash': 'v1.15.0-rc3-22-g590d6ee'}, 'tensorflow_environment_variables': [{'name': 'TF_GPU_THREAD_COUNT', 'value': '1'}, {'name': 'TF_GPU_THREAD_MODE', 'value': 'gpu_private'}], 'run_parameters': [{'name': 'batch_size', 'long_value': 1}, {'name': 'dtype', 'string_value': "<dtype: 'float16'>"}, {'name': 'num_workers', 'long_value': 8}, {'name': 'resnet_size', 'string_value': '50'}, {'name': 'resnet_version', 'string_value': '1'}, {'name': 'synthetic_data', 'bool_value': 'False'}, {'name': 'train_epochs', 'long_value': 5}]}
+I0614 13:37:04.803127 46912496713088 logger.py:152] Benchmark run: {'model_name': 'resnet', 'dataset': {'name': 'ImageNet'}, 'machine_config': {'memory_total': 403611475968, 'memory_available': 348231356416}, 'test_id': None, 'run_date': '2021-06-14T20:37:04.755328Z', 'tensorflow_version': {'version': '1.15.0', 'git_hash': 'v1.15.0-rc3-22-g590d6ee'}, 'tensorflow_environment_variables': [{'name': 'TF_GPU_THREAD_COUNT', 'value': '1'}, {'name': 'TF_GPU_THREAD_MODE', 'value': 'gpu_private'}], 'run_parameters': [{'name': 'batch_size', 'long_value': 1}, {'name': 'dtype', 'string_value': "<dtype: 'float16'>"}, {'name': 'num_workers', 'long_value': 8}, {'name': 'resnet_size', 'string_value': '50'}, {'name': 'resnet_version', 'string_value': '1'}, {'name': 'synthetic_data', 'bool_value': 'False'}, {'name': 'train_epochs', 'long_value': 5}]}
+INFO:tensorflow:Starting cycle: 0/5
+I0614 13:37:04.803343 46912496713088 resnet_run_loop.py:706] Starting cycle: 0/5
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809896 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809906 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809931 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809902 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809916 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809907 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809980 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0614 13:37:04.809952 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:datasets_num_private_threads: 25
+I0614 13:37:04.845260 46912496713088 resnet_run_loop.py:89] datasets_num_private_threads: 25
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.188693 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.188894 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.189194 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.189495 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.189731 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.189942 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.191024 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0614 13:37:07.191819 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/imagenet_preprocessing.py:76: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+2021-06-14 13:37:07.209452: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.209452: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.209448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.209451: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.209448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.209452: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.209448: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:07.211194: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-14 13:37:08.222790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.226882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.230908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.233320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.236170: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.238614: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.241304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.244522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.244615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.247755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.251035: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.251196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.254490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.257502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.258259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.258335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.262165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.262221: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.264486: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.264954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.265570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.265651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.266392: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.266954: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.269300: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.271125: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.272336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.272673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.273260: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.273642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.276335: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.283707: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.284167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.284780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.284821: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.285348: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.286807: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.288560: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.288998: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.291281: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.293008: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.294147: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.294368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.294706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.295624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.297904: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.302931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.303206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.303276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.303596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.304753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.304799: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.306683: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.308337: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.308757: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.310981: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.311946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.312120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.312195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.312522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.312603: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.317281: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.321015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.321123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:08.321263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.321341: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.321590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.321631: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.323581: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.325191: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.325610: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.327852: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.329480: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.329879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.329976: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1b:00.0
+2021-06-14 13:37:08.330052: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.330140: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.334257: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.338944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.339043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3d:00.0
+2021-06-14 13:37:08.339125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.339204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.339255: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.341130: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.342734: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.343265: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.345522: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.347141: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.347789: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.347885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:3e:00.0
+2021-06-14 13:37:08.347969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.351755: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.356940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.356982: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.357031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 4 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:88:00.0
+2021-06-14 13:37:08.357108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.358885: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.360450: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.360872: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.363077: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.364724: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.365692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 5 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+2021-06-14 13:37:08.365769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.365808: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.367548: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.369055: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.369390: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.369461: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.371562: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.373126: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.373607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 6 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b2:00.0
+2021-06-14 13:37:08.377556: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.383165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 7 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:b3:00.0
+2021-06-14 13:37:08.383214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:08.385630: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:08.387623: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:08.388154: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:08.390969: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:08.393052: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:08.399100: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:08.430964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.452223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.469524: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.483979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.495282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.504638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.508001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-06-14 13:37:08.513037: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.593934 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.594445 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.603766 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.612437 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.612940 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.620827 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.622199 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.629713 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.630208 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+INFO:tensorflow:Calling model_fn.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.638016 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+I0614 13:37:08.638037 46912496713088 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.639054 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.641021 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.641496 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.649107 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.656211 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.658847 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.659346 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.664877 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.665390 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.666723 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.666990 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.667623 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.668153 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.673384 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0614 13:37:08.674261 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:97: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0614 13:37:08.674779 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.676051 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0614 13:37:08.682444 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:54: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.684687 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.691908 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.694254 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0614 13:37:08.700206 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:519: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.070463 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.074677 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.078618 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.082549 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.091758 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.094605 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.098064 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.102294 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.107474 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.125235 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.126305 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.127020 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.127541 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.128325 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.130717 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.132269 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.134430 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.135094 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.137577 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0614 13:37:10.141315 46912496713088 deprecation.py:323] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_model.py:546: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.141943 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.145947 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.147882 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.159876 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0614 13:37:10.161432 46912496713088 deprecation.py:323] From /usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/lib/python3.7/site-packages/tensorflow_core/python/ops/losses/losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.166773 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.178937 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.180848 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.185839 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.187786 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0614 13:37:10.194927 46912496713088 module_wrapper.py:139] From /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/official/resnet/resnet_run_loop.py:323: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0614 13:37:10.202025 46912496713088 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Done calling model_fn.
+I0614 13:37:12.815243 46912496713088 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0614 13:37:12.816196 46912496713088 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0614 13:37:14.714818 46912496713088 monitored_session.py:240] Graph was finalized.
+2021-06-14 13:37:14.715284: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.741991: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.743684: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.743770: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55555dda6b20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.743782: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.749260: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.749732: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597eab50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.749746: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.772750: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.773982: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.780253: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.780214: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.780928: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597c1bb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.780951: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.781076: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597ca1b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.781114: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.803773: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.809371: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.809744: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597c4cc0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.809756: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.811034: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.819114: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.819647: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597c13b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.819673: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.823861: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.829493: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.829919: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597b62f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.829931: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:14.866700: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-14 13:37:14.873916: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2021-06-14 13:37:14.874336: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55555980f330 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:14.874350: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-14 13:37:15.657110: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597b0a00 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.657134: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.663793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.663860: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.663886: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.663894: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.663902: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.663909: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.663917: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.663926: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.668850: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555559775660 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.668879: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.671401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.671455: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.675523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.675575: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.675596: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.675604: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.675612: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.675621: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.675628: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.675637: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.684782: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597af890 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.684799: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.688935: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597b5bb0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.688953: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.690505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.690558: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.696489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.696531: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.696551: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.696559: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.696566: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.696573: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.696580: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.696587: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.701873: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.701925: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.701946: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.701954: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.701962: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.701970: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.701977: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.701985: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.703638: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597c9b50 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.703660: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.709123: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597af970 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.709141: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.710591: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597da020 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.710616: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.712405: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5555597e5960 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-14 13:37:15.712422: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-06-14 13:37:15.716822: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.716862: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.716881: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.716897: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.716904: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.716912: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.716919: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.716928: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.718293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.718338: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.722496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.722546: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.722566: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.722574: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.722581: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.722588: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.722594: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.722620: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.724457: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.724502: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.724691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.724732: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.724754: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.724764: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.724773: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.724783: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.724792: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.724802: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.726001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:1a:00.0
+2021-06-14 13:37:15.726041: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.726060: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:15.726067: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-06-14 13:37:15.726074: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-06-14 13:37:15.726081: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-06-14 13:37:15.726088: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-06-14 13:37:15.726096: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:15.738803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.738842: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.744498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.744540: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.746326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.746372: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.747619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-06-14 13:37:15.747666: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-06-14 13:37:15.829930: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.829961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.829969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.836391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12987 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.846355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.846386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.846394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.855012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12983 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.874293: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.874318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.874325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.877445: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.877470: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.877478: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.882014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12905 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.886223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.886242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.886248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.888175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12897 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.890065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.890085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.890091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.890832: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.890853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.890860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.894403: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12892 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.895854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-14 13:37:15.895875: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-06-14 13:37:15.895881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-06-14 13:37:15.898766: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12892 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.899973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12892 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:15.902814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 12892 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:1a:00.0, compute capability: 7.0)
+2021-06-14 13:37:21.189345: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.189345: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.191120: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.196536: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.199899: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.201282: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.210058: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2021-06-14 13:37:21.232906: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1586] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+INFO:tensorflow:Running local_init_op.
+I0614 13:37:21.243850 46912496713088 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0614 13:37:21.430366 46912496713088 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /tmp/tmpkqtwrlr8/model.ckpt.
+I0614 13:37:25.339906 46912496713088 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /tmp/tmpkqtwrlr8/model.ckpt.
+2021-06-14 13:37:32.026352: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.029819: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.033509: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.034929: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.036959: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.037184: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.042680: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:32.052848: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:37:37.600860: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:38.068478: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:38.157072: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:38.430526: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:38.717420: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:39.157487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:39.160713: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:39.591956: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-14 13:37:40.241910: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:41.066935: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:41.143852: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:41.229810: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:42.071904: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:42.254405: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:42.557546: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:37:43.209643: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-06-14 13:38:03.157875: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:03.368568: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:03.916044: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:04.899637: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:05.087753: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:05.128352: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:05.392918: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:05.829987: I tensorflow/compiler/jit/xla_compilation_cache.cc:238] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2021-06-14 13:38:16.403145: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:38:16.675323: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:38:16.722056: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:38:16.976001: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+INFO:tensorflow:cross_entropy = 9.119459, learning_rate = 0.0, train_accuracy = 0.0
+I0614 13:38:18.869908 46912496713088 basic_session_run_hooks.py:262] cross_entropy = 9.119459, learning_rate = 0.0, train_accuracy = 0.0
+INFO:tensorflow:loss = 10.514905, step = 0
+I0614 13:38:18.870912 46912496713088 basic_session_run_hooks.py:262] loss = 10.514905, step = 0
+2021-06-14 13:38:21.335851: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:38:21.756651: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:38:22.162133: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)
+2021-06-14 13:38:23.575868: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:533] layout failed: Invalid argument: Attribute 'squeeze_dims' contains out of range index '3', index must be between [-4, 3)

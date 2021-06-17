@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -N 1
+#SBATCH -N 2
 #SBATCH -C gpu -c 10
 #SBATCH --ntasks-per-node=8
 #SBATCH --gpus-per-task=1
@@ -71,11 +71,11 @@ then
     else
         #echo "Nodes: " $SLURM_NNODES " Tasks: " $((SLURM_NNODES*8)) " CPUs per task: " $SLURM_CPUS_PER_TASK
         set -x
-        srun -N 1 -n 8 -c 10 ./utils/run.sh $@
+        #srun -N 1 -n 8 -c 10 ./utils/run.sh $@
         #srun -l -u ./utils/run.sh $@
-        # srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
-        #      --cpu-bind=cores \
-        #      ./utils/run.sh
+        srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
+             --cpu-bind=cores \
+             ./utils/run.sh
     fi
 else
     if [ "$DO_PROFILING" == "true" ]
