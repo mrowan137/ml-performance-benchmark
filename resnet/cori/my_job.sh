@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -N 2
+#SBATCH -N 8
 #SBATCH -C gpu -c 10
 #SBATCH --ntasks-per-node=8
 #SBATCH --gpus-per-task=1

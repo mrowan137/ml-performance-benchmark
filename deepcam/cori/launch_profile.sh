@@ -26,7 +26,7 @@ python $SCRIPT \
      --max_inter_threads 2 \
      --model_prefix "classifier" \
      --optimizer "LAMB" \
-     --max_epochs 70 \
+     --max_epochs 5 \
      --amp_opt_level O1 \
      --local_batch_size $BATCH_SIZE |& tee -a ${output_dir}/train.out
 

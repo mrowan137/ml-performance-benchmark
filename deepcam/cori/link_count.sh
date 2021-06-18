@@ -1,11 +1,13 @@
 #!/bin/bash
 
 subdir=(train validation)
-samples_per_node=(720 72)
+samples_per_node=(20023 2248)
 
 node_count=$1
-base_dir="/global/cscratch1/sd/tkurth/data/cam5_data/All-Hist/train"
+#base_dir="/global/cscratch1/sd/tkurth/data/cam5_data/All-Hist/train"
+base_dir="/global/cscratch1/sd/tkurth/data/cam5_data/All-Hist/all"
 data_dir="data/cam5_data/All-Hist_small_split_$node_count"
+#data_dir="data/cam5_data/All-Hist-all" 
 mkdir -p $data_dir
 
 cd $data_dir
