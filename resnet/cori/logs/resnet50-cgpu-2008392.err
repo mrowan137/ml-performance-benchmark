@@ -1,0 +1,10 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 1 -n 8 -c 10 --cpu-bind=cores ./utils/run.sh
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init

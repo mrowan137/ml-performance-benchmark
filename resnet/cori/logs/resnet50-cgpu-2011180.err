@@ -1,0 +1,76 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 8 -n 64 -c 10 --cpu-bind=cores ./utils/run_short.sh
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+srun: error: cgpu07: tasks 32-39: Exited with exit code 13
+srun: Terminating job step 2011180.0
+slurmstepd: error: *** STEP 2011180.0 ON cgpu03 CANCELLED AT 2021-06-19T13:01:43 ***
+srun: error: cgpu04: tasks 8-15: Exited with exit code 13
+srun: error: cgpu06: tasks 24-31: Exited with exit code 13
+srun: error: cgpu03: tasks 0-7: Exited with exit code 13
+srun: error: cgpu09: tasks 48-55: Exited with exit code 13
+srun: error: cgpu08: tasks 40-47: Exited with exit code 13
+srun: error: cgpu05: tasks 16-23: Exited with exit code 13
+srun: error: cgpu10: tasks 56-63: Exited with exit code 13

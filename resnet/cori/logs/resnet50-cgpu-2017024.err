@@ -1,0 +1,18 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 2 -n 16 -c 10 --cpu-bind=cores ./utils/run_short.sh
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init

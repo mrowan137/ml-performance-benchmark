@@ -44,7 +44,7 @@ then
         $MULTI_WORKER_FLAGS \
         --data_dir=$DATADIR \
         --stop_threshold=0.9999 \
-	    --train_epochs=70 \
+	    --train_epochs=5 \
         --label_smoothing=0 \
         --batch_size=$BATCHSIZE \
         --enable_lars \

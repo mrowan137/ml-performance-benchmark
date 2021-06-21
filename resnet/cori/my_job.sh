@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH -N 8
+#SBATCH -N 4
 #SBATCH -C gpu -c 10
 #SBATCH --ntasks-per-node=8
 #SBATCH --gpus-per-task=1
 #SBATCH --exclusive
-#SBATCH -t 0:40:00
+#SBATCH -t 4:00:00
 #SBATCH -A nstaff
 #SBATCH -J resnet50-cgpu
 #SBATCH -d singleton
@@ -67,7 +67,7 @@ then
         echo "then"
         srun -N $SLURM_NNODES -n $SLURM_NTASKS -c 10 \
              --cpu-bind=cores \
-             ./utils/run_with_profiling.sh
+             ./utils/run.sh
     else
         #echo "Nodes: " $SLURM_NNODES " Tasks: " $((SLURM_NNODES*8)) " CPUs per task: " $SLURM_CPUS_PER_TASK
         set -x

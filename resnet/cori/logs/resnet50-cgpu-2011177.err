@@ -1,0 +1,12 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 1 -n 8 -c 10 --cpu-bind=cores ./utils/run_short.sh
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+slurmstepd: error: execve(): /global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori/./utils/run_short.sh: Permission denied
+srun: error: cgpu17: tasks 0-7: Exited with exit code 13
+srun: Terminating job step 2011177.0

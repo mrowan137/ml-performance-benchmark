@@ -1,0 +1,21 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
++ srun -N 2 -n 16 -c 10 --cpu-bind=cores ./utils/run.sh
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+srun: error: cgpu10: tasks 0-7: Exited with exit code 1
+srun: Terminating job step 2007857.0
+srun: error: cgpu12: tasks 8-15: Exited with exit code 1

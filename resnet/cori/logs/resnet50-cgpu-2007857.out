@@ -1,0 +1,96 @@
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+ModuleNotFoundError: No module named 'absl'
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+Traceback (most recent call last):
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
+/usr/common/software/python/3.7-anaconda-2019.07/bin/python
+Traceback (most recent call last):
+  File "./official/resnet/imagenet_main.py", line 42, in <module>
+    from absl import app as absl_app
+ModuleNotFoundError: No module named 'absl'
