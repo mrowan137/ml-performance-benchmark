@@ -1,0 +1,22 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+mkdir: cannot create directory 'outputs_nodes1_batch2': File exists
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r3.w8.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r5.w8.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r6.w8.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r7.w8.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r1.w8.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r2.w8.qdrep': No such file or directory
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2017402.0.r4.w8.qdrep': No such file or directory
+srun: error: cgpu12: tasks 1-7: Exited with exit code 1
+srun: Terminating job step 2017402.0
+slurmstepd: error: *** STEP 2017402.0 ON cgpu12 CANCELLED AT 2021-06-21T11:43:41 ***
+srun: error: cgpu12: task 0: Terminated
+srun: Force Terminated job step 2017402.0

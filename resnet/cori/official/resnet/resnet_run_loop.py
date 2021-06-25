@@ -697,7 +697,7 @@ def resnet_main(
       #schedule[-1] = train_epochs - sum(schedule[:-1])  # over counting.
 
       # Manual setup (override train_epochs) 
-      schedule = [1]*5
+      schedule = [1]*1000
       n_loops = len(schedule)
 
     train_start_time = time.time()

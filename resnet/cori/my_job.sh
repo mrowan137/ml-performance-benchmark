@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -N 4
+#SBATCH -N 8
 #SBATCH -C gpu -c 10
 #SBATCH --ntasks-per-node=8
 #SBATCH --gpus-per-task=1
@@ -13,7 +13,7 @@
 # End Slurm directives and begin shell commands
 
 # Run parameters
-export BATCHSIZE=64
+export BATCHSIZE=16
 export STRATEGY='horovod'    # horovod or multi_worker_mirrored
 export DATA_MODE='real' # real or synthetic
 export DO_PROFILING='false'  # true or false

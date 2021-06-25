@@ -1,0 +1,142 @@
+:::MLLOG {"namespace": "", "time_ms": 1624002840722, "event_type": "POINT_IN_TIME", "key": "submission_benchmark", "value": "deepcam", "metadata": {"file": "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/utils/mlperf_log_utils.py", "lineno": 56}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840938, "event_type": "POINT_IN_TIME", "key": "submission_org", "value": "Umbrella Corp.", "metadata": {"file": "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/utils/mlperf_log_utils.py", "lineno": 59}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840938, "event_type": "POINT_IN_TIME", "key": "submission_division", "value": "closed", "metadata": {"file": "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/utils/mlperf_log_utils.py", "lineno": 62}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840938, "event_type": "POINT_IN_TIME", "key": "submission_status", "value": "onprem", "metadata": {"file": "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/utils/mlperf_log_utils.py", "lineno": 65}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840939, "event_type": "POINT_IN_TIME", "key": "submission_platform", "value": "8xSUBMISSION_PLATFORM_PLACEHOLDER", "metadata": {"file": "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/utils/mlperf_log_utils.py", "lineno": 68}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840939, "event_type": "INTERVAL_START", "key": "init_start", "value": null, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 109}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840939, "event_type": "POINT_IN_TIME", "key": "cache_clear", "value": null, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 110}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840939, "event_type": "POINT_IN_TIME", "key": "seed", "value": 333, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 114}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840941, "event_type": "POINT_IN_TIME", "key": "global_batch_size", "value": 16, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 187}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840941, "event_type": "POINT_IN_TIME", "key": "opt_name", "value": "LAMB", "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 188}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840941, "event_type": "POINT_IN_TIME", "key": "opt_base_learning_rate", "value": 0.001, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 189}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840941, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_steps", "value": 0, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 190}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840941, "event_type": "POINT_IN_TIME", "key": "opt_learning_rate_warmup_factor", "value": 1.0, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 191}}
+:::MLLOG {"namespace": "", "time_ms": 1624002840942, "event_type": "POINT_IN_TIME", "key": "opt_epsilon", "value": 1e-08, "metadata": {"file": "src/deepCam/train_hdf5_ddp.py", "lineno": 192}}
+Constructing DeepLabv3+ model...
+Number of output channels: 3
+Output stride: 16
+Number of Input Channels: 16
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 284, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/train/data-1996-10-23-02-4.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 284, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/train/data-1996-10-27-05-5.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 284, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/train/data-1996-07-29-01-1.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 284, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/train/data-1996-05-20-00-1.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 284, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/train/data-1996-07-14-06-1.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 284, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/train/data-1996-06-24-02-1.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Traceback (most recent call last):
+  File "src/deepCam/train_hdf5_ddp.py", line 581, in <module>
+    main(pargs)
+  File "src/deepCam/train_hdf5_ddp.py", line 300, in main
+    comm_rank = comm_rank)
+  File "/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/cori/src/deepCam/data/cam_hdf5_dataset.py", line 90, in __init__
+    with h5.File(filename, "r") as fin:
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = '/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8/validation/data-1996-11-21-02-5.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)

@@ -1,0 +1,16 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+mkdir: cannot create directory 'outputs_nodes1_batch2': File exists
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+Warning: Python module not loaded, you already have Python loaded via conda init
+cp: cannot stat '/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data_nsys/1_node/nsys.2009135.0.r5.w8.qdrep': No such file or directory
+srun: error: cgpu02: task 5: Exited with exit code 1
+srun: Terminating job step 2009135.0
+slurmstepd: error: *** STEP 2009135.0 ON cgpu02 CANCELLED AT 2021-06-18T00:42:06 ***
+srun: error: cgpu02: tasks 0-4,6-7: Terminated
+srun: Force Terminated job step 2009135.0
