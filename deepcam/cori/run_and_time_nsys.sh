@@ -36,7 +36,8 @@ run_tag="deepcam_cgpu_${SLURM_JOB_ID}_nodes${SLURM_NNODES}_batch${BATCH_SIZE}"
 
 #data_dir_prefix="/global/cscratch1/sd/mrowan/hpc_mlperf_nsys_scripts/deepcam/data/cam5_data/All-Hist_small_split_${SLURM_NNODES}"
 #data_dir_prefix="/global/cscratch1/sd/mrowan/ml-performance-benchmark/deepcam/data/cam5_data/All-Hist_small_split_8"
-data_dir_prefix="/global/cscratch1/sd/tkurth/data/cam5_data/All-Hist"
+#data_dir_prefix="/global/cscratch1/sd/tkurth/data/cam5_data/All-Hist"
+data_dir_prefix="/global/cfs/cdirs/mpccc/gsharing/sfarrell/climate-data/All-Hist"
 TAG='W'
 
 output_dir=$SCRATCH/deepcam/results/$run_tag
