@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "../train_hdf5_ddp.py", line 585, in <module>
+    main(pargs)
+  File "../train_hdf5_ddp.py", line 108, in main
+    logger = mll.mlperf_logger(log_file, "deepcam", "Umbrella Corp.")
+  File "/global/cscratch1/sd/mrowan/mlperf-deepcam/src/deepCam/utils/mlperf_log_utils.py", line 50, in __init__
+    torch.distributed.barrier()
+  File "/usr/common/software/pytorch/v1.6.0-gpu/lib/python3.7/site-packages/torch/distributed/distributed_c10d.py", line 1710, in barrier
+    work = _default_pg.barrier()
+RuntimeError: CUDA error: all CUDA-capable devices are busy or unavailable
+srun: error: cgpu04: task 15: Exited with exit code 1
+srun: Terminating job step 2062210.0
+slurmstepd: error: *** STEP 2062210.0 ON cgpu01 CANCELLED AT 2021-07-06T19:28:35 ***
+srun: error: cgpu01: task 0: Terminated
+srun: error: cgpu04: tasks 8-11,13-14: Terminated
+srun: error: cgpu01: tasks 2,4,6: Terminated
+srun: error: cgpu18: tasks 56,58,60,62: Terminated
+srun: error: cgpu15: tasks 40,42,44,46: Terminated
+srun: error: cgpu09: tasks 24,26,28,30: Terminated
+srun: error: cgpu13: tasks 32,34,36,38: Terminated
+srun: error: cgpu01: tasks 3,5,7: Terminated
+srun: error: cgpu17: tasks 49-55: Terminated
+srun: error: cgpu18: tasks 59,61,63: Terminated
+srun: error: cgpu15: tasks 41,43,45: Terminated
+srun: error: cgpu13: tasks 33,35,39: Terminated
+srun: error: cgpu09: tasks 25,27,29: Terminated
+srun: error: cgpu15: task 47: Terminated
+srun: error: cgpu18: task 57: Terminated
+srun: error: cgpu01: task 1: Terminated
+srun: error: cgpu13: task 37: Terminated
+srun: error: cgpu17: task 48: Terminated
+srun: error: cgpu09: task 31: Terminated
+srun: error: cgpu04: task 12: Terminated
+srun: error: Task launch for 2062210.0 failed on node cgpu07: Socket timed out on send/recv operation
+srun: error: Application launch failed: Socket timed out on send/recv operation
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Timed out waiting for job step to complete

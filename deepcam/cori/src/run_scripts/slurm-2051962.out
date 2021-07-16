@@ -1,0 +1,2 @@
+slurmstepd: error: *** JOB 2051962 ON cgpu02 CANCELLED AT 2021-07-02T19:19:20 ***
+slurmstepd: error: *** STEP 2051962.0 ON cgpu02 CANCELLED AT 2021-07-02T19:19:20 ***

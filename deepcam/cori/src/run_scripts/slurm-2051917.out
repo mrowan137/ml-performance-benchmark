@@ -1,0 +1,47 @@
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+srun: error: cgpu07: tasks 8-15: Exited with exit code 1
+srun: Terminating job step 2051917.0
+slurmstepd: error: *** STEP 2051917.0 ON cgpu05 CANCELLED AT 2021-07-02T19:09:15 ***
+srun: error: cgpu05: task 0: Terminated
+srun: error: cgpu10: task 19: Terminated
+srun: error: cgpu05: tasks 2,4,6: Terminated
+srun: error: cgpu10: tasks 17,21,23: Terminated
+srun: error: cgpu13: tasks 24,26,28,30: Terminated
+srun: error: cgpu05: tasks 3,5,7: Terminated
+srun: error: cgpu10: tasks 16,18,20: Terminated
+srun: error: cgpu13: tasks 25,27,29: Terminated
+srun: error: cgpu05: task 1: Terminated
+srun: error: cgpu10: task 22: Terminated
+srun: error: cgpu13: task 31: Terminated
+srun: Force Terminated job step 2051917.0

@@ -1,0 +1,43 @@
+srun: error: slurm_receive_msgs: Socket timed out on send/recv operation
+srun: error: Task launch for 2051907.0 failed on node cgpu07: Socket timed out on send/recv operation
+srun: error: Application launch failed: Socket timed out on send/recv operation
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 2051907.0 ON cgpu05 CANCELLED AT 2021-07-02T19:00:30 ***
+srun: error: cgpu05: task 0: Killed
+srun: Terminating job step 2051907.0
+srun: error: cgpu05: tasks 2,4,6: Killed
+srun: error: cgpu05: tasks 1,3,5: Killed
+srun: error: cgpu05: task 7: Killed
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                             File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                     ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+                                                ^
+SyntaxError: SyntaxError: invalid syntax
+invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError:   File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+invalid syntax
+  File "../train_hdf5_ddp.py", line 259
+    raise Exception(f'Requested {pargs.lr_warmup_steps} LR warmup steps '
+                                                                        ^
+SyntaxError: invalid syntax
+srun: error: cgpu07: tasks 8-15: Exited with exit code 1
