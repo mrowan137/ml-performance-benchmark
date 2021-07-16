@@ -9,6 +9,7 @@
 #SBATCH -J cosmoflow-cgpu
 #SBATCH -d singleton
 #SBATCH -o logs/%x-%j.out
+#SBATCH -e logs/%x-%j.err
 ## End SLURM directives and begin shell commands
 
 
