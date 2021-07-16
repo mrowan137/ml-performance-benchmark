@@ -10,7 +10,7 @@
 #SBATCH -d singleton
 #SBATCH -o logs/%x-%j.out
 #SBATCH -e logs/%x-%j.err
-# End Slurm directives and begin shell commands
+# End SLURM directives and begin shell commands
 
 # Run parameters
 export BATCHSIZE=64

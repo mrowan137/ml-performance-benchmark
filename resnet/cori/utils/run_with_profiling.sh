@@ -12,15 +12,12 @@ export HOROVOD_FUSION_THRESHOLD=8388608
 
 # Where to store results and logfiles
 RES_DIR=profiling_results/nsight/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}
-if [ $SLURM_PROCID -eq 0 ]
-then
-    mkdir -p $RES_DIR
-fi
-PROF_FILE=${RES_DIR}/nsys.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}
+mkdir -p $RES_DIR
 
 # Short run -- NSight Systems profiling
 # Memory error if collecting mpi trace like so:
 # nsys profile -o $PROF_FILE -t cuda,nvtx,mpi,osrt --mpi-impl=openmpi ...
+PROF_FILE=${RES_DIR}/nsys.${SLURM_JOB_ID}.r${PMIX_RANK}.w${SLURM_NPROCS}
 nsys profile -o $PROF_FILE -t cuda \
      python -u ./official/resnet/imagenet_main.py \
      --clean \
