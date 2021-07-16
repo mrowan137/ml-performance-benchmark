@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -N 8
+#SBATCH -N 1
 #SBATCH -C gpu -c 10
 #SBATCH --ntasks-per-node=8
 #SBATCH --gpus-per-task=1
@@ -13,86 +13,40 @@
 # End Slurm directives and begin shell commands
 
 # Run parameters
-export BATCHSIZE=16
-export STRATEGY='horovod'    # horovod or multi_worker_mirrored
-export DATA_MODE='real' # real or synthetic
+export BATCHSIZE=64
 export DO_PROFILING='false'  # true or false
-export DO_NCCL_DEBUG='false'  # true or false
+export DO_NCCL_DEBUG='false' # true or false
 
 # Setup software environment
 module purge
 module load cgpu
-
 module load tensorflow/gpu-1.15.0-py37
-#module load cuda/10.1.168
-#module load cudnn/7.6.5
-#module load nccl
-export PYTHONPATH=/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
+export PYTHONPATH=$(pwd):/usr/common/software/tensorflow/gpu-tensorflow/1.15.0-py37/bin/python
 
-# module load tensorflow/gpu-2.2.0-py37
-# export PYTHONPATH=/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/gpu-tensorflow/2.2.0-py37/bin/python
-# module load tensorflow/2.4.1-gpu
-# export PYTHONPATH=/global/cscratch1/sd/mrowan/ml-performance-benchmark/resnet/cori:/usr/common/software/tensorflow/2.4.1-gpu/bin/python
-
-# export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
+export MODELDIR=results/${SLURM_NNODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}/model_dir
 export NODES=$SLURM_NNODES
-# #rm -rf $MODELDIR
 
-# # XLA environment
-#source /global/cscratch1/sd/mrowan/1.14.0/env.sh
+# XLA environment
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_PATH
 export TF_XLA_FLAGS=tf_xla_cpu_global_jit
-# export PYTHONPATH=$(pwd):$PYTHONPATH
 
 if [ "$DO_PROFILING" == "true" ]
 then
     module load nsight-systems
 fi
 
-# if [ "$DATA_MODE" == "real" ]
-# then
-#     #copy imagenet data to BB
-#     ./utils/stage_data_bb.sh
-#     srun -n 1 -c $((NODES*8*10)) cp /global/cscratch1/sd/mrowan/scratch/imagenet/train/* /global/cscratch1/sd/mrowan/scratch/imagenet/validation/* /mnt/bb/$USER
-# fi
-#export DATADIR=/mnt/bb/$USER
+# Data directory -- can use cfs for high-bandwidth streaming, but recommended to
+# use bb or cscratch
+export DATADIR=/global/cfs/cdirs/nstaff/ai_benchmark/michael/data/imagenet/all_data
+#export DATADIR=/global/cscratch1/sd/mrowan/imagenet/all_data
 
-#DW persistentdw name=cosmobb
-export DATADIR=/global/cscratch1/sd/mrowan/imagenet/all_data
-
-if [ "$STRATEGY" == "horovod" ]
+if [ "$DO_PROFILING" == "true" ]
 then
-    if [ "$DO_PROFILING" == "true" ]
-    then
-        echo "then"
-        srun -N $SLURM_NNODES -n $SLURM_NTASKS -c 10 \
-             --cpu-bind=cores \
-             ./utils/run.sh
-    else
-        #echo "Nodes: " $SLURM_NNODES " Tasks: " $((SLURM_NNODES*8)) " CPUs per task: " $SLURM_CPUS_PER_TASK
-        set -x
-        #srun -N 1 -n 8 -c 10 ./utils/run.sh $@
-        #srun -l -u ./utils/run.sh $@
-        srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
-             --cpu-bind=cores \
-             ./utils/run.sh
-    fi
+    srun -N $SLURM_NNODES -n $SLURM_NTASKS -c 10 \
+         --cpu-bind=cores \
+         ./utils/run_with_profiling.sh
 else
-    if [ "$DO_PROFILING" == "true" ]
-    then
-        jsrun -n${NODES} -a1 -c42 -g6 -r1 -b none stdbuf -o0 "./utils/run_with_profiling.sh"
-    else
-        jsrun -n${NODES} -a1 -c42 -g6 -r1 -b none stdbuf -o0 "./utils/run.sh"
-    fi
+    srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
+         --cpu-bind=cores \
+         ./utils/run.sh
 fi
-
-# if [ "$DO_PROFILING" == "true" ]
-# then
-#     cat ./utils/run_with_profiling.sh >> log.${LSB_JOBID}
-# else
-#     cat ./utils/run.sh >> log.${LSB_JOBID}
-# fi
-
-# mv log.${LSB_JOBID} $LOG_DIR/
-# mv %J.out $LOG_DIR/
-# mv %J.err $LOG_DIR/

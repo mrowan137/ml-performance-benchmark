@@ -39,7 +39,7 @@ then
         --data_dir=$DATADIR \
         --label_smoothing=0 \
         --train_epochs=5 \
-        --stop_threshold=0.99 \
+        --stop_threshold=0.9999 \
         --batch_size=$BATCHSIZE \
         --enable_lars \
         --fp16_implementation=casting \
@@ -72,7 +72,7 @@ else
          --model_dir=$MODELDIR 2>&1 > /mnt/bb/$USER/log.${LSB_JOBID}
 fi
 
-cp $PROF_FILE.qdrep $RES_DIR
+cp ${PROF_FILE}.qdrep ${RES_DIR}
 
 if [ $PMIX_RANK -eq 0 ]
 then

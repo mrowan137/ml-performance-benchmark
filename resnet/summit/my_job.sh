@@ -13,14 +13,13 @@
 export BATCHSIZE=64
 export STRATEGY='horovod'    # horovod or multi_worker_mirrored
 export DATA_MODE='synthetic' # real or synthetic
-export DO_PROFILING='true'  # true or false
-export DO_NCCL_DEBUG='false'  # true or false
+export DO_PROFILING='true'   # true or false
+export DO_NCCL_DEBUG='false' # true or false
 
 # Setup software environment
 module purge
 export MODELDIR=/mnt/bb/$USER/models/model_dir_${NODES}_nodes
 export NODES=$(cat ${LSB_DJOB_HOSTFILE} | sort | uniq | grep -v login | grep -v batch | wc -l)
-#rm -rf $MODELDIR
 
 # XLA environment
 source $WORLDWORK/stf011/junqi/native-build/latest/1.14.0/env.sh
