@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Where to store results and logfiles
-RUN_TAG="${SLURM_JOB_ID}"
-export OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${RUN_TAG}"
+export OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}"
 export PROFILE_DIR="${OUTPUT_DIR}/profiling_results"
 
 if [ $PMIX_RANK -eq 0 ]
