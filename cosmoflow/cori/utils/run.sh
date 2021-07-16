@@ -11,11 +11,10 @@ then
 fi
 
 # Where to store results and logfiles
-export OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}"
-
+OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}"
+mkdir -p ${OUTPUT_DIR}
 if [ $PMIX_RANK -eq 0 ]
 then
-    mkdir -p ${OUTPUT_DIR}
     touch ${OUTPUT_DIR}/train.out
 fi
 

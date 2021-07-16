@@ -1,17 +1,16 @@
 #!/bin/bash
 
 # Where to store results and logfiles
-export OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}"
-export PROFILE_DIR="${OUTPUT_DIR}/profiling_results"
-
+OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}"
+PROFILE_DIR="${OUTPUT_DIR}/profiling_results"
+mkdir -p ${OUTPUT_DIR}
+mkdir -p ${PROFILE_DIR}
 if [ $PMIX_RANK -eq 0 ]
 then
-    mkdir -p ${OUTPUT_DIR}
-    mkdir -p ${PROFILE_DIR}
     touch ${OUTPUT_DIR}/train.out
 fi
-export PROF_FILE=${PROFILE_DIR}/nsys.${SLURM_JOB_ID}.r${PMIX_RANK}.w${SLURM_NPROCS}
 
+PROF_FILE=${PROFILE_DIR}/nsys.${SLURM_JOB_ID}.r${PMIX_RANK}.w${SLURM_NPROCS}
 nsys profile -o ${PROF_FILE} -t cuda \
      python src/train.py -d \
      --batch-size=$BATCHSIZE \
