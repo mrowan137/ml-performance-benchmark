@@ -11,12 +11,9 @@ export HOROVOD_CYCLE_TIME=1
 export HOROVOD_FUSION_THRESHOLD=8388608
 
 # Where to store results and logfiles
-RUN=j${SLURM_JOB_ID}
-RES_DIR=profiling_results/${NODES}_nodes_batchsize_${BATCHSIZE}_${RUN}
-LOG_DIR=logs/${NODES}_nodes_batchsize_${BATCHSIZE}_${RUN}
+RES_DIR=profiling_results/nsight/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}
 if [ $SLURM_PROCID -eq 0 ]
 then
-    mkdir -p $LOG_DIR
     mkdir -p $RES_DIR
 fi
 PROF_FILE=${RES_DIR}/nsys.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}

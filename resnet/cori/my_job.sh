@@ -16,6 +16,8 @@
 export BATCHSIZE=64
 export DO_PROFILING='false'  # true or false
 export DO_NCCL_DEBUG='false' # true or false
+                             # only set at most one of DO_PROFILING,
+                             # DO_NCCL_DEBUG to True
 
 # Setup software environment
 module purge
@@ -35,10 +37,11 @@ then
     module load nsight-systems
 fi
 
-# Data directory -- can use cfs for high-bandwidth streaming, but recommended to
-# use bb or cscratch
-export DATADIR=/global/cfs/cdirs/nstaff/ai_benchmark/michael/data/imagenet/all_data
+# Data directory -- can use cfs for high-bandwidth
+# streaming, but recommended to use bb or cscratch
 #export DATADIR=/global/cscratch1/sd/mrowan/imagenet/all_data
+export DATADIR=/global/cfs/cdirs/nstaff/ai_benchmark/michael/data/imagenet/all_data
+
 
 if [ "$DO_PROFILING" == "true" ]
 then

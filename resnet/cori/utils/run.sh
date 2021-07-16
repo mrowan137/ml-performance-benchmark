@@ -15,18 +15,10 @@ if [ "$DO_NCCL_DEBUG" == "true" ]
 then
     export NCCL_DEBUG=INFO
     export NCCL_DEBUG_SUBSYS=COLL
-    export NCCL_DEBUG_DIR="logs/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}/nccl"
+    export NCCL_DEBUG_DIR="profiling_results/nccl/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}"
     mkdir -p $NCCL_DEBUG_DIR
     export NCCL_DEBUG_FILE="${NCCL_DEBUG_DIR}/nccl.${SLURM_JOB_ID}.r${SLURM_PROCID}.w${SLURM_NPROCS}"
     echo $NCCL_DEBUG_FILE
-fi
-
-# Where to store results and logfiles
-RUN=j${SLURM_JOB_ID}
-LOG_DIR=logs/${NODES}_nodes_batchsize_${BATCHSIZE}_${RUN}
-if [ $SLURM_PROCID -eq 0 ]
-then
-    mkdir -p $LOG_DIR
 fi
 
 # Long run -- test convergence
