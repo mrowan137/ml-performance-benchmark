@@ -1,3 +1,9 @@
+"""
+Script to extract average time per epoch
+Usage:
+    python get_time.py log.out 5
+This computes the average of first 5 epoch times using data from log.out
+"""
 import numpy as np
 import re
 import sys
