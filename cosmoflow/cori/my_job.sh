@@ -1,69 +1,43 @@
 ##!/bin/bash
-#BSUB -P csc330
-#BSUB -W 00:15
-##BSUB -w ended(######)
-#BSUB -nnodes 8
-#BSUB -alloc_flags "nvme smt4"
-#BSUB -J CosmoFlow_8
-#BSUB -o %J.out
-#BSUB -e %J.err
-## End LSF directives and begin shell commands
+#SBATCH -N 1
+#SBATCH -C gpu -c 10
+#SBATCH --ntasks-per-node 8
+#SBATCH --gpus-per-task 1
+#SBATCH --exclusive
+#SBATCH -t 1:00:00
+#SBATCH -A nstaff
+#SBATCH -J cosmoflow-cgpu
+#SBATCH -d singleton
+#SBATCH -o logs/%x-%j.out
+## End SLURM directives and begin shell commands
 
 
 # Run parameters
-export batch_size=8
-export DO_PROFILING='false' # true or false
+export BATCHSIZE=8
+export DO_PROFILING='false'  # true or false
 export DO_NCCL_DEBUG='false' # true or false
+                             # only set at most one of DO_PROFILING,
+                             # DO_NCCL_DEBUG to True
 
 # Setup software environment
-source activate mlperf_deepcam
+module purge
 module load cgpu
 module load tensorflow/2.4.1-gpu
-
-# TODO
-export PYTHONPATH=/global/homes/m/mrowan/.conda/envs/mlperf_deepcam/lib/python3.7/site-packages:/global/homes/m/mrowan/code/mlperf-logging
+export PYTHONPATH=/usr/common/software/tensorflow/2.4.1-gpu/bin/python
 export NODES=${SLURM_NNODES}
-export CONFIG=src/configs/cosmo_runs_gpu_$NODES.yaml
 
 #XLA environment
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CUDA_DIR
-#export PYTHONPATH=$(pwd):$PYTHONPATH
 
 
 if [ "$DO_PROFILING" == "true" ]
 then
     module load nsight-systems
-fi
-
-# Copy data to burst buffer # TODO
-export data_dir="/ccs/home/mrowan/scratch/cosmoUniverse_2019_05_4parE_tf"
-#jsrun -n$NODES -a1 -c42 -r1 cp -rL ./data/cam5_data/All-Hist_small_split_${NODES}/ /mnt/bb/$USER
-#export data_dir=/mnt/bb/$USER
-
-if [ "$DO_PROFILING" == "true" ]
-then
-    jsrun -r1 -a6 -c7 -g6 \
-          --bind=proportional-packed:7 \
-          -x LD_LIBRARY_PATH \
-          stdbuf -o0 \
-          ./utils/run_with_profiling.sh
+    srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
+         --cpu-bind=cores \
+         ./utils/run_with_profiling.sh
 else
-    jsrun -r1 -a6 -c7 -g6 \
-          --bind=proportional-packed:7 \
-          -x LD_LIBRARY_PATH \
-          stdbuf -o0 \
-          ./utils/run.sh
+    srun -N $SLURM_NNODES -n $((SLURM_NNODES*8)) -c 10 \
+         --cpu-bind=cores \
+         ./utils/run.sh
 fi
-
-# if [ "$DO_PROFILING" == "true" ]
-# then
-#     cat ./utils/run_with_profiling.sh >> log.${LSB_JOBID}
-# else
-#     cat ./utils/run.sh >> log.${LSB_JOBID}
-# fi
-
-# mv log.${LSB_JOBID} $LOG_DIR/
-# mv %J.out $LOG_DIR/
-# mv %J.err $LOG_DIR/
-
-

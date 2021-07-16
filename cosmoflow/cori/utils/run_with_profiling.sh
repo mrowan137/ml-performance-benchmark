@@ -1,22 +1,25 @@
 #!/bin/bash
 
 # Where to store results and logfiles
-run_tag="${LSB_JOBID}"
-export output_dir="results/${NODES}_nodes_batchsize_${batch_size}_j${run_tag}"
-profile_dir="${output_dir}/profiling_results"
+RUN_TAG="${SLURM_JOB_ID}"
+export OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${RUN_TAG}"
+export PROFILE_DIR="${OUTPUT_DIR}/profiling_results"
 
-#if [ $PMIX_RANK -eq 0 ]
-#then
-mkdir -p ${output_dir}
-mkdir -p ${profile_dir}
-touch ${output_dir}/train.out
-#fi
-prof_file=${profile_dir}/nsys.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}
+if [ $PMIX_RANK -eq 0 ]
+then
+    mkdir -p ${OUTPUT_DIR}
+    mkdir -p ${PROFILE_DIR}
+    touch ${OUTPUT_DIR}/train.out
+fi
+export PROF_FILE=${PROFILE_DIR}/nsys.${SLURM_JOB_ID}.r${PMIX_RANK}.w${SLURM_NPROCS}
 
-nsys profile -o $prof_file -t cuda \
+nsys profile -o ${PROF_FILE} -t cuda \
      python src/train.py -d \
-     --batch-size=$batch_size \
+     --batch-size=$BATCHSIZE \
      --n-epochs=5 \
-     --data-dir=$data_dir \
-     --output-dir=$output_dir \
-     --rank-gpu $CONFIG |& tee -a ${output_dir}/train.out
+     --output-dir=$OUTPUT_DIR \
+     --rank-gpu \
+     --amp \
+     --stage-dir=/tmp \
+     --n-train=$((65536/(8/NODES))) \
+     --n-valid=$((8192/(8/NODES))) 2>&1 > ${OUTPUT_DIR}/train.out

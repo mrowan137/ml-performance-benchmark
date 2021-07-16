@@ -5,24 +5,27 @@ if [ "$DO_NCCL_DEBUG" == "true" ]
 then
     export NCCL_DEBUG=INFO
     export NCCL_DEBUG_SUBSYS=COLL
-    export NCCL_DEBUG_DIR="results/${NODES}_nodes_batchsize_${batch_size}_j${LSB_JOBID}/nccl_logs"
+    export NCCL_DEBUG_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${SLURM_JOB_ID}/nccl_logs"
     mkdir -p $NCCL_DEBUG_DIR
-    export NCCL_DEBUG_FILE="${NCCL_DEBUG_DIR}/nccl.${LSB_JOBID}.r${PMIX_RANK}.w${LSB_JOB_NUMPROC}"
+    export NCCL_DEBUG_FILE="${NCCL_DEBUG_DIR}/nccl.${SLURM_JOB_ID}.r${PMIX_RANK}.w${SLURM_NPROCS}"
 fi
 
 # Where to store results and logfiles
-run_tag="${LSB_JOBID}"
-export output_dir="results/${NODES}_nodes_batchsize_${batch_size}_j${run_tag}"
+RUN_TAG="${SLURM_JOB_ID}"
+export OUTPUT_DIR="results/${NODES}_nodes_batchsize_${BATCHSIZE}_j${RUN_TAG}"
 
-#if [ $PMIX_RANK -eq 0 ]
-#then
-mkdir -p ${output_dir}
-touch ${output_dir}/train.out
-#fi
+if [ $PMIX_RANK -eq 0 ]
+then
+    mkdir -p ${OUTPUT_DIR}
+    touch ${OUTPUT_DIR}/train.out
+fi
 
 python src/train.py -d \
-       --batch-size=$batch_size \
-       --data-dir=$data_dir \
-       --output-dir=$output_dir \
+       --batch-size=$BATCHSIZE \
        --n-epochs=5 \
-       --rank-gpu $CONFIG |& tee -a ${output_dir}/train.out
+       --output-dir=$OUTPUT_DIR \
+       --rank-gpu \
+       --amp \
+       --stage-dir=/tmp \
+       --n-train=$((65536/(8/NODES))) \
+       --n-valid=$((8192/(8/NODES))) 2>&1 > ${OUTPUT_DIR}/train.out
