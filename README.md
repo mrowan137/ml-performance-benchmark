@@ -1,5 +1,6 @@
 # ml-performance-benchmark
-Performance benchmarking for ML/AI workloads.
+Performance benchmarking of ML/AI workloads ResNet, DeepCam, and CosmoFlow; work in support of [Architectural Requirements for Deep Learning Workloads in HPC Environments (PMBS21)](https://ieeexplore.ieee.org/document/9652793).
+
 
 ## ResNet
 Imagenet data: download training and validation datasets from http://www.image-net.org/challenges/LSVRC/2012/downloads
